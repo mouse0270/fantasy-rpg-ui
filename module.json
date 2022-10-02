@@ -1,0 +1,62 @@
+{
+	"id": "module-template",
+	"title": "MODULE TITLE",
+	"description": "MODULE DESCRIPTION",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10,
+		"maximum": 10
+	},
+	"authors": [
+		{
+			"name": "Mouse0270",
+			"url": "https://github.com/mouse0270/",
+			"email": "rmcintosh@websitesbyfatdudes.com",
+			"discord": "Mouse0270#0270",
+
+			"flags": {
+				"twitter": "Mouse0270",
+				"patreon": "Mouse0270",
+				"github": "Mouse0270",
+				"ko-fi": "Mouse0270",
+				"reddit": "u/Mouse0270"
+			}
+		}
+	],
+
+	"library": false,
+	"socket": false,
+
+	"relationships": {
+		"systems": [],
+		"requires": [],
+		"conflicts": []
+	},
+	"esmodules": [
+        "/scripts/init.mjs"
+	],
+	"scripts": [],
+	"styles": [
+        "/styles/module.css"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		}
+	],
+	"media": [],
+	"url": "This is auto replaced",
+	"manifest": "This is auto replaced",
+	"download": "This is auto replaced",
+	"readme": "This is auto replaced",
+	"changelog": "This is auto replaced",
+	"license": "This is auto replacedE",
+	"bugs": "This is auto replaced",
+	"flags": {
+		"allowBugReporter": true, 
+		"attributions": "This is auto replaced"
+	}
+}
