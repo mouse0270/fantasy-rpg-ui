@@ -1,0 +1,49 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-sidebar-background-chat: var(--rpg-ui-background-stone);
+}
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - CHAT
+/*======================================================================*/
+
+#sidebar {
+	.tab[data-tab].chat-sidebar {
+		background-color: transparent;
+		background-image: none;
+		border-image-source: var(--rpg-ui-sidebar-background-chat);
+		border-image-repeat: repeat;
+		border-image-slice: 60 fill;
+		border-image-width: 20px;
+		border-width: 0px;
+		box-shadow: none;
+		
+    	box-shadow: none;
+		margin: 0px;
+		padding: 0px;
+
+		.chat-message{
+			background-color: transparent;
+			background-image: none;
+			border-image-source: var(--rpg-ui-background-parchment);
+			border-image-repeat: repeat;
+			border-image-slice: 60 fill;
+			border-image-width: 20px;
+			border-color: transparent !important;
+			border-style: solid;
+			border-width: 5px;
+			margin: 0.5rem;
+			padding: 0.5rem 1rem;
+		}
+
+		#chat-form textarea {
+			background-image: none;
+			border-image-source: var(--rpg-ui-background-board);
+			border-image-repeat: repeat;
+			border-image-slice: 60 fill;
+			border-image-width: 20px;
+		}
+	}
+}
+

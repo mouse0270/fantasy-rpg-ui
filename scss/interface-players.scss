@@ -1,0 +1,20 @@
+@import '_mixins';
+
+:root {
+}
+
+/*======================================================================*/
+/* FORMAT UI LEFT - PLAYERS
+/*======================================================================*/
+#ui-left {
+	#players {
+		background-color: transparent;
+		border-image-source: var(--rpg-ui-background-button);
+		border-image-repeat: repeat;
+		border-image-slice: 60 fill;
+		border-image-width: 20px;
+		border-width: 5px;
+		margin-bottom: 9px;
+		margin-left: 9px;
+	}
+}

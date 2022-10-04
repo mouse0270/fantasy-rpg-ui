@@ -1,0 +1,71 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-dialog-title: var(--rpg-ui-title-iron);
+	--rpg-ui-dialog-background: var(--rpg-ui-background-stone);
+	--rpg-ui-dialog-foreground: var(--rpg-ui-background-parchment);
+}
+
+/*======================================================================*/
+/* FORMAT DIALOG TITLE
+/*======================================================================*/
+.window-app.dialog, .window-app.sheet-config, .window-app.folder-edit {
+	@include windowHeader(--rpg-ui-dialog-title);
+} 
+
+/*======================================================================*/
+/* FORMAT DIALOG CONTENT
+/*======================================================================*/
+.window-app.dialog .window-content {
+	@include windowContentBackground(--rpg-ui-dialog-background);
+}
+.window-app.dialog .window-content .dialog-content {
+	@include windowContentParchment(--rpg-ui-dialog-foreground);
+	
+	margin: 0.5rem;
+    padding: 0.5rem;
+}
+.window-app.sheet-config .window-content,
+.window-app.folder-edit .window-content  {
+	@include windowContentBackground(--rpg-ui-dialog-background);
+}
+.window-app.sheet-config .window-content > form, 
+.window-app.folder-edit .window-content > form {
+	@include windowContentParchment(--rpg-ui-dialog-foreground);
+
+	margin: 0.5rem;
+    padding: 0.5rem;
+
+
+	/*======================================================================*/
+	/* FORMAT DIALOG BUTTONS
+	/*======================================================================*/
+	button {
+		@include button;
+
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -3px);
+	}
+}
+
+
+/*======================================================================*/
+/* FORMAT DIALOG BUTTONS
+/*======================================================================*/
+.window-app.dialog .window-content .dialog-buttons {
+	bottom: 0px;
+	left: 0px;
+	padding: 0px 1rem;
+	position: absolute;
+	transform: translateY(15px);
+	width: 100%;
+
+	button {
+		@include button;
+	}
+}
+
+.window-app.folder-edit .window-content > form button[type="submit"] {
+	transform: translate(-50%, 22px);
+}

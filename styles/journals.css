@@ -1,0 +1,396 @@
+:root {
+  --rpg-ui-journal-title: var(--rpg-ui-title-iron);
+  --rpg-ui-journal-background-left: var(--rpg-ui-background-wood);
+  --rpg-ui-journal-background-right: var(--rpg-ui-background-stone);
+  --rpg-ui-journal-foreground: var(--rpg-ui-background-parchment);
+  --rpg-ui-journal-header-ribbon: var(--rpg-ui-title-ribbon-green);
+  --rpg-ui-journal-sidebar-directory-item: var(--rpg-ui-content-board-1);
+}
+
+/*======================================================================*/
+/* FORMAT JOURNAL TITLE
+/*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header {
+  border-width: 0px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  /* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header .window-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-journal-title);
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 300px;
+  overflow: visible;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -15px);
+          transform: translate(-50%, -15px);
+  white-space: nowrap;
+  z-index: 1;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close:hover, .window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+  color: white;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar:hover, .window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar ~ a.header-button.close {
+  -webkit-transform: translate(-99px, 15px);
+          transform: translate(-99px, 15px);
+  z-index: -2;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content {
+  overflow: visible;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header .window-title {
+  left: calc(50% + var(--sidebar-width-expanded) / 2);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar) {
+  background-image: var(--rpg-ui-button-with-rings);
+  background-color: transparent;
+  background-size: 100% 100%;
+  position: absolute;
+  right: -150px;
+  width: 150px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-20px, 70px);
+          transform: translate(-20px, 70px);
+  padding-left: 35px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):before {
+  background-image: var(--rpg-ui-button-rings);
+  background-color: transparent;
+  background-size: 100% 100%;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  width: 37px;
+  position: absolute;
+  -webkit-transform: translate(-35px, -1px);
+          transform: translate(-35px, -1px);
+  z-index: 1;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(2) {
+  -webkit-transform: translate(-20px, 60px);
+          transform: translate(-20px, 60px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(3) {
+  -webkit-transform: translate(-20px, 105px);
+          transform: translate(-20px, 105px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(4) {
+  -webkit-transform: translate(-20px, 150px);
+          transform: translate(-20px, 150px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(5) {
+  -webkit-transform: translate(-20px, 195px);
+          transform: translate(-20px, 195px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(6) {
+  -webkit-transform: translate(-20px, 240px);
+          transform: translate(-20px, 240px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(7) {
+  -webkit-transform: translate(-20px, 285px);
+          transform: translate(-20px, 285px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(8) {
+  -webkit-transform: translate(-20px, 330px);
+          transform: translate(-20px, 330px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(9) {
+  -webkit-transform: translate(-20px, 375px);
+          transform: translate(-20px, 375px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(10) {
+  -webkit-transform: translate(-20px, 420px);
+          transform: translate(-20px, 420px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(11) {
+  -webkit-transform: translate(-20px, 465px);
+          transform: translate(-20px, 465px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(12) {
+  -webkit-transform: translate(-20px, 510px);
+          transform: translate(-20px, 510px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(13) {
+  -webkit-transform: translate(-20px, 555px);
+          transform: translate(-20px, 555px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(14) {
+  -webkit-transform: translate(-20px, 600px);
+          transform: translate(-20px, 600px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(15) {
+  -webkit-transform: translate(-20px, 645px);
+          transform: translate(-20px, 645px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(16) {
+  -webkit-transform: translate(-20px, 690px);
+          transform: translate(-20px, 690px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(17) {
+  -webkit-transform: translate(-20px, 735px);
+          transform: translate(-20px, 735px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(18) {
+  -webkit-transform: translate(-20px, 780px);
+          transform: translate(-20px, 780px);
+}
+.window-app.sheet.journal-sheet.journal-entry.fantasy-rpg-ui-is-collapsed .window-header .window-title {
+  left: calc(50% + var(--sidebar-width-collapsed) / 2);
+}
+
+/*======================================================================*/
+/* FORMAT JOURNAL SIDEBAR
+/*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar {
+  background: transparent;
+  border-image-source: var(--rpg-ui-journal-background-left);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-width: 5px;
+  border-style: solid;
+  padding: 0px;
+  overflow: visible;
+  position: relative;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .scrollable {
+  overflow: hidden overlay;
+  padding-right: 0rem;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar:after {
+  background-image: var(--rpg-ui-window-coupling);
+  background-position-x: center;
+  background-repeat: space;
+  background-size: 50px 150px;
+  content: "";
+  height: calc(100% - 80px);
+  pointer-events: none;
+  position: absolute;
+  right: -28px;
+  top: 40px;
+  width: 45px;
+  z-index: 1;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .pages-list .directory-item {
+  border-image-source: var(--rpg-ui-journal-sidebar-directory-item);
+  border-image-repeat: repeat;
+  border-image-slice: 50 fill;
+  border-image-width: 20px;
+  border-width: 0px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .pages-list .headings li:last-child {
+  margin-bottom: 0px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons {
+  bottom: 0px;
+  left: 0px;
+  padding: 0px;
+  position: absolute;
+  -webkit-transform: translateY(35px);
+          transform: translateY(35px);
+  width: 100%;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-button-big);
+  background-size: 100% 100%;
+  border-width: 0px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 45px;
+  max-width: 200px;
+  padding-bottom: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button:hover, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button:active {
+  background: var(--rpg-ui-button-big-pressed);
+  background-size: 100% 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.next, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.previous {
+  background-image: var(--rpg-ui-button-long-arrow);
+  font-size: 0rem;
+  margin: 0.5rem 0rem;
+  min-width: 60px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.next:focus, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.previous:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.next:hover, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.next:active, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.previous:hover, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.previous:active {
+  background-image: var(--rpg-ui-button-long-arrow-pressed);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.next {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar.collapsed {
+  border-width: 7px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar.collapsed .pages-list .directory-item {
+  margin: 0rem;
+  margin-bottom: 0.25rem;
+  padding: 0rem;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar.collapsed .action-buttons {
+  left: calc(var(--sidebar-width-collapsed) + 1rem);
+  width: var(--sidebar-width-expanded);
+  z-index: 1;
+}
+
+/*======================================================================*/
+/* FORMAT JOURNAL CONTENT
+/*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-header {
+  left: 50%;
+  margin-top: 2rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 75%;
+  z-index: 1;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-header .title {
+  background-color: transparent;
+  background-image: var(--rpg-ui-journal-header-ribbon);
+  background-size: 100% 100%;
+  border-width: 0px;
+  height: 75px;
+  padding: 0px 55px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-entry-content {
+  background: transparent;
+  border-image-source: var(--rpg-ui-journal-background-right);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-width: 5px;
+  border-style: solid;
+  padding: 0px;
+  position: relative;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-entry-pages {
+  border-image-source: var(--rpg-ui-journal-foreground);
+  border-image-repeat: repeat;
+  border-image-slice: 85 fill;
+  border-image-width: 20px;
+  border-width: 15px;
+  border-style: solid;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-entry-pages .scrollable {
+  margin-top: calc(75px + 1rem);
+}

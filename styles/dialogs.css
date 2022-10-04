@@ -1,0 +1,263 @@
+:root {
+  --rpg-ui-dialog-title: var(--rpg-ui-title-iron);
+  --rpg-ui-dialog-background: var(--rpg-ui-background-stone);
+  --rpg-ui-dialog-foreground: var(--rpg-ui-background-parchment);
+}
+
+/*======================================================================*/
+/* FORMAT DIALOG TITLE
+/*======================================================================*/
+.window-app.dialog, .window-app.sheet-config, .window-app.folder-edit {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.window-app.dialog .window-header, .window-app.sheet-config .window-header, .window-app.folder-edit .window-header {
+  border-width: 0px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  /* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+}
+.window-app.dialog .window-header .window-title, .window-app.sheet-config .window-header .window-title, .window-app.folder-edit .window-header .window-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-dialog-title);
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 300px;
+  overflow: visible;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -15px);
+          transform: translate(-50%, -15px);
+  white-space: nowrap;
+  z-index: 1;
+}
+.window-app.dialog .window-header a.header-button.close, .window-app.sheet-config .window-header a.header-button.close, .window-app.folder-edit .window-header a.header-button.close {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+}
+.window-app.dialog .window-header a.header-button.close i, .window-app.sheet-config .window-header a.header-button.close i, .window-app.folder-edit .window-header a.header-button.close i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+.window-app.dialog .window-header a.header-button.close:hover, .window-app.dialog .window-header a.header-button.close:active, .window-app.sheet-config .window-header a.header-button.close:hover, .window-app.sheet-config .window-header a.header-button.close:active, .window-app.folder-edit .window-header a.header-button.close:hover, .window-app.folder-edit .window-header a.header-button.close:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+.window-app.dialog .window-header a.header-button.send-to-taskbar, .window-app.sheet-config .window-header a.header-button.send-to-taskbar, .window-app.folder-edit .window-header a.header-button.send-to-taskbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+  color: white;
+}
+.window-app.dialog .window-header a.header-button.send-to-taskbar i, .window-app.sheet-config .window-header a.header-button.send-to-taskbar i, .window-app.folder-edit .window-header a.header-button.send-to-taskbar i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+.window-app.dialog .window-header a.header-button.send-to-taskbar:hover, .window-app.dialog .window-header a.header-button.send-to-taskbar:active, .window-app.sheet-config .window-header a.header-button.send-to-taskbar:hover, .window-app.sheet-config .window-header a.header-button.send-to-taskbar:active, .window-app.folder-edit .window-header a.header-button.send-to-taskbar:hover, .window-app.folder-edit .window-header a.header-button.send-to-taskbar:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+.window-app.dialog .window-header a.header-button.send-to-taskbar ~ a.header-button.close, .window-app.sheet-config .window-header a.header-button.send-to-taskbar ~ a.header-button.close, .window-app.folder-edit .window-header a.header-button.send-to-taskbar ~ a.header-button.close {
+  -webkit-transform: translate(-99px, 15px);
+          transform: translate(-99px, 15px);
+  z-index: -2;
+}
+
+/*======================================================================*/
+/* FORMAT DIALOG CONTENT
+/*======================================================================*/
+.window-app.dialog .window-content {
+  background: transparent;
+  border-image-source: var(--rpg-ui-dialog-background);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-width: 5px;
+  border-style: solid;
+  padding: 0px;
+}
+
+.window-app.dialog .window-content .dialog-content {
+  border-image-source: var(--rpg-ui-dialog-foreground);
+  border-image-repeat: repeat;
+  border-image-slice: 85 fill;
+  border-image-width: 20px;
+  border-width: 15px;
+  border-style: solid;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.window-app.sheet-config .window-content,
+.window-app.folder-edit .window-content {
+  background: transparent;
+  border-image-source: var(--rpg-ui-dialog-background);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-width: 5px;
+  border-style: solid;
+  padding: 0px;
+}
+
+.window-app.sheet-config .window-content > form,
+.window-app.folder-edit .window-content > form {
+  border-image-source: var(--rpg-ui-dialog-foreground);
+  border-image-repeat: repeat;
+  border-image-slice: 85 fill;
+  border-image-width: 20px;
+  border-width: 15px;
+  border-style: solid;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  /*======================================================================*/
+  /* FORMAT DIALOG BUTTONS
+  /*======================================================================*/
+}
+.window-app.sheet-config .window-content > form button,
+.window-app.folder-edit .window-content > form button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-button-big);
+  background-size: 100% 100%;
+  border-width: 0px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 45px;
+  max-width: 200px;
+  padding-bottom: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -3px);
+          transform: translate(-50%, -3px);
+}
+.window-app.sheet-config .window-content > form button:focus,
+.window-app.folder-edit .window-content > form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.window-app.sheet-config .window-content > form button:hover, .window-app.sheet-config .window-content > form button:active,
+.window-app.folder-edit .window-content > form button:hover,
+.window-app.folder-edit .window-content > form button:active {
+  background: var(--rpg-ui-button-big-pressed);
+  background-size: 100% 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+/*======================================================================*/
+/* FORMAT DIALOG BUTTONS
+/*======================================================================*/
+.window-app.dialog .window-content .dialog-buttons {
+  bottom: 0px;
+  left: 0px;
+  padding: 0px 1rem;
+  position: absolute;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  width: 100%;
+}
+.window-app.dialog .window-content .dialog-buttons button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-button-big);
+  background-size: 100% 100%;
+  border-width: 0px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 45px;
+  max-width: 200px;
+  padding-bottom: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+}
+.window-app.dialog .window-content .dialog-buttons button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.window-app.dialog .window-content .dialog-buttons button:hover, .window-app.dialog .window-content .dialog-buttons button:active {
+  background: var(--rpg-ui-button-big-pressed);
+  background-size: 100% 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.window-app.folder-edit .window-content > form button[type=submit] {
+  -webkit-transform: translate(-50%, 22px);
+          transform: translate(-50%, 22px);
+}

@@ -1,0 +1,196 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-journal-title: var(--rpg-ui-title-iron);
+	--rpg-ui-journal-background-left: var(--rpg-ui-background-wood);
+	--rpg-ui-journal-background-right: var(--rpg-ui-background-stone);
+	--rpg-ui-journal-foreground: var(--rpg-ui-background-parchment);
+	--rpg-ui-journal-header-ribbon: var(--rpg-ui-title-ribbon-green);
+	--rpg-ui-journal-sidebar-directory-item: var(--rpg-ui-content-board-1);
+}
+
+/*======================================================================*/
+/* FORMAT JOURNAL TITLE
+/*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry {
+	@include windowHeader(--rpg-ui-journal-title);
+
+	.window-content {
+		overflow: visible;
+	}
+
+	.window-header .window-title {
+		left: calc(50% + var(--sidebar-width-expanded) / 2);
+	}
+
+	.window-header a.header-button:not(.close):not(.send-to-taskbar) {
+		background-image: var(--rpg-ui-button-with-rings);
+		background-color: transparent;
+		background-size: 100% 100%;
+		position: absolute;
+		right: -150px;
+		width: 150px;
+		height: 40px;
+		display: flex;
+		transform: translate(-20px, 70px);
+		padding-left: 35px;
+		display: flex;
+		align-items: center;
+		z-index: 1;
+	}
+	.window-header a.header-button:not(.close):not(.send-to-taskbar):before {
+		background-image: var(--rpg-ui-button-rings);
+		background-color: transparent;
+		background-size: 100% 100%;
+		content: "";
+		display: flex;
+		height: 30px;
+		width: 37px;
+		position: absolute;
+		transform: translate(-35px, -1px);
+		z-index: 1;
+	}
+
+	@for $iLoop from 2 through 18 { 
+		.window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(#{$iLoop}) {
+			transform: translate(-20px, (15px + (35px * ($iLoop - 1)) + (10px * ($iLoop - 1))));
+		}
+	}
+
+	&.fantasy-rpg-ui-is-collapsed .window-header .window-title {
+		left: calc(50% + var(--sidebar-width-collapsed) / 2);
+	}
+}
+
+
+/*======================================================================*/
+/* FORMAT JOURNAL SIDEBAR
+/*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar {
+	@include windowContentBackground(--rpg-ui-journal-background-left);
+
+	overflow: visible;
+	position: relative;
+
+	.scrollable {
+		overflow: hidden overlay;
+		padding-right: 0rem;
+	}
+
+	&:after {
+		background-image: var(--rpg-ui-window-coupling);
+		background-position-x: center;
+		background-repeat: space;
+		background-size: 50px 150px;
+		content: "";
+		height: calc(100% - 80px);
+		pointer-events: none;
+		position: absolute;
+		right: -28px;
+		top: 40px;
+		width: 45px;
+		z-index: 1;
+	}
+
+	.pages-list .directory-item {
+		border-image-source: var(--rpg-ui-journal-sidebar-directory-item);
+		border-image-repeat: repeat;
+		border-image-slice: 50 fill;
+		border-image-width: 20px;
+		border-width: 0px;
+		margin: 0.5rem;
+		padding: 0.5rem;
+	}
+	.pages-list .headings li:last-child {
+		margin-bottom: 0px;
+	}
+
+	.action-buttons {
+		bottom: 0px;
+		left: 0px;
+		padding: 0px;
+		position: absolute;
+		transform: translateY(35px);
+		width: 100%;
+
+		button {
+			@include button;
+
+			&.next, &.previous {
+				background-image: var(--rpg-ui-button-long-arrow);
+				font-size: 0rem;
+				margin: 0.5rem 0rem;
+				min-width: 60px;
+
+				&:focus {
+					box-shadow: none;
+				}
+
+				&:hover, &:active {
+					background-image: var(--rpg-ui-button-long-arrow-pressed);
+					box-shadow: none;
+					padding-bottom: 0px;
+					padding-top: 10px;
+				}
+			}
+			&.next {
+				transform: scaleX(-1);
+			}
+		}
+	}
+
+	&.collapsed {
+		border-width: 7px;
+	}
+
+	&.collapsed .pages-list .directory-item {
+		margin: 0rem;
+		margin-bottom: 0.25rem;
+		padding: 0rem;
+	}
+
+	&.collapsed .action-buttons {
+		left: calc(var(--sidebar-width-collapsed) + 1rem);
+		width: var(--sidebar-width-expanded);
+		z-index: 1;
+	}
+}
+
+/*======================================================================*/
+/* FORMAT JOURNAL CONTENT
+/*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry .window-content {
+
+	.journal-header {
+		left: 50%;
+		margin-top: 2rem;
+		position: absolute;
+		transform: translateX(-50%);
+		width: 75%;
+		z-index: 1;
+		
+		.title {
+			background-color: transparent;
+			background-image: var(--rpg-ui-journal-header-ribbon);
+			background-size: 100% 100%;
+			border-width: 0px;
+			height: 75px;
+			padding: 0px 55px;
+		}
+	}
+
+	.journal-entry-content {
+		@include windowContentBackground(--rpg-ui-journal-background-right);
+	
+		position: relative;
+	}
+	.journal-entry-pages {
+		@include windowContentParchment(--rpg-ui-journal-foreground);
+	
+		margin: 1rem;
+	
+		.scrollable {
+			margin-top: calc(75px + 1rem);
+		}
+	}
+}

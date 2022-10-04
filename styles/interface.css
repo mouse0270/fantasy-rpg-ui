@@ -1,0 +1,10 @@
+/*======================================================================*/
+/* FORMAT UI LEFT
+/*======================================================================*/
+#ui-left #logo {
+  content: var(--rpg-ui-logo);
+  margin-left: 35px;
+  width: 50px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}

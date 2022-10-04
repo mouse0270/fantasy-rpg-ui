@@ -1,0 +1,123 @@
+@mixin windowTitle($title) {
+	align-items: center;
+    background-image: var($title);
+    background-size: 100% 100%;
+    display: flex;
+	left: calc(50%);
+    justify-content: center;
+    min-width: 300px;
+	overflow: visible;
+	padding: 0.5rem 1rem;
+    position: absolute;
+    transform: translate(-50%, -15px);
+	white-space: nowrap;
+	z-index: 1;
+}
+
+@mixin windowButton {
+	align-items: center;
+    background-image: var(--rpg-ui-button-border);
+    background-color: transparent;
+    background-size: 100% 100%;
+	color: var(--palette-danger-300);
+    display: flex;
+	font-size: 0rem;
+	justify-content: center;
+    min-height: 35px;
+    position: absolute;
+	text-shadow: 0 0 5px rgb(0 0 0 / 80%);
+    transform: translate(-124px, 15px);
+    right: -150px;
+    width: 35px;
+    z-index: -1;
+
+	i {
+		font-size: var(--font-size-18);
+    	margin-right: 0px;
+	}
+
+	&:hover, &:active {
+		background-image: var(--rpg-ui-button-border-pressed);
+	}
+}
+
+@mixin windowHeader($title) {
+	background: none;
+	box-shadow: none;
+
+	.window-header {
+		border-width: 0px;
+		flex: 0;
+		
+		.window-title {
+			@include windowTitle($title);
+		}
+
+		a.header-button.close {
+			@include windowButton;
+		}
+
+		/* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+		a.header-button.send-to-taskbar {
+			@include windowButton;
+			color: white;
+
+			~ a.header-button.close {
+				transform: translate(-99px, 15px);
+				z-index: -2;
+			}
+		}
+	}
+}
+
+@mixin windowContentBackground($background) {
+	background: transparent;
+	border-image-source: var($background);
+	border-image-repeat: repeat;
+	border-image-slice: 60 fill;
+	border-image-width: 20px;
+    border-width: 5px;
+	border-style: solid;
+	padding: 0px;
+}
+
+@mixin windowContentParchment($parchement) {
+	border-image-source: var($parchement);
+	border-image-repeat: repeat;
+	border-image-slice: 85 fill;
+	border-image-width: 20px;
+    border-width: 15px;
+	border-style: solid;
+	padding: 0.5rem;
+}
+
+
+@mixin button {
+    align-items: center;
+	background-color: transparent;
+	background-image: var(--rpg-ui-button-big);
+	background-size: 100% 100%;
+	border-width: 0px;
+	color: white;
+	display: flex;
+    justify-content: center;
+    min-height: 45px;
+	max-width: 200px;
+    padding-bottom: 10px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	transition: all 0.1s ease-in-out;
+	white-space: nowrap;
+
+	&:focus {
+		box-shadow: none;
+	}
+
+	&:hover, &:active {
+		background: var(--rpg-ui-button-big-pressed);
+		background-size: 100% 100%;
+		box-shadow: none;
+		padding-bottom: 0px;
+		padding-top: 10px;
+	}
+}

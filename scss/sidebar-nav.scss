@@ -1,0 +1,46 @@
+@import '_mixins';
+
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - NAVIGATION
+/*======================================================================*/
+
+#sidebar {
+	background-image: none;
+	border-color: transparent;
+	border-width: 0px;
+	box-shadow: none;
+	overflow: visible;
+
+	#sidebar-tabs {
+		background-color: transparent;
+		border-image-source: var(--rpg-ui-background-button);
+		border-image-repeat: repeat;
+		border-image-slice: 60 fill;
+		border-image-width: 20px;
+		border-bottom: 0px;
+    	box-shadow: none;
+		margin-bottom: 2px;
+		padding: 8px;
+
+		> .item.active {
+			border: 1px solid var(--color-border-highlight-alt);
+			border-radius: 0px;
+			box-shadow: 0 0 6px inset var(--color-shadow-highlight);
+		}
+	}
+	&.collapsed #sidebar-tabs {
+		border-bottom: 0px;
+		padding: 8px 6px;
+
+		> .item.active {
+			border-radius: 0px;
+		}
+	}
+
+	.tab[data-tab] {
+		background: url(/ui/denim075.png) repeat;
+		border: 1px solid var(--color-border-dark);
+		box-shadow: 0 0 20px var(--color-shadow-dark);
+	}
+}

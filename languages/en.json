@@ -1,0 +1,154 @@
+{
+	"fantasy-rpg-ui": {
+		"title": "Fantasy RPG UI",
+		"theme": {
+			"options.title": {
+				"name": "Title Image",
+				"hint": "Select the image you would like to use for the title of these windows.",
+				"choices": {
+					"iron": "Iron",
+					"ribbonBlack": "Black",
+					"ribbonBlue": "Blue",
+					"ribbonBrown": "Brown",
+					"ribbonGreen": "Green",
+					"ribbonGreenDark": "Dark Green",
+					"ribbonNavy": "Navy",
+					"ribbonNavyPurple": "Navy Purple",
+					"ribbonOrange": "Orange",
+					"ribbonPink": "Pink",
+					"ribbonPurple": "Purple",
+					"ribbonRed": "Red",
+					"ribbonSkyBlue": "Sky Blue",
+					"ribbonYellow": "Yellow",
+					"ribbonYellowGreen": "YellowGreen"
+				}
+			},
+			"options.background": {
+				"name": "Background Image",
+				"hint": "Select the background image you would like to use for these windows",
+				"choices": {
+					"board": "Board",
+					"stone": "Stone",
+					"wood": "Wood",
+					"woodAlt": "Wood Alt."
+				}
+			},
+			"options.foreground": {
+				"name": "Foreground Image",
+				"hint": "Select the foreground image you would like to use for these windows",
+				"choices": {
+					"parchment": "Parchment",
+					"parchment-with-nails": "Parchment with Nails",
+					"oldFabric": "Old Fabric"
+				}
+			},
+			"options.content": {
+				"choices": {
+					"board1" : "Board Option 1",
+					"board2" : "Board Option 2"
+				}
+			},
+			"options.buttonStyle": {
+				"choices": {
+					"rounded": "Rounded",
+					"circle": "Circle",
+					"border": "Border"
+				}
+			},
+			"options.iconBorderStyles": {
+				"choices": {
+					"blue": "Blue",
+					"brown": "Brown",
+					"green": "Green",
+					"red": "Red",
+					"violet": "Violet",
+					"white": "White"
+				}
+			},
+			"options.iconOverlayStyles": {
+				"choices": {
+					"blue": "Blue",
+					"brown": "Brown",
+					"green": "Green",
+					"red": "Red",
+					"violet": "Violet",
+					"white": "White"
+				}
+			},
+			"library": {
+				"dialogs": {
+					"name": "Enable Dialog Theme",
+					"hint": "When enabled this will apply Fantasy RPU UI to Dialog like windows in Foundry."
+				},
+				"journals": {
+					"name": "Enable Journals Theme",
+					"hint": "When enabled this will apply Fantasy RPU UI to windows using Foundry's Journal classes.",
+					"hideHeaderButtons": {
+						"name": "Hide Header Buttons",
+						"hint": "This style sheet will hide `.window-header a.header-button` until you hover over the button."
+					},
+					"backgroundLeft": {
+						"name": "Background Image for Left Panel",
+						"hint": "Select the background image you would like to use for the left panel of the journal windows."
+					},
+					"backgroundRight": {
+						"name": "Background Image for Right Panel",
+						"hint": "Select the background image you would like to use for the right panel of the journal windows."
+					},
+					"headerRibbon": {
+						"name": "Journal Title Ribbon Color",
+						"hint": "Select the ribbon color you would like to use for the titles of journal entries."
+					},
+					"sidebar": {
+						"directory-item": {
+							"name": "Background Image For Journal Pages",
+							"hint": "Select the image you would like to use for the items in the Journals left panel."
+						}
+					}
+				},
+				"interface": {
+					"name": "Enable Interface Theme",
+					"hint": "When enabled you will be able to select and style individual parts of the user interface.",
+					"controls": {
+						"name": "Enable Controls Theme",
+						"hint": "When enabled you will be able to control the style of UI Controls of Foundry",
+						"mainStyle.name": "Main Controls Button Style",
+						"mainStyle.hint": "Changes the Style of the Main Controls in Foundry.",
+						"subStyle.name": "Sub Controls Button Style",
+						"subStyle.hint": "Changes the Style of the Sub Controls in Foundry.",
+						"toggleStyle.name": "Toggle Controls Button Style",
+						"toggleStyle.hint": "Changes the Style of the Toggle Controls in Foundry."
+					},
+					"navigation": {
+						"name": "Enable Scene Navigation Theme",
+						"hint": "When enabled you will be able to control the style of the Scene Navigation Control in Foundry"
+					},
+					"players": {
+						"name": "Enable Players Theme",
+						"hint": "When enabled you will be able to control the style of the Players Control in Foundry"
+					},
+					"hotbar": {
+						"name": "Enable Hotbar Theme",
+						"hint": "When enabled you will be able to control the style of the Hotbar Control in Foundry",
+						"macroBorder.name": "Border Color",
+						"macroBorder.hint": "Choose the border color you would like to use for the macros in the hotbar.",
+						"macroOverlay.name": "Border Color",
+						"macroOverlay.hint": "Choose the overlay color you would like to use for the macros in the hotbar."
+					}
+				},
+				"sidebar": {
+					"name": "Enable Sidebar Theme",
+					"hint": "When enabled you will be able to style individual parts of the Sidebar in Foundry.",
+					"nav": {
+						"name": "Enable Sidebar Navigation Theme",
+						"hint": "When enabled it will style the navigation bar used in Foundry's Sidebar."
+					},
+					"chat": {
+						"name": "Enable Sidebar Chat Theme",
+						"hint": "When enabled it will style the Chat Tab used in Foundry's Sidebar."
+					}
+				}
+			}
+		}
+	}
+}

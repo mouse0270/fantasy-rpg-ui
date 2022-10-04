@@ -1,5 +1,5 @@
 export class MODULE {
-	static ID = 'ID-OF-YOUR-MODULE';
+	static ID = 'fantasy-rpg-ui';
 
 	static OPTIONS = {
 		background: '#7030A0',

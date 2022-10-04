@@ -1,0 +1,38 @@
+@import '_mixins';
+
+/*======================================================================*/
+/* FORMAT UI TOP - NAVIGATION
+/*======================================================================*/
+#ui-top {
+	#navigation {
+		#scene-list .scene {
+			@include button;
+
+			&.view, &.context {
+				background: var(--rpg-ui-button-big-pressed);
+				background-size: 100% 100%;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				padding-bottom: 0px;
+				padding-top: 10px
+			}
+
+			ul.scene-players {
+				top: 35px;
+			}
+		}
+		#nav-toggle {
+			align-items: center;
+			background-color: transparent;
+			background-image: var(--rpg-ui-button-border);
+			background-size: 100% 100%;
+			border-width: 0px;
+			display: flex;
+			justify-content: center;
+		}
+		&.collapsed #nav-toggle {
+			background-image: var(--rpg-ui-button-border-pressed);
+			background-size: 100% 100%;
+		}
+	}
+}

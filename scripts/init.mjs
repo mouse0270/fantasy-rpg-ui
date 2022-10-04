@@ -2,14 +2,14 @@
 import { MODULE } from './_module.mjs';
 
 // GET CORE MODULE
-import * as CORE from './module.mjs';
+import { default as CORE } from './module.mjs';
 
 /* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */
 // socketlib HOOKS -> socketlib.ready
 /* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */
 Hooks.once('socketlib.ready', () => {
 	MODULE.debug('SOCKETLIB Ready - SOCKET'); // WONT REGISTER CAUSE CALL HAPPENS WAY TO EARLY
-	CORE.registerSocketLib();
+	//CORE.registerSocketLib();
 });
 
 /* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */
@@ -26,6 +26,14 @@ Hooks.once('devModeReady', ({ registerPackageDebugFlag }) => {
 			5: 'ALL'
 		}
 	});
+});
+
+/* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */
+// libThemer HOOKS -> lib-themer.Ready
+/* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */
+Hooks.once('lib-themer.Ready', (API) => {
+	MODULE.log(CORE.THEME)
+	API.register(CORE.THEME);
 });
 
 /* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */

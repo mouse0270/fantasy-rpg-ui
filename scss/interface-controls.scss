@@ -1,0 +1,86 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-interface-controls-style-main: var(--rpg-ui-button-rounded);
+	--rpg-ui-interface-controls-style-main-pressed: var(--rpg-ui-button-rounded-pressed);
+	--rpg-ui-interface-controls-style-main-padding: 4px;
+	--rpg-ui-interface-controls-style-sub: var(--rpg-ui-button-circle);
+	--rpg-ui-interface-controls-style-sub-pressed: var(--rpg-ui-button-circle-pressed);
+	--rpg-ui-interface-controls-style-sub-padding: 4px;
+	--rpg-ui-interface-controls-style-toggle: var(--rpg-ui-button-border);
+	--rpg-ui-interface-controls-style-toggle-pressed: var(--rpg-ui-button-border-pressed);
+	--rpg-ui-interface-controls-style-toggle-padding: 0px;
+}
+
+/*======================================================================*/
+/* FORMAT UI LEFT - CONTROLS
+/*======================================================================*/
+#ui-left {
+	#controls {
+		ol.control-tools > li {
+			background-color: transparent;
+			border-width: 0px;
+			box-shadow: none;
+			color: white;
+			flex: 0 0 32px;
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.1s ease-in-out;
+		}
+		ol.control-tools > li:focus {
+			border-width: 0px;
+			box-shadow: none;
+		}
+		ol.control-tools > li.active,
+		ol.control-tools > li:hover {
+			border-width: 0px;
+			box-shadow: none;
+		}
+		ol.control-tools > li.toggle,
+		ol.control-tools > li.toggle.active, 
+		ol.control-tools > li.toggle:hover {
+			background-color: transparent;
+			border-width: 0px;
+			box-shadow: none;
+		}
+		ol.main-controls.control-tools > li {
+			background-image: var(--rpg-ui-interface-controls-style-main);
+			background-size: 100% 100%;
+			flex: 0 0 32px;
+			padding-bottom: var(--rpg-ui-interface-controls-style-main-padding);
+		}
+		ol.main-controls.control-tools > li.active,
+		ol.main-controls.control-tools > li:hover {
+			background: var(--rpg-ui-interface-controls-style-main-pressed);
+			background-size: 100% 100%;
+			padding-bottom: 0px;
+			padding-top: var(--rpg-ui-interface-controls-style-main-padding);
+		}
+		ol.sub-controls.control-tools > li {
+			background-image: var(--rpg-ui-interface-controls-style-sub);
+			background-size: 100% 100%;
+			padding-bottom: var(--rpg-ui-interface-controls-style-sub-padding);
+		}
+		ol.sub-controls.control-tools > li.active,
+		ol.sub-controls.control-tools > li:hover {
+			background: var(--rpg-ui-interface-controls-style-sub-pressed);
+			background-size: 100% 100%;
+			padding-bottom: 0px;
+			padding-top: var(--rpg-ui-interface-controls-style-sub-padding);
+		}
+		ol.sub-controls.control-tools > li.toggle {
+			background-image: var(--rpg-ui-interface-controls-style-toggle);
+			background-size: 100% 100%;
+			padding-bottom: var(--rpg-ui-interface-controls-style-toggle-padding);
+		}
+		ol.sub-controls.control-tools > li.toggle.active,
+		ol.sub-controls.control-tools > li.toggle:hover {
+			background: var(--rpg-ui-interface-controls-style-toggle-pressed);
+			background-size: 100% 100%;
+			padding-bottom: 0px;
+			padding-top: var(--rpg-ui-interface-controls-style-toggle-pressed);
+		}
+	}
+}

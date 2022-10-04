@@ -1,6 +1,6 @@
 {
-	"id": "module-template",
-	"title": "MODULE TITLE",
+	"id": "fantasy-rpg-ui",
+	"title": "Fantasy RPG UI",
 	"description": "MODULE DESCRIPTION",
 	"version": "1.0.0",
 	"compatibility": {
@@ -38,6 +38,7 @@
 	],
 	"scripts": [],
 	"styles": [
+        "/styles/assets.css",
         "/styles/module.css"
 	],
 	"languages": [

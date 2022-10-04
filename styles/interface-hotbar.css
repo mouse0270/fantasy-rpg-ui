@@ -1,0 +1,97 @@
+:root {
+  --rpg-ui-interface-hotbar-macro-border: var(--rpg-ui-icon-rounded-brown-border);
+  --rpg-ui-interface-hotbar-macro-overlay: var(--rpg-ui-icon-rounded-violet-overlay);
+}
+
+/*======================================================================*/
+/* FORMAT UI TOP - NAVIGATION
+/*======================================================================*/
+#ui-bottom #hotbar .bar-controls {
+  background-color: transparent;
+  border-image-source: var(--rpg-ui-background-button);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+}
+#ui-bottom #hotbar #macro-list {
+  border-width: 0px;
+  margin: 0px;
+  grid-template-columns: repeat(10, calc(var(--macro-size) + 10px));
+  margin-top: -5px;
+}
+#ui-bottom #hotbar #macro-list .macro {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-interface-hotbar-macro-border);
+  background-size: 100% 100%;
+  border-width: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(var(--macro-size) + 10px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(var(--macro-size) + 10px);
+}
+#ui-bottom #hotbar #macro-list .macro:after {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-interface-hotbar-macro-overlay);
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-width: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0px;
+  width: 100%;
+  padding: 12px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+}
+#ui-bottom #hotbar #macro-list .macro .macro-icon {
+  height: calc(var(--macro-size) - 15px);
+  position: absolute;
+  width: calc(var(--macro-size) - 15px);
+  z-index: 1;
+}
+#ui-bottom #hotbar #macro-list .macro .macro-key {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-icon-number);
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10px;
+          flex: 0 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  z-index: 2;
+}

@@ -1,0 +1,23 @@
+@import '_mixins'; 
+
+
+/*======================================================================*/
+/* FORMAT JOURNAL TITLE
+/*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry {
+	.window-header a.header-button:not(.close):not(.send-to-taskbar) {
+		background-image: none;
+		font-size: 0rem;
+		max-width: 40px;
+		overflow: hidden;
+		right: -40px;
+		transform-origin: left;
+
+		&:hover {
+			background-image: var(--rpg-ui-button-with-rings);
+			font-size: var(--font-size-14);
+			max-width: 150px;
+			right: -150px	
+		}
+	}
+}
