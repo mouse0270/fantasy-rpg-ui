@@ -1,6 +1,7 @@
 {
 	"fantasy-rpg-ui": {
 		"title": "Fantasy RPG UI",
+		"dialog.createPreset": "Would you like to create and enable the Fantasy RPG UI Theme?",
 		"theme": {
 			"options.title": {
 				"name": "Title Image",

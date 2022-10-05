@@ -326,6 +326,42 @@ export default class CORE {
 
 				return wrapped(...args);
 			}, "WRAPPER");
+
+			// Check if Theme Exists
+			if (!game.settings.get('lib-themer', 'presets').hasOwnProperty('fantasy-rpg-ui')) {
+				Dialog.confirm({
+					id: `${MODULE.ID}-create-preset`,
+					title: MODULE.TITLE,
+					content: `<p style="margin-top: 0px;">${MODULE.localize('dialog.createPreset')}</p>`,
+					yes: (elemDialog) => {
+						game.settings.set('lib-themer', 'presets', foundry.utils.mergeObject(game.settings.get('lib-themer', 'presets'), {
+							[`${MODULE.ID}`]: {
+								name: MODULE.TITLE,
+								theme: {
+									'libraryFantasyRPGUIDialogs': {value: 'true'},
+									'libraryFantasyRPGUIInterface': {value: 'true'},
+									'libraryFantasyRPGUIInterfaceControls': {value: 'true'},
+									'libraryFantasyRPGUIInterfaceHotbar': {value: 'true'},
+									'libraryFantasyRPGUIInterfaceNavigation': {value: 'true'},
+									'libraryFantasyRPGUIInterfacePHotbar': {value: 'true'},
+									'libraryFantasyRPGUIInterfacePlayers': {value: 'true'},
+									'libraryFantasyRPGUIJournals': {value: 'true'},
+									'libraryFantasyRPGUIJournalsHideHeaderButtons': {value: 'true'},
+									'libraryFantasyRPGUISidebar': {value: 'true'},
+									'libraryFantasyRPGUISidebarChat': {value: 'true'},
+									'libraryFantasyRPGUISidebarNav': {value: 'true'},
+								}
+							}
+						}, { inplace: false })).then(response => {
+							game.settings.set('lib-themer', 'themeSettings', game.settings.get('lib-themer', 'presets')[MODULE.ID]).then(response => {
+								for (const [property, value] of Object.entries(game.settings.get('lib-themer','themeSettings').theme)) {
+									game.modules.get('lib-themer').API.setCSSVariable(property, value.value);
+								}
+							});
+						})
+					}, no: () => false
+				})
+			}
 		});
 
 		Hooks.on('renderJournalSheet', async (app, elem, options) => {
@@ -335,18 +371,18 @@ export default class CORE {
 			target.classList.toggle(`${MODULE.ID}-is-collapsed`, isCollapsed);
 		});
 
-Hooks.on('lib-themer.UpdateSetting', async (setting, key, value) => {
-	const checkFor = ['--rpg-ui-interface-controls-style-main', '--rpg-ui-interface-controls-style-sub', '--rpg-ui-interface-controls-style-toggle'];
+		Hooks.on('lib-themer.UpdateSetting', async (setting, key, value) => {
+			const checkFor = ['--rpg-ui-interface-controls-style-main', '--rpg-ui-interface-controls-style-sub', '--rpg-ui-interface-controls-style-toggle'];
 
-	if (checkFor.includes(key)) {
-		document.querySelector(":root").style.setProperty(`${key}-pressed`, `var(${value}-pressed)`);
+			if (checkFor.includes(key)) {
+				document.querySelector(":root").style.setProperty(`${key}-pressed`, `var(${value}-pressed)`);
 
-		if (value == '--rpg-ui-button-border') {
-			document.querySelector(":root").style.setProperty(`${key}-padding`, `0px`);
-		}else{
-			document.querySelector(":root").style.setProperty(`${key}-padding`, `4px`);
-		}
-	}
-})
+				if (value == '--rpg-ui-button-border') {
+					document.querySelector(":root").style.setProperty(`${key}-padding`, `0px`);
+				}else{
+					document.querySelector(":root").style.setProperty(`${key}-padding`, `4px`);
+				}
+			}
+		})
 	}
 }

@@ -30,8 +30,17 @@
 
 	"relationships": {
 		"systems": [],
-		"requires": [],
-		"conflicts": []
+		"requires": [{
+			"id": "lib-themer",
+			"reason": "Used to customize theme options."
+		},{
+			"id": "lib-wrapper",
+			"reason": "Used to handle moving journal titles when toggle collapse."
+		}],
+		"conflicts": [],
+		"flags": {
+			"optional": []
+		}
 	},
 	"esmodules": [
         "/scripts/init.mjs"
