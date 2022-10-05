@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mouse0270/fantasy-rpg-ui">
-    ![Color_ICON_Axe](https://user-images.githubusercontent.com/564874/193952411-8af12fc5-c8d6-4085-b385-404653d317d7.png)
+    ![image](https://user-images.githubusercontent.com/564874/193952411-8af12fc5-c8d6-4085-b385-404653d317d7.png)
   </a>
 
   <h3 align="center">Fantasy RPG UI</h3>
