@@ -32,7 +32,6 @@ Hooks.once('devModeReady', ({ registerPackageDebugFlag }) => {
 // libThemer HOOKS -> lib-themer.Ready
 /* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */
 Hooks.once('lib-themer.Ready', (API) => {
-	MODULE.log(CORE.THEME)
 	API.register(CORE.THEME);
 });
 

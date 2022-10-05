@@ -195,16 +195,7 @@ export default class CORE {
 								type: 'choices',
 								default: '--rpg-ui-button-rounded',
 								format: 'var({value})',
-								choices: CORE.#BUTTONSTYLES,
-								onchange: (value) => {
-									document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-main-pressed', `var(${value}-pressed)`);
-
-									if (value == '--rpg-ui-button-border') {
-										document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-main-padding', `0px`);
-									}else{
-										document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-main-padding', `4px`);
-									}
-								}
+								choices: CORE.#BUTTONSTYLES
 							},
 							'--rpg-ui-interface-controls-style-sub': {
 								name: `${MODULE.ID}.theme.library.interface.controls.subStyle.name`,
@@ -212,16 +203,7 @@ export default class CORE {
 								type: 'choices',
 								default: '--rpg-ui-button-circle',
 								format: 'var({value})',
-								choices: CORE.#BUTTONSTYLES,
-								onchange: (value) => {
-									document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-sub-pressed', `var(${value}-pressed)`);
-
-									if (value == '--rpg-ui-button-border') {
-										document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-sub-padding', `0px`);
-									}else{
-										document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-sub-padding', `4px`);
-									}
-								}
+								choices: CORE.#BUTTONSTYLES
 							},
 							'--rpg-ui-interface-controls-style-toggle': {
 								name: `${MODULE.ID}.theme.library.interface.controls.toggleStyle.name`,
@@ -229,16 +211,7 @@ export default class CORE {
 								type: 'choices',
 								default: '--rpg-ui-button-border',
 								format: 'var({value})',
-								choices: CORE.#BUTTONSTYLES,
-								onchange: (value) => {
-									document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-toggle-pressed', `var(${value}-pressed)`);
-
-									if (value == '--rpg-ui-button-border') {
-										document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-toggle-padding', `0px`);
-									}else{
-										document.querySelector(":root").style.setProperty('--rpg-ui-interface-controls-style-toggle-padding', `4px`);
-									}
-								}
+								choices: CORE.#BUTTONSTYLES
 							}
 						}
 					},
@@ -360,8 +333,20 @@ export default class CORE {
 			const isCollapsed = target.querySelector('.sidebar').classList.contains('collapsed');
 
 			target.classList.toggle(`${MODULE.ID}-is-collapsed`, isCollapsed);
+		});
 
-			MODULE.log(app, elem, options);
-		})
+Hooks.on('lib-themer.UpdateSetting', async (setting, key, value) => {
+	const checkFor = ['--rpg-ui-interface-controls-style-main', '--rpg-ui-interface-controls-style-sub', '--rpg-ui-interface-controls-style-toggle'];
+
+	if (checkFor.includes(key)) {
+		document.querySelector(":root").style.setProperty(`${key}-pressed`, `var(${value}-pressed)`);
+
+		if (value == '--rpg-ui-button-border') {
+			document.querySelector(":root").style.setProperty(`${key}-padding`, `0px`);
+		}else{
+			document.querySelector(":root").style.setProperty(`${key}-padding`, `4px`);
+		}
+	}
+})
 	}
 }
