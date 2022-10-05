@@ -64,7 +64,7 @@ Use the `BLANK_README.md` to get started.
 
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See [LICENSE]([license-url]) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,6 +74,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[license-url]: https://github.com/mouse0270/fantasy-rpg-ui/blob/master/LICENSE
+
 [forge-installs]: https://img.shields.io/badge/dynamic/json?&colorB=90A959&label=Forge%20Installs&query=package.installs&suffix=%25&style=for-the-badge&url=https://forge-vtt.com/api/bazaar/package/fantasy-rpg-ui
 [forge-url]: https://forge-vtt.com/bazaar/package/fantasy-rpg-ui
 
