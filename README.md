@@ -37,7 +37,8 @@
 
 This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme attempts to give the UI a classic RPG interface you'd expect to find in an Role Playing Game.
 
-### Supported Features
+
+### Supported Features <img src="https://geps.dev/progress/35" height="16"/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Dialog Windows<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Journal Sheet<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
