@@ -33,7 +33,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Module
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![image](https://user-images.githubusercontent.com/564874/193952294-5032d9e6-9d5a-4174-a27e-984c4ae3b1e0.png)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
