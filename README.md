@@ -26,7 +26,6 @@
 	<ol>
 		<li><a href="#about-the-Module">About the Module</a></li>
 		<li><a href="#supported-Modules--Systems">Supported Modules / Systems</a></li>
-		<li><a href="#roadmap">Roadmap</a></li>
 		<li><a href="#license">License</a></li>
 		<li><a href="#acknowledgments">Acknowledgments</a></li>
 	</ol>
@@ -52,12 +51,6 @@ Use the `BLANK_README.md` to get started.
 
 <!-- SUPPORTED MODULES/SYSTEMS -->
 ## Supported Modules / Systems
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-## Roadmap
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
