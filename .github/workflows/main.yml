@@ -31,7 +31,6 @@ jobs:
         license: "https://github.com/mouse0270/${{github.repository}}/blob/master/LICENSE"
         bugs: "https://github.com/${{github.repository}}/issues"
         flags: 
-          allowBugReporter: 'true'
           attributions: "https://github.com/${{github.repository}}/blob/master/ATTRIBUTIONS.md"
 
     # Create a zip file with all files required by the module to add to the release
