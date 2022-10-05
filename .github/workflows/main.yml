@@ -30,8 +30,6 @@ jobs:
         changelog: "https://raw.githubusercontent.com/${{github.repository}}/master/CHANGELOG.md"
         license: "https://github.com/mouse0270/${{github.repository}}/blob/master/LICENSE"
         bugs: "https://github.com/${{github.repository}}/issues"
-        flags: 
-          attributions: "https://github.com/${{github.repository}}/blob/master/ATTRIBUTIONS.md"
 
     # Create a zip file with all files required by the module to add to the release
     - run: zip -r ./module.zip module.json LICENSE README.md CHANGELOG.md ATTRIBUTIONS.md styles/ scripts/ templates/ languages/
