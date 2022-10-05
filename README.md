@@ -35,22 +35,61 @@
 ## About The Module
 ![image](https://user-images.githubusercontent.com/564874/193952294-5032d9e6-9d5a-4174-a27e-984c4ae3b1e0.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme attempts to give the UI a classic RPG interface you'd expect to find in an Role Playing Game.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+### Supported Features
+- [x] Dialog Windows
+- [x] Journal Sheet
+  - [ ] Edit Journal Content
+- [x] Interface
+  - [x] Left UI - Controls
+  - [x] Top UI - Scene Navigation
+  - [x] Bottom UI - Hotbar
+  - [x] Players Widget
+- [ ] Sidebar
+  - [x] Navigation
+  - [x] Tab - Chat
+  - [ ] Tab - Combat
+  - [ ] Tab - Scenes
+  - [ ] Tab - Actors
+  - [ ] Tab - Journal
+  - [ ] Tab - Tables
+  - [ ] Tab - Cards
+  - [ ] Tab - Playlist
+  - [ ] Tab - Compendium
+  - [ ] Tab - Settings
+- [ ] Configure Game Settings
+- [ ] Module Management
+- [ ] Configure Controls
+- [ ] Edit World
+- [ ] Tour Management
+- [ ] Support Details
+- [ ] View Documentation
+- [ ] Community Wiki Pages
+- [ ] Game Invitation Links
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+If you find any other windows or elements unthemed please let me know.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORTED MODULES/SYSTEMS -->
-## Supported Modules / Systems
+## Supported Packages
+### Full Support
+Nothing right, now, but I am still working on the base theme!
+### Partial Support
+- [ ] [Taskbar](https://theripper93.com/#/module/foundry-taskbar)
+  - Partial support: The minimize button is themed, but the actual task bar is not
+### Planned Support
+- [ ] [Token Action HUD]()
+  - Planned Support
+- [ ] [D&D 5e System]()
+  - Planned Support
+- [ ] [Tidy5e Sheet]()
+  - Planned Support
+## Unsupported
+Any package listed here is because I am either unable to support it or wont support it, please don't ask
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -59,10 +98,20 @@ Use the `BLANK_README.md` to get started.
 ## License
 Distributed under the MIT License. See [LICENSE]([license-url]) for more information.
 
+The assets in `./private` folder are packaged within and provided with Fantasy RPG UI and may **NOT** be redistributed or used outside of Foundry Virtual Tabletop except as permitted by a separate license agreement between the original copyright holder of these assets. These license terms apply to all images within `./private` folder and all subdirectories.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+- This theme is created using assets created by [Blackhammer](https://www.gamedevmarket.net/member/blackhammer/). Assets used are listed below:
+  - [Fantasy Wooden GUI : Free](https://www.gamedevmarket.net/asset/fantasy-wooden-gui-free/)
+  - [Fantasy Wooden GUI : Pack 1](https://www.gamedevmarket.net/asset/fantasy-wooden-gui-pack-1/)
+  - [Fantasy Wooden GUI : Pack 2](https://www.gamedevmarket.net/asset/fantasy-wooden-gui-pack-2/)
+  - [Fantasy Wooden ICON](https://www.gamedevmarket.net/asset/fantasy-wooden-icon/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
