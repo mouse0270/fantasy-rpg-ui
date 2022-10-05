@@ -1,0 +1,99 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-sidebar-settings-background: var(--rpg-ui-background-stone);
+	--rpg-ui-sidebar-settings-ribbon-general-info: var(--rpg-ui-title-ribbon-purple);
+	--rpg-ui-sidebar-settings-ribbon-game-settings: var(--rpg-ui-title-ribbon-purple);
+	--rpg-ui-sidebar-settings-ribbon-help-and-documentation: var(--rpg-ui-title-ribbon-purple);
+	--rpg-ui-sidebar-settings-ribbon-game-access: var(--rpg-ui-title-ribbon-purple);
+}
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - CHAT
+/*======================================================================*/
+
+#sidebar {
+	.tab[data-tab].settings-sidebar {
+		background-color: transparent;
+		background-image: none;
+		border-image-source: var(--rpg-ui-sidebar-settings-background);
+		border-image-repeat: repeat;
+		border-image-slice: 60 fill;
+		border-image-width: 20px;
+		border-width: 0px;
+		box-shadow: none;
+		
+    	box-shadow: none;
+		margin: 0px;
+		padding: 0px;
+
+		h2 {
+			align-items: center;
+			background-color: transparent;
+			background-image: var(--rpg-ui-sidebar-settings-ribbon-general-info);
+			background-size: 100% 100%;
+			border-width: 0px; 
+			color: var(--color-text-dark-primary);
+			display: flex;   
+			height: 40px;
+			justify-content: center;
+			left: 50%;
+			margin: 0rem;
+			padding: 0px 36px;
+			position: absolute;
+    		transform: translateX(-50%);
+			white-space: nowrap;
+			width: 80%;
+
+			&:nth-of-type(2) {
+				background-image: var(--rpg-ui-sidebar-settings-ribbon-general-info);
+			}	
+			&:nth-of-type(2) {
+				background-image: var(--rpg-ui-sidebar-settings-ribbon-game-settings);
+			}	
+			&:nth-of-type(3) {
+				background-image: var(--rpg-ui-sidebar-settings-ribbon-help-and-documentation);
+			}	
+			&:nth-of-type(4) {
+				background-image: var(--rpg-ui-sidebar-settings-ribbon-game-access);
+			}
+		}
+
+		h2 + * {
+			padding-top: 30px;
+    		margin-top: 10px
+		}
+
+		ul#game-details {
+			background-color: transparent;
+			background-image: none;
+			border-image-source: var(--rpg-ui-background-parchment);
+			border-image-repeat: repeat;
+			border-image-slice: 60 fill;
+			border-image-width: 20px;
+			border-color: transparent !important;
+			border-style: solid;
+			border-width: 5px;
+			color: var(--color-text-dark-primary);
+			margin: 0.25rem 0.5rem;
+    		margin-top: 10px;
+			padding: 0.5rem 1rem;
+			padding-top: 30px;
+		}
+
+		h2 + div {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 30px;
+    		padding-bottom: 10px;
+
+			> button {
+				@include button;
+
+				margin-top: 0px;
+			}
+		}
+	}
+}
+

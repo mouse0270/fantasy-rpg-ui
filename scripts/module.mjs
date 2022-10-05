@@ -295,13 +295,95 @@ export default class CORE {
 							type: 'text/css'
 						}],
 						settings: {
-							'--rpg-ui-sidebar-background-chat': {
+							'--rpg-ui-sidebar-chat-background': {
 								name: `${MODULE.ID}.theme.options.background.name`,
 								hint: `${MODULE.ID}.theme.options.background.hint`,
 								type: 'choices',
 								default: 'stone',
 								format: 'var(--rpg-ui-background-{value})',
 								choices: CORE.#BACKGROUNDCHOICES
+							},
+							libraryFantasyRPGUISidebarChatMessages: {
+								name: `${MODULE.ID}.theme.library.sidebar.chat.messages.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.chat.messages.hint`,
+								type: 'library',
+								default: false,
+								files: [{
+									name: `./modules/${MODULE.ID}/styles/sidebar-chat-messages.css`,
+									type: 'text/css'
+								}]
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarScenes: {
+						name: `${MODULE.ID}.theme.library.sidebar.scenes.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.scenes.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-scenes.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-scenes-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarSettings: {
+						name: `${MODULE.ID}.theme.library.sidebar.settings.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.settings.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-settings.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-settings-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							},
+							'--rpg-ui-sidebar-settings-ribbon-general-info': {
+								name: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.generalInfo.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.generalInfo.hint`,
+								type: 'choices',
+								default: 'ribbon-purple',
+								format: 'var(--rpg-ui-title-{value})',
+								choices: Object.fromEntries(Object.entries(CORE.#TITLECHOICES).filter(([key, value]) => key.startsWith('ribbon')))
+							},
+							'--rpg-ui-sidebar-settings-ribbon-game-settings': {
+								name: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.gameSettings.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.gameSettings.hint`,
+								type: 'choices',
+								default: 'ribbon-purple',
+								format: 'var(--rpg-ui-title-{value})',
+								choices: Object.fromEntries(Object.entries(CORE.#TITLECHOICES).filter(([key, value]) => key.startsWith('ribbon')))
+							},
+							'--rpg-ui-sidebar-settings-ribbon-help-and-documentation': {
+								name: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.helpAndDocumentation.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.helpAndDocumentation.hint`,
+								type: 'choices',
+								default: 'ribbon-purple',
+								format: 'var(--rpg-ui-title-{value})',
+								choices: Object.fromEntries(Object.entries(CORE.#TITLECHOICES).filter(([key, value]) => key.startsWith('ribbon')))
+							},
+							'--rpg-ui-sidebar-settings-ribbon-game-access': {
+								name: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.gameAccess.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.settings.ribbon.gameAccess.hint`,
+								type: 'choices',
+								default: 'ribbon-purple',
+								format: 'var(--rpg-ui-title-{value})',
+								choices: Object.fromEntries(Object.entries(CORE.#TITLECHOICES).filter(([key, value]) => key.startsWith('ribbon')))
 							}
 						}
 					}

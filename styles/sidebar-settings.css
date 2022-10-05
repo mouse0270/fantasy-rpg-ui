@@ -1,0 +1,133 @@
+:root {
+  --rpg-ui-sidebar-settings-background: var(--rpg-ui-background-stone);
+  --rpg-ui-sidebar-settings-ribbon-general-info: var(--rpg-ui-title-ribbon-purple);
+  --rpg-ui-sidebar-settings-ribbon-game-settings: var(--rpg-ui-title-ribbon-purple);
+  --rpg-ui-sidebar-settings-ribbon-help-and-documentation: var(--rpg-ui-title-ribbon-purple);
+  --rpg-ui-sidebar-settings-ribbon-game-access: var(--rpg-ui-title-ribbon-purple);
+}
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - CHAT
+/*======================================================================*/
+#sidebar .tab[data-tab].settings-sidebar {
+  background-color: transparent;
+  background-image: none;
+  border-image-source: var(--rpg-ui-sidebar-settings-background);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-width: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  box-shadow: none;
+  margin: 0px;
+  padding: 0px;
+}
+#sidebar .tab[data-tab].settings-sidebar h2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-sidebar-settings-ribbon-general-info);
+  background-size: 100% 100%;
+  border-width: 0px;
+  color: var(--color-text-dark-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 50%;
+  margin: 0rem;
+  padding: 0px 36px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+  width: 80%;
+}
+#sidebar .tab[data-tab].settings-sidebar h2:nth-of-type(2) {
+  background-image: var(--rpg-ui-sidebar-settings-ribbon-general-info);
+}
+#sidebar .tab[data-tab].settings-sidebar h2:nth-of-type(2) {
+  background-image: var(--rpg-ui-sidebar-settings-ribbon-game-settings);
+}
+#sidebar .tab[data-tab].settings-sidebar h2:nth-of-type(3) {
+  background-image: var(--rpg-ui-sidebar-settings-ribbon-help-and-documentation);
+}
+#sidebar .tab[data-tab].settings-sidebar h2:nth-of-type(4) {
+  background-image: var(--rpg-ui-sidebar-settings-ribbon-game-access);
+}
+#sidebar .tab[data-tab].settings-sidebar h2 + * {
+  padding-top: 30px;
+  margin-top: 10px;
+}
+#sidebar .tab[data-tab].settings-sidebar ul#game-details {
+  background-color: transparent;
+  background-image: none;
+  border-image-source: var(--rpg-ui-background-parchment);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-color: transparent !important;
+  border-style: solid;
+  border-width: 5px;
+  color: var(--color-text-dark-primary);
+  margin: 0.25rem 0.5rem;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  padding-top: 30px;
+}
+#sidebar .tab[data-tab].settings-sidebar h2 + div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+#sidebar .tab[data-tab].settings-sidebar h2 + div > button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: var(--rpg-ui-button-big);
+  background-size: 100% 100%;
+  border-width: 0px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 45px;
+  max-width: 200px;
+  padding-bottom: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  margin-top: 0px;
+}
+#sidebar .tab[data-tab].settings-sidebar h2 + div > button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#sidebar .tab[data-tab].settings-sidebar h2 + div > button:hover, #sidebar .tab[data-tab].settings-sidebar h2 + div > button:active {
+  background: var(--rpg-ui-button-big-pressed);
+  background-size: 100% 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}

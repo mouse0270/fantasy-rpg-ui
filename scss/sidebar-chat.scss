@@ -1,7 +1,7 @@
 @import '_mixins';
 
 :root {
-	--rpg-ui-sidebar-background-chat: var(--rpg-ui-background-stone);
+	--rpg-ui-sidebar-chat-background: var(--rpg-ui-background-stone);
 }
 
 /*======================================================================*/
@@ -12,7 +12,7 @@
 	.tab[data-tab].chat-sidebar {
 		background-color: transparent;
 		background-image: none;
-		border-image-source: var(--rpg-ui-sidebar-background-chat);
+		border-image-source: var(--rpg-ui-sidebar-chat-background);
 		border-image-repeat: repeat;
 		border-image-slice: 60 fill;
 		border-image-width: 20px;
@@ -23,26 +23,23 @@
 		margin: 0px;
 		padding: 0px;
 
-		.chat-message{
-			background-color: transparent;
-			background-image: none;
-			border-image-source: var(--rpg-ui-background-parchment);
-			border-image-repeat: repeat;
-			border-image-slice: 60 fill;
-			border-image-width: 20px;
-			border-color: transparent !important;
-			border-style: solid;
-			border-width: 5px;
+		#chat-log {
 			margin: 0.5rem;
-			padding: 0.5rem 1rem;
+			.chat-message { 
+				margin: 0.25rem 0.5rem;
+			}
 		}
+		#chat-form {
+			margin: 0rem 0.75rem 1rem;
 
-		#chat-form textarea {
-			background-image: none;
-			border-image-source: var(--rpg-ui-background-board);
-			border-image-repeat: repeat;
-			border-image-slice: 60 fill;
-			border-image-width: 20px;
+			textarea {
+				background-image: none;
+				border-image-source: var(--rpg-ui-background-board);
+				border-image-repeat: repeat;
+				border-image-slice: 60 fill;
+				border-image-width: 20px;
+				padding: 1rem;
+			}
 		}
 	}
 }

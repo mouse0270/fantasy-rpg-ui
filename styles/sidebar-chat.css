@@ -1,5 +1,5 @@
 :root {
-  --rpg-ui-sidebar-background-chat: var(--rpg-ui-background-stone);
+  --rpg-ui-sidebar-chat-background: var(--rpg-ui-background-stone);
 }
 
 /*======================================================================*/
@@ -8,7 +8,7 @@
 #sidebar .tab[data-tab].chat-sidebar {
   background-color: transparent;
   background-image: none;
-  border-image-source: var(--rpg-ui-sidebar-background-chat);
+  border-image-source: var(--rpg-ui-sidebar-chat-background);
   border-image-repeat: repeat;
   border-image-slice: 60 fill;
   border-image-width: 20px;
@@ -19,18 +19,14 @@
   margin: 0px;
   padding: 0px;
 }
-#sidebar .tab[data-tab].chat-sidebar .chat-message {
-  background-color: transparent;
-  background-image: none;
-  border-image-source: var(--rpg-ui-background-parchment);
-  border-image-repeat: repeat;
-  border-image-slice: 60 fill;
-  border-image-width: 20px;
-  border-color: transparent !important;
-  border-style: solid;
-  border-width: 5px;
+#sidebar .tab[data-tab].chat-sidebar #chat-log {
   margin: 0.5rem;
-  padding: 0.5rem 1rem;
+}
+#sidebar .tab[data-tab].chat-sidebar #chat-log .chat-message {
+  margin: 0.25rem 0.5rem;
+}
+#sidebar .tab[data-tab].chat-sidebar #chat-form {
+  margin: 0rem 0.75rem 1rem;
 }
 #sidebar .tab[data-tab].chat-sidebar #chat-form textarea {
   background-image: none;
@@ -38,4 +34,5 @@
   border-image-repeat: repeat;
   border-image-slice: 60 fill;
   border-image-width: 20px;
+  padding: 1rem;
 }

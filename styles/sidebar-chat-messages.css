@@ -1,0 +1,16 @@
+/*======================================================================*/
+/* FORMAT SIDEBAR - CHAT
+/*======================================================================*/
+#sidebar .tab[data-tab].chat-sidebar #chat-log .chat-message {
+  background-color: transparent;
+  background-image: none;
+  border-image-source: var(--rpg-ui-background-parchment);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-color: transparent !important;
+  border-style: solid;
+  border-width: 5px;
+  margin: 0.25rem 0.5rem;
+  padding: 0.5rem 1rem;
+}
