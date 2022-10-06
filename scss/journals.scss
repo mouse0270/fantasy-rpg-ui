@@ -23,40 +23,6 @@
 		left: calc(50% + var(--sidebar-width-expanded) / 2);
 	}
 
-	.window-header a.header-button:not(.close):not(.send-to-taskbar) {
-		background-image: var(--rpg-ui-button-with-rings);
-		background-color: transparent;
-		background-size: 100% 100%;
-		position: absolute;
-		right: -150px;
-		width: 150px;
-		height: 40px;
-		display: flex;
-		transform: translate(-20px, 70px);
-		padding-left: 35px;
-		display: flex;
-		align-items: center;
-		z-index: 1;
-	}
-	.window-header a.header-button:not(.close):not(.send-to-taskbar):before {
-		background-image: var(--rpg-ui-button-rings);
-		background-color: transparent;
-		background-size: 100% 100%;
-		content: "";
-		display: flex;
-		height: 30px;
-		width: 37px;
-		position: absolute;
-		transform: translate(-35px, -1px);
-		z-index: 1;
-	}
-
-	@for $iLoop from 2 through 18 { 
-		.window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(#{$iLoop}) {
-			transform: translate(-20px, (15px + (35px * ($iLoop - 1)) + (10px * ($iLoop - 1))));
-		}
-	}
-
 	&.fantasy-rpg-ui-is-collapsed .window-header .window-title {
 		left: calc(50% + var(--sidebar-width-collapsed) / 2);
 	}
@@ -160,6 +126,15 @@
 /* FORMAT JOURNAL CONTENT
 /*======================================================================*/
 .window-app.sheet.journal-sheet.journal-entry .window-content {
+	border-image-source: none;
+	border-width: 0px;
+
+	> * {
+		border-image-source: none;
+		border-width: 0px;
+		margin: 0rem;
+		padding: 0rem;
+	}
 
 	.journal-header {
 		left: 50%;

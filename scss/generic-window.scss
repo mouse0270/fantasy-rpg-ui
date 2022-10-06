@@ -1,0 +1,29 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-generic-title: var(--rpg-ui-title-iron);
+	--rpg-ui-generic-background: var(--rpg-ui-background-stone);
+	--rpg-ui-generic-foreground: var(--rpg-ui-background-parchment);
+}
+	
+/*======================================================================*/
+/* FORMAT GENERIC TITLE
+/*======================================================================*/
+.app.window-app {
+	@include windowHeader(--rpg-ui-generic-title);
+}
+
+/*======================================================================*/
+/* FORMAT GENERIC CONTENT
+/*======================================================================*/
+.app.window-app {
+	.window-content {
+		@include windowContentBackground(--rpg-ui-generic-background);
+
+		> * {
+			@include windowContentParchment(--rpg-ui-generic-foreground);
+	
+			margin: 0.5rem;
+		}
+	}
+}

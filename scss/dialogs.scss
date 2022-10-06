@@ -11,6 +11,14 @@
 /*======================================================================*/
 .window-app.dialog, .window-app.sheet-config, .window-app.folder-edit {
 	@include windowHeader(--rpg-ui-dialog-title);
+	
+	.window-header a.header-button:not(.close) {
+		display: none !important;
+	}
+	.window-header a.header-button.close {
+		transform: translate(-124px, 15px) !important;
+		z-index: -1 !important;
+	}
 } 
 
 /*======================================================================*/
@@ -23,7 +31,6 @@
 	@include windowContentParchment(--rpg-ui-dialog-foreground);
 	
 	margin: 0.5rem;
-    padding: 0.5rem;
 }
 .window-app.sheet-config .window-content,
 .window-app.folder-edit .window-content  {
@@ -54,8 +61,11 @@
 /* FORMAT DIALOG BUTTONS
 /*======================================================================*/
 .window-app.dialog .window-content .dialog-buttons {
+	border-image-source: none;
+    border-width: 0px;
 	bottom: 0px;
 	left: 0px;
+    margin: 0px;
 	padding: 0px 1rem;
 	position: absolute;
 	transform: translateY(15px);

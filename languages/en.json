@@ -43,6 +43,10 @@
 					"oldFabric": "Old Fabric"
 				}
 			},
+			"options.hideHeaderButtons": {
+				"name": "Hide Header Buttons",
+				"hint": "This style sheet will hide header buttons for this category until you hover over the button."
+			},
 			"options.content": {
 				"choices": {
 					"board1" : "Board Option 1",
@@ -77,6 +81,10 @@
 				}
 			},
 			"library": {
+				"genericWindow": {
+					"name": "Enable Theme for all Windows.",
+					"hint": "When enabled this will apply a generic theme for all window's in foundry. WARNING: These are not handcrafted and may have issues."
+				},
 				"dialogs": {
 					"name": "Enable Dialog Theme",
 					"hint": "When enabled this will apply Fantasy RPU UI to Dialog like windows in Foundry."
@@ -84,10 +92,6 @@
 				"journals": {
 					"name": "Enable Journals Theme",
 					"hint": "When enabled this will apply Fantasy RPU UI to windows using Foundry's Journal classes.",
-					"hideHeaderButtons": {
-						"name": "Hide Header Buttons",
-						"hint": "This style sheet will hide `.window-header a.header-button` until you hover over the button."
-					},
 					"backgroundLeft": {
 						"name": "Background Image for Left Panel",
 						"hint": "Select the background image you would like to use for the left panel of the journal windows."
@@ -147,6 +151,20 @@
 					"chat": {
 						"name": "Enable Sidebar Chat Theme",
 						"hint": "When enabled it will style the Chat Tab used in Foundry's Sidebar."
+					},
+					"scenes": {
+						"name": "Enable Sidebar Scenes Theme",
+						"hint": "When enabled it will style the Scenes Tab used in Foundry's Sidebar."
+					},
+					"settings": {
+						"name": "Enable Sidebar Settings Theme",
+						"hint": "When enabled it will style the Settings Tab used in Foundry's Sidebar."
+					}
+				},
+				"modules": {
+					"foundry-taskbar": {
+						"name": "Enable Theme for Taskbar",
+						"hint": "When enabled it will style elements used in the Module Taskbar by theripper93."
 					}
 				}
 			}

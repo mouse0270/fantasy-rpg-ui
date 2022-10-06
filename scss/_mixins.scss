@@ -57,14 +57,39 @@
 			@include windowButton;
 		}
 
-		/* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
-		a.header-button.send-to-taskbar {
-			@include windowButton;
-			color: white;
+		a.header-button:not(.close) {
+			align-items: center;
+			background-image: var(--rpg-ui-button-with-rings);
+			background-color: transparent;
+			background-size: 100% 100%;
+			display: flex;
+			height: 40px;
+			display: flex;
+			font-size: var(--font-size-14);
+    		max-width: 150px;
+			padding-left: 35px;
+			position: absolute;
+			right: -150px;
+			transform: translate(-20px, 70px);
+			width: 150px;
+			z-index: 1;
+		}
+		a.header-button:not(.close):before {
+			background-image: var(--rpg-ui-button-rings);
+			background-color: transparent;
+			background-size: 100% 100%;
+			content: "";
+			display: flex;
+			height: 30px;
+			width: 37px;
+			position: absolute;
+			transform: translate(-35px, -1px);
+			z-index: 1;
+		}
 
-			~ a.header-button.close {
-				transform: translate(-99px, 15px);
-				z-index: -2;
+		@for $iLoop from 2 through 18 { 
+			a.header-button:not(.close):nth-child(#{$iLoop}) {
+				transform: translate(-20px, (15px + (35px * ($iLoop - 1)) + (10px * ($iLoop - 1))));
 			}
 		}
 	}

@@ -1,0 +1,45 @@
+@import '_mixins';
+
+:root {
+
+}
+
+#taskbar {
+	background-color: transparent !important;
+    border-image-source: var(--rpg-ui-background-button) !important;
+    border-image-repeat: repeat !important;
+    border-image-slice: 60 fill !important;
+    border-image-width: 20px !important;
+    border-bottom: 0px !important;
+    box-shadow: none;
+    margin-bottom: 2px;
+    padding: 8px;
+}
+
+/*======================================================================*/
+/* FORMAT MINIMIZE BUTTON
+/*======================================================================*/
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) {
+	/* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+	.window-header a.header-button.send-to-taskbar {
+		@include windowButton;
+
+		background-image: var(--rpg-ui-button-border) !important;
+		color: white;
+		height: 35px !important;
+		max-width: 35px !important;
+		padding: 0px !important;
+		right: -46px !important;
+		transform: translate(-20px, 15px) !important;
+		z-index: -1 !important;
+
+		&:before {
+			content: none !important;
+		}
+
+		~ a.header-button.close {
+			transform: translate(-99px, 15px) !important;
+			z-index: -2 !important;
+		}
+	}
+}

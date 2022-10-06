@@ -1,0 +1,67 @@
+#taskbar {
+  background-color: transparent !important;
+  border-image-source: var(--rpg-ui-background-button) !important;
+  border-image-repeat: repeat !important;
+  border-image-slice: 60 fill !important;
+  border-image-width: 20px !important;
+  border-bottom: 0px !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+
+/*======================================================================*/
+/* FORMAT MINIMIZE BUTTON
+/*======================================================================*/
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) {
+  /* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+  background-image: var(--rpg-ui-button-border) !important;
+  color: white;
+  height: 35px !important;
+  max-width: 35px !important;
+  padding: 0px !important;
+  right: -46px !important;
+  -webkit-transform: translate(-20px, 15px) !important;
+          transform: translate(-20px, 15px) !important;
+  z-index: -1 !important;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar:hover, html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar:before {
+  content: none !important;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar ~ a.header-button.close {
+  -webkit-transform: translate(-99px, 15px) !important;
+          transform: translate(-99px, 15px) !important;
+  z-index: -2 !important;
+}

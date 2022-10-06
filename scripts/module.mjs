@@ -60,6 +60,52 @@ export default class CORE {
 		return {
 			id: MODULE.ID,
 			title: MODULE.TITLE,
+			libraryFantasyRPGUIGenericWindow: {
+				name: `${MODULE.ID}.theme.library.genericWindow.name`,
+				hint: `${MODULE.ID}.theme.library.genericWindow.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/generic-window.css`,
+					type: 'text/css'
+				}],
+				settings: {
+					'--rpg-ui-generic-title': {
+						name: `${MODULE.ID}.theme.options.title.name`,
+						hint: `${MODULE.ID}.theme.options.title.hint`,
+						type: 'choices',
+						default: 'iron',
+						format: 'var(--rpg-ui-title-{value})',
+						choices: CORE.#TITLECHOICES
+					},
+					'libraryFantasyRPGUIGenericWindowHideHeaderButtons': {
+						name: `${MODULE.ID}.theme.options.hideHeaderButtons.name`,
+						hint: `${MODULE.ID}.theme.options.hideHeaderButtons.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/hide-header-buttons.css`,
+							type: 'text/css'
+						}]
+					},
+					'--rpg-ui-generic-background': {
+						name: `${MODULE.ID}.theme.options.background.name`,
+						hint: `${MODULE.ID}.theme.options.background.hint`,
+						type: 'choices',
+						default: 'stone',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					},
+					'--rpg-ui-generic-foreground': {
+						name: `${MODULE.ID}.theme.options.foreground.name`,
+						hint: `${MODULE.ID}.theme.options.foreground.hint`,
+						type: 'choices',
+						default: 'parchment',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					}
+				}
+			},
 			libraryFantasyRPGUIDialogs: {
 				name: `${MODULE.ID}.theme.library.dialogs.name`,
 				hint: `${MODULE.ID}.theme.library.dialogs.hint`,
@@ -114,9 +160,9 @@ export default class CORE {
 						format: 'var(--rpg-ui-title-{value})',
 						choices: CORE.#TITLECHOICES
 					},
-					'libraryFantasyRPGUIJournalsHideHeaderButtons': {
-						name: `${MODULE.ID}.theme.library.journals.hideHeaderButtons.name`,
-						hint: `${MODULE.ID}.theme.library.journals.hideHeaderButtons.hint`,
+					'libraryFantasyRPGUIJounralsHideHeaderButtons': {
+						name: `${MODULE.ID}.theme.options.hideHeaderButtons.name`,
+						hint: `${MODULE.ID}.theme.options.hideHeaderButtons.hint`,
 						type: 'library',
 						default: false,
 						files: [{
@@ -388,6 +434,16 @@ export default class CORE {
 						}
 					}
 				}
+			},
+			libraryFantasyRPGUIModulesFoundryTaskbar: {
+				name: `${MODULE.ID}.theme.library.modules.foundry-taskbar.name`,
+				hint: `${MODULE.ID}.theme.library.modules.foundry-taskbar.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-foundry-taskbar.css`,
+					type: 'text/css'
+				}]
 			}
 		}
 	}

@@ -20,7 +20,6 @@
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
-  /* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
 }
 .window-app.sheet.journal-sheet.journal-entry .window-header .window-title {
   -webkit-box-align: center;
@@ -75,70 +74,29 @@
 .window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close:hover, .window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close:active {
   background-image: var(--rpg-ui-button-border-pressed);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: var(--rpg-ui-button-border);
-  background-color: transparent;
-  background-size: 100% 100%;
-  color: var(--palette-danger-300);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 35px;
-  position: absolute;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  -webkit-transform: translate(-124px, 15px);
-          transform: translate(-124px, 15px);
-  right: -150px;
-  width: 35px;
-  z-index: -1;
-  color: white;
-}
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar i {
-  font-size: var(--font-size-18);
-  margin-right: 0px;
-}
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar:hover, .window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar:active {
-  background-image: var(--rpg-ui-button-border-pressed);
-}
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.send-to-taskbar ~ a.header-button.close {
-  -webkit-transform: translate(-99px, 15px);
-          transform: translate(-99px, 15px);
-  z-index: -2;
-}
-.window-app.sheet.journal-sheet.journal-entry .window-content {
-  overflow: visible;
-}
-.window-app.sheet.journal-sheet.journal-entry .window-header .window-title {
-  left: calc(50% + var(--sidebar-width-expanded) / 2);
-}
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar) {
   background-image: var(--rpg-ui-button-with-rings);
   background-color: transparent;
   background-size: 100% 100%;
-  position: absolute;
-  right: -150px;
-  width: 150px;
-  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 40px;
+  display: flex;
+  font-size: var(--font-size-14);
+  max-width: 150px;
+  padding-left: 35px;
+  position: absolute;
+  right: -150px;
   -webkit-transform: translate(-20px, 70px);
           transform: translate(-20px, 70px);
-  padding-left: 35px;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 150px;
   z-index: 1;
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):before {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):before {
   background-image: var(--rpg-ui-button-rings);
   background-color: transparent;
   background-size: 100% 100%;
@@ -153,73 +111,79 @@
           transform: translate(-35px, -1px);
   z-index: 1;
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(2) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(2) {
   -webkit-transform: translate(-20px, 60px);
           transform: translate(-20px, 60px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(3) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(3) {
   -webkit-transform: translate(-20px, 105px);
           transform: translate(-20px, 105px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(4) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(4) {
   -webkit-transform: translate(-20px, 150px);
           transform: translate(-20px, 150px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(5) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(5) {
   -webkit-transform: translate(-20px, 195px);
           transform: translate(-20px, 195px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(6) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(6) {
   -webkit-transform: translate(-20px, 240px);
           transform: translate(-20px, 240px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(7) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(7) {
   -webkit-transform: translate(-20px, 285px);
           transform: translate(-20px, 285px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(8) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(8) {
   -webkit-transform: translate(-20px, 330px);
           transform: translate(-20px, 330px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(9) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(9) {
   -webkit-transform: translate(-20px, 375px);
           transform: translate(-20px, 375px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(10) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(10) {
   -webkit-transform: translate(-20px, 420px);
           transform: translate(-20px, 420px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(11) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(11) {
   -webkit-transform: translate(-20px, 465px);
           transform: translate(-20px, 465px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(12) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(12) {
   -webkit-transform: translate(-20px, 510px);
           transform: translate(-20px, 510px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(13) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(13) {
   -webkit-transform: translate(-20px, 555px);
           transform: translate(-20px, 555px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(14) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(14) {
   -webkit-transform: translate(-20px, 600px);
           transform: translate(-20px, 600px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(15) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(15) {
   -webkit-transform: translate(-20px, 645px);
           transform: translate(-20px, 645px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(16) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(16) {
   -webkit-transform: translate(-20px, 690px);
           transform: translate(-20px, 690px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(17) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(17) {
   -webkit-transform: translate(-20px, 735px);
           transform: translate(-20px, 735px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):not(.send-to-taskbar):nth-child(18) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(18) {
   -webkit-transform: translate(-20px, 780px);
           transform: translate(-20px, 780px);
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content {
+  overflow: visible;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-header .window-title {
+  left: calc(50% + var(--sidebar-width-expanded) / 2);
 }
 .window-app.sheet.journal-sheet.journal-entry.fantasy-rpg-ui-is-collapsed .window-header .window-title {
   left: calc(50% + var(--sidebar-width-collapsed) / 2);
@@ -353,6 +317,16 @@
 /*======================================================================*/
 /* FORMAT JOURNAL CONTENT
 /*======================================================================*/
+.window-app.sheet.journal-sheet.journal-entry .window-content {
+  border-image-source: none;
+  border-width: 0px;
+}
+.window-app.sheet.journal-sheet.journal-entry .window-content > * {
+  border-image-source: none;
+  border-width: 0px;
+  margin: 0rem;
+  padding: 0rem;
+}
 .window-app.sheet.journal-sheet.journal-entry .window-content .journal-header {
   left: 50%;
   margin-top: 2rem;

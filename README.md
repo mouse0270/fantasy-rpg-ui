@@ -39,6 +39,11 @@ This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme att
 
 
 ### Supported Features <img src="https://geps.dev/progress/35" height="16"/>
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Generic Windows<br/>
+  *This will apply a generic theme to all windows. Enabling individual theme options will have a more hand crafted experiance. Enable this option if you want the Fantasy RPG UI on more elements.*<br/>
+
+---
+
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Dialog Windows<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Journal Sheet<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
@@ -51,7 +56,7 @@ This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme att
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Navigation<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Chat<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Tab - Combat<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Tab - Scenes<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Scenes<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Tab - Actors<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Tab - Journal<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Tab - Tables<br/>
@@ -80,15 +85,18 @@ If you find any other windows or elements unthemed please let me know.
 ### Full Support
 Nothing right, now, but I am still working on the base theme!
 ### Partial Support
-- [ ] [Taskbar](https://theripper93.com/#/module/foundry-taskbar)
-  - Partial support: The minimize button is themed, but the actual task bar is not
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Taskbar](https://theripper93.com/#/module/foundry-taskbar)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Send to Taskbar Button<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Taskbar<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Start menu<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Workspaces<br/>
 ### Planned Support
-- [ ] [Token Action HUD]()
-  - Planned Support
-- [ ] [D&D 5e System]()
-  - Planned Support
-- [ ] [Tidy5e Sheet]()
-  - Planned Support
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Token Action HUD]()<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [D&D 5e System]()<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Tidy5e Sheet]()<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
 ## Unsupported
 Any package listed here is because I am either unable to support it or wont support it, please don't ask
 
