@@ -115,7 +115,7 @@ Any package listed here is because I am either unable to support it or wont supp
 
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See [LICENSE File]([license-url]) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/mouse0270/fantasy-rpg-ui/blob/master/LICENSE) for more information.
 
 The assets in `./private` folder are packaged within and provided with Fantasy RPG UI and may **NOT** be redistributed or used outside of Foundry Virtual Tabletop except as permitted by a separate license agreement between the original copyright holder of these assets. These license terms apply to all images within `./private` folder and all subdirectories.
 
@@ -135,7 +135,7 @@ The assets in `./private` folder are packaged within and provided with Fantasy R
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-url]: https://github.com/mouse0270/fantasy-rpg-ui/blob/master/LICENSE
+[license-url]: 
 
 [forge-installs]: https://img.shields.io/badge/dynamic/json?&colorB=90A959&label=Forge%20Installs&query=package.installs&suffix=%25&style=for-the-badge&url=https://forge-vtt.com/api/bazaar/package/fantasy-rpg-ui
 [forge-url]: https://forge-vtt.com/bazaar/package/fantasy-rpg-ui
