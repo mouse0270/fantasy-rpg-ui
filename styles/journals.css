@@ -181,6 +181,7 @@
 }
 .window-app.sheet.journal-sheet.journal-entry .window-content {
   overflow: visible;
+  padding: 0rem;
 }
 .window-app.sheet.journal-sheet.journal-entry .window-header .window-title {
   left: calc(50% + var(--sidebar-width-expanded) / 2);

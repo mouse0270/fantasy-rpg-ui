@@ -83,7 +83,11 @@
 			"library": {
 				"genericWindow": {
 					"name": "Enable Theme for all Windows.",
-					"hint": "When enabled this will apply a generic theme for all window's in foundry. WARNING: These are not handcrafted and may have issues. It is recommended to enable this option along with the options below for the best experience."
+					"hint": "When enabled this will apply a generic theme for all window's in foundry. WARNING: These are not handcrafted and may have issues. It is recommended to enable this option along with the options below for the best experience.",
+					"inputs": {
+						"name": "Enable Theme for Toggle Inputs",
+						"hint": "When Enabled this will apply a the theme to all inputs with the type checkbox or radio."
+					}
 				},
 				"dialogs": {
 					"name": "Enable Dialog Theme",
