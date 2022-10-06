@@ -60,6 +60,12 @@
 					"border": "Border"
 				}
 			},
+			"options.toggle": {
+				"checkbox.name": "Checked Box State Color",
+				"checkbox.hint": "Select the color you would like the checkmark to be when checked.",
+				"radio.name": "Radio Button State Color",
+				"radio.hint": "Select the color you would like the radio button to be when selected."
+			},
 			"options.iconBorderStyles": {
 				"choices": {
 					"blue": "Blue",
@@ -78,6 +84,16 @@
 					"red": "Red",
 					"violet": "Violet",
 					"white": "White"
+				}
+			},
+			"options.inputToggleStyles": {
+				"choices": {
+					"green": "Green",
+					"mint": "Mint",
+					"orange": "Orange",
+					"sky": "Sky",
+					"white": "White",
+					"yellow": "Yellow"
 				}
 			},
 			"library": {
@@ -158,7 +174,9 @@
 					},
 					"chat": {
 						"name": "Enable Sidebar Chat Theme",
-						"hint": "When enabled it will style the Chat Tab used in Foundry's Sidebar."
+						"hint": "When enabled it will style the Chat Tab used in Foundry's Sidebar.",
+						"messages.name": "Enable Chat Messages Theme",
+						"messages.hint": "When enabled it will style the chat messages in the Chat Tab used in Foundry's Sidebar."
 					},
 					"scenes": {
 						"name": "Enable Sidebar Scenes Theme",
@@ -166,7 +184,17 @@
 					},
 					"settings": {
 						"name": "Enable Sidebar Settings Theme",
-						"hint": "When enabled it will style the Settings Tab used in Foundry's Sidebar."
+						"hint": "When enabled it will style the Settings Tab used in Foundry's Sidebar.",
+						"ribbon": {
+							"generalInfo.name": "General Info Ribbon Color",
+							"generalInfo.hint": "Select the ribbon color you would like to use for the General Info heading.",
+							"gameSettings.name": "Game Settings Ribbon Color",
+							"gameSettings.hint": "Select the ribbon color you would like to use for the Game Settings heading.",
+							"helpAndDocumentation.name": "Help And Documentation Ribbon Color",
+							"helpAndDocumentation.hint": "Select the ribbon color you would like to use for the Help And Documentation heading.",
+							"gameAccess.name": "Game Access Ribbon Color",
+							"gameAccess.hint": "Select the ribbon color you would like to use for the Game Access heading."
+						}
 					}
 				},
 				"modules": {

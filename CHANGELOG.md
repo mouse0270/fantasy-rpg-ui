@@ -10,4 +10,4 @@ Overhauls Foundry Virtual Tabletops UI into a Classic Fantasy RPG Theme.
     - Tab - Scenes
     - Tab - Settings
 - Generic Windows
- - Applies a generic theme to all Windows.
+  - Applies a generic theme to all Windows.

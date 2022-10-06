@@ -55,6 +55,20 @@ export default class CORE {
 		'--rpg-ui-icon-rounded-violet-overlay': `${MODULE.ID}.theme.options.iconOverlayStyles.choices.violet`,
 		'--rpg-ui-icon-rounded-white-overlay': `${MODULE.ID}.theme.options.iconOverlayStyles.choices.white`
 	}
+	static #INPUTCHECKBOXSTYLES = {
+		'--rpg-ui-inputs-checkbox-checked-green': `${MODULE.ID}.theme.options.inputToggleStyles.choices.green`,
+		'--rpg-ui-inputs-checkbox-checked-mint': `${MODULE.ID}.theme.options.inputToggleStyles.choices.mint`,
+		'--rpg-ui-inputs-checkbox-checked-orange': `${MODULE.ID}.theme.options.inputToggleStyles.choices.orange`,
+		'--rpg-ui-inputs-checkbox-checked-white': `${MODULE.ID}.theme.options.inputToggleStyles.choices.white`,
+		'--rpg-ui-inputs-checkbox-checked-yellow': `${MODULE.ID}.theme.options.inputToggleStyles.choices.yellow`,
+	};
+	static #INPUTRADIOSTYLES = {
+		'--rpg-ui-inputs-radio-checked-green': `${MODULE.ID}.theme.options.inputToggleStyles.choices.green`,
+		'--rpg-ui-inputs-radio-checked-orange': `${MODULE.ID}.theme.options.inputToggleStyles.choices.orange`,
+		'--rpg-ui-inputs-radio-checked-sky': `${MODULE.ID}.theme.options.inputToggleStyles.choices.sky`,
+		'--rpg-ui-inputs-radio-checked-white': `${MODULE.ID}.theme.options.inputToggleStyles.choices.white`,
+		'--rpg-ui-inputs-radio-checked-yellow': `${MODULE.ID}.theme.options.inputToggleStyles.choices.yellow`,
+	}
 
 	static get THEME() {
 		let fantasyRPGUITheme = {
@@ -112,7 +126,25 @@ export default class CORE {
 						files: [{
 							name: `./modules/${MODULE.ID}/styles/generic-window-inputs.css`,
 							type: 'text/css'
-						}]
+						}],
+						settings: {
+							'--rpg-ui-inputs-checkbox-color': {
+								name: `${MODULE.ID}.theme.options.toggle.checkbox.name`,
+								hint: `${MODULE.ID}.theme.options.toggle.checkbox.hint`,
+								type: 'choices',
+								default: '--rpg-ui-inputs-checkbox-checked-green',
+								format: 'var({value})',
+								choices: CORE.#INPUTCHECKBOXSTYLES
+							},
+							'--rpg-ui-inputs-radio-color': {
+								name: `${MODULE.ID}.theme.options.toggle.radio.name`,
+								hint: `${MODULE.ID}.theme.options.toggle.radio.hint`,
+								type: 'choices',
+								default: '--rpg-ui-inputs-radio-checked-green',
+								format: 'var({value})',
+								choices: CORE.#INPUTRADIOSTYLES
+							}
+						}
 					}
 				}
 			},
