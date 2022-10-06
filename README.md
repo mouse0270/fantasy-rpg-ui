@@ -115,7 +115,7 @@ Any package listed here is because I am either unable to support it or wont supp
 
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See [LICENSE]([license-url]) for more information.
+Distributed under the MIT License. See [LICENSE File]([license-url]) for more information.
 
 The assets in `./private` folder are packaged within and provided with Fantasy RPG UI and may **NOT** be redistributed or used outside of Foundry Virtual Tabletop except as permitted by a separate license agreement between the original copyright holder of these assets. These license terms apply to all images within `./private` folder and all subdirectories.
 
