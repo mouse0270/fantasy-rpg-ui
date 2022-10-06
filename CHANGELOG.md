@@ -1,4 +1,4 @@
-# Version 0.3.1 - I'M ALIVE
+# Version 0.3.2 - I'M ALIVE
 Overhauls Foundry Virtual Tabletops UI into a Classic Fantasy RPG Theme.
 - Completed Handcrafted Windows
   - Dialog Windows
