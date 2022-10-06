@@ -3,7 +3,7 @@
 }
 
 /*======================================================================*/
-/* FORMAT SIDEBAR - CHAT
+/* FORMAT SIDEBAR - SCENES
 /*======================================================================*/
 #sidebar .tab[data-tab].scenes-sidebar {
   background-color: transparent;
@@ -17,7 +17,7 @@
           box-shadow: none;
   box-shadow: none;
   margin: 0px;
-  padding: 0px;
+  padding: 7px;
 }
 #sidebar .tab[data-tab].scenes-sidebar .directory-list .directory-item.document {
   border-image-source: var(--rpg-ui-background-button);
@@ -27,7 +27,7 @@
   border-width: 0px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  margin: 0rem 1rem 0.5rem;
+  margin: 0rem 0.5rem 0.5rem;
   padding: 8px 7px;
 }
 #sidebar .tab[data-tab].scenes-sidebar .directory-list .directory-item.document .document-name {

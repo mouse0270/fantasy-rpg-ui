@@ -57,7 +57,7 @@ export default class CORE {
 	}
 
 	static get THEME() {
-		return {
+		let fantasyRPGUITheme = {
 			id: MODULE.ID,
 			title: MODULE.TITLE,
 			libraryFantasyRPGUIGenericWindow: {
@@ -103,6 +103,16 @@ export default class CORE {
 						default: 'parchment',
 						format: 'var(--rpg-ui-background-{value})',
 						choices: CORE.#BACKGROUNDCHOICES
+					},
+					libraryFantasyRPGUIGenericWindowInputs: {
+						name: `${MODULE.ID}.theme.library.genericWindow.inputs.name`,
+						hint: `${MODULE.ID}.theme.library.genericWindow.inputs.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/generic-window-inputs.css`,
+							type: 'text/css'
+						}]
 					}
 				}
 			},
@@ -160,7 +170,7 @@ export default class CORE {
 						format: 'var(--rpg-ui-title-{value})',
 						choices: CORE.#TITLECHOICES
 					},
-					'libraryFantasyRPGUIJounralsHideHeaderButtons': {
+					'libraryFantasyRPGUIJournalsHideHeaderButtons': {
 						name: `${MODULE.ID}.theme.options.hideHeaderButtons.name`,
 						hint: `${MODULE.ID}.theme.options.hideHeaderButtons.hint`,
 						type: 'library',
@@ -378,6 +388,16 @@ export default class CORE {
 								default: 'stone',
 								format: 'var(--rpg-ui-background-{value})',
 								choices: CORE.#BACKGROUNDCHOICES
+							},
+							libraryFantasyRPGUISidebarScenesCompact: {
+								name: `${MODULE.ID}.theme.library.sidebar.options.compact.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.options.compact.hint`,
+								type: 'library',
+								default: false,
+								files: [{
+									name: `./modules/${MODULE.ID}/styles/sidebar-scenes-compact.css`,
+									type: 'text/css'
+								}],
 							}
 						}
 					},
@@ -434,8 +454,11 @@ export default class CORE {
 						}
 					}
 				}
-			},
-			libraryFantasyRPGUIModulesFoundryTaskbar: {
+			}
+		}
+
+		if (game.modules.get('foundry-taskbar')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesFoundryTaskbar'] = {
 				name: `${MODULE.ID}.theme.library.modules.foundry-taskbar.name`,
 				hint: `${MODULE.ID}.theme.library.modules.foundry-taskbar.hint`,
 				type: 'library',
@@ -446,6 +469,8 @@ export default class CORE {
 				}]
 			}
 		}
+
+		return fantasyRPGUITheme;
 	}
 
 	static installAPI = () => {
@@ -467,37 +492,49 @@ export default class CORE {
 
 			// Check if Theme Exists
 			if (!game.settings.get('lib-themer', 'presets').hasOwnProperty('fantasy-rpg-ui')) {
+				let rpgUITheme = {
+					[`${MODULE.ID}`]: {
+						name: MODULE.TITLE,
+						theme: {
+							libraryFantasyRPGUIGenericWindow: {value: 'true'},
+							libraryFantasyRPGUIGenericWindowHideHeaderButtons: {value: 'true'},
+							libraryFantasyRPGUIGenericWindowInputs: {value: 'true'},
+							libraryFantasyRPGUIDialogs: {value: 'true'},
+							libraryFantasyRPGUIInterface: {value: 'true'},
+							libraryFantasyRPGUIInterfaceControls: {value: 'true'},
+							libraryFantasyRPGUIInterfaceHotbar: {value: 'true'},
+							libraryFantasyRPGUIInterfaceNavigation: {value: 'true'},
+							libraryFantasyRPGUIInterfacePHotbar: {value: 'true'},
+							libraryFantasyRPGUIInterfacePlayers: {value: 'true'},
+							libraryFantasyRPGUISidebar: {value: 'true'},
+							libraryFantasyRPGUISidebarChat: {value: 'true'},
+							libraryFantasyRPGUISidebarChatMessages: {value: 'true'},
+							libraryFantasyRPGUISidebarNav: {value: 'true'},
+							libraryFantasyRPGUISidebarScenes: {value: 'true'},
+							libraryFantasyRPGUISidebarScenesCompact: {value: 'true'},
+							libraryFantasyRPGUISidebarSettings: {value: 'true'},
+							libraryFantasyRPGUIJournals: {value: 'true'},
+							libraryFantasyRPGUIJournalsHideHeaderButtons: {value: 'true'},
+							libraryFantasyRPGUIModulesFoundryTaskbar: {value: 'true'}
+						}
+					}
+				}
+
 				Dialog.confirm({
 					id: `${MODULE.ID}-create-preset`,
 					title: MODULE.TITLE,
 					content: `<p style="margin-top: 0px;">${MODULE.localize('dialog.createPreset')}</p>`,
 					yes: (elemDialog) => {
-						game.settings.set('lib-themer', 'presets', foundry.utils.mergeObject(game.settings.get('lib-themer', 'presets'), {
-							[`${MODULE.ID}`]: {
-								name: MODULE.TITLE,
-								theme: {
-									'libraryFantasyRPGUIDialogs': {value: 'true'},
-									'libraryFantasyRPGUIInterface': {value: 'true'},
-									'libraryFantasyRPGUIInterfaceControls': {value: 'true'},
-									'libraryFantasyRPGUIInterfaceHotbar': {value: 'true'},
-									'libraryFantasyRPGUIInterfaceNavigation': {value: 'true'},
-									'libraryFantasyRPGUIInterfacePHotbar': {value: 'true'},
-									'libraryFantasyRPGUIInterfacePlayers': {value: 'true'},
-									'libraryFantasyRPGUIJournals': {value: 'true'},
-									'libraryFantasyRPGUIJournalsHideHeaderButtons': {value: 'true'},
-									'libraryFantasyRPGUISidebar': {value: 'true'},
-									'libraryFantasyRPGUISidebarChat': {value: 'true'},
-									'libraryFantasyRPGUISidebarNav': {value: 'true'},
-								}
-							}
-						}, { inplace: false })).then(response => {
+						game.settings.set('lib-themer', 'presets', foundry.utils.mergeObject(game.settings.get('lib-themer', 'presets'), rpgUITheme, { inplace: false })).then(response => {
 							game.settings.set('lib-themer', 'themeSettings', game.settings.get('lib-themer', 'presets')[MODULE.ID]).then(response => {
 								for (const [property, value] of Object.entries(game.settings.get('lib-themer','themeSettings').theme)) {
 									game.modules.get('lib-themer').API.setCSSVariable(property, value.value);
 								}
 							});
 						})
-					}, no: () => false
+					}, no: () => {
+						game.settings.set('lib-themer', 'presets', foundry.utils.mergeObject(game.settings.get('lib-themer', 'presets'), rpgUITheme, { inplace: false }))
+					}
 				})
 			}
 		});

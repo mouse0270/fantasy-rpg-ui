@@ -1,0 +1,15 @@
+@import '_mixins';
+
+:root {
+}
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - SCENES
+/*======================================================================*/
+html #sidebar {
+	.tab[data-tab].scenes-sidebar {
+		.scene {
+			--sidebar-scene-height: 50px;
+		}
+	}
+}

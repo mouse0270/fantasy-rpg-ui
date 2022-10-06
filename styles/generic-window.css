@@ -189,6 +189,7 @@
   border-width: 5px;
   border-style: solid;
   padding: 0px;
+  padding: 0.5rem;
 }
 .app.window-app .window-content > * {
   border-image-source: var(--rpg-ui-generic-foreground);
@@ -198,5 +199,4 @@
   border-width: 15px;
   border-style: solid;
   padding: 0.5rem;
-  margin: 0.5rem;
 }

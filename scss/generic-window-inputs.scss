@@ -1,0 +1,49 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-inputs-checkbox-color: var(--rpg-ui-inputs-checkbox-checked-green);
+	--rpg-ui-inputs-radio-color: var(--rpg-ui-inputs-checkbox-checked-green);
+}
+
+/*======================================================================*/
+/* FORMAT INPUTS - CHECKBOX
+/*======================================================================*/
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+	appearance: none;
+	filter: none;
+    position: relative;
+}
+input[type="checkbox"]:after {
+    content: "";
+    background-image: var(--rpg-ui-inputs-checkbox-empty);
+    background-size: 100% 100%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+input[type="checkbox"]:checked:before {
+    content: "";
+    background-image: var(--rpg-ui-inputs-checkbox-color);
+    background-size: 100% 100%;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+input[type="radio"]:after {
+    content: "";
+    background-image: var(--rpg-ui-inputs-radio-empty);
+    background-size: 100% 100%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+input[type="radio"]:checked:before {
+    content: "";
+    background-image: var(--rpg-ui-inputs-radio-color);
+    background-size: 100% 100%;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}

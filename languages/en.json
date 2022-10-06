@@ -83,7 +83,7 @@
 			"library": {
 				"genericWindow": {
 					"name": "Enable Theme for all Windows.",
-					"hint": "When enabled this will apply a generic theme for all window's in foundry. WARNING: These are not handcrafted and may have issues."
+					"hint": "When enabled this will apply a generic theme for all window's in foundry. WARNING: These are not handcrafted and may have issues. It is recommended to enable this option along with the options below for the best experience."
 				},
 				"dialogs": {
 					"name": "Enable Dialog Theme",
@@ -144,6 +144,10 @@
 				"sidebar": {
 					"name": "Enable Sidebar Theme",
 					"hint": "When enabled you will be able to style individual parts of the Sidebar in Foundry.",
+					"options": {
+						"compact.name": "Enable Compact Theme",
+						"compact.hint": "When enabled this will apply a compact theme option to this option."
+					},
 					"nav": {
 						"name": "Enable Sidebar Navigation Theme",
 						"hint": "When enabled it will style the navigation bar used in Foundry's Sidebar."

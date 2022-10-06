@@ -38,12 +38,7 @@
 This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme attempts to give the UI a classic RPG interface you'd expect to find in an Role Playing Game.
 
 
-### Supported Features <img src="https://geps.dev/progress/35" height="16"/>
-<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Generic Windows<br/>
-  *This will apply a generic theme to all windows. Enabling individual theme options will have a more hand crafted experiance. Enable this option if you want the Fantasy RPG UI on more elements.*<br/>
-
----
-
+### Supported Features <img src="https://geps.dev/progress/34" height="16"/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Dialog Windows<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Journal Sheet<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
@@ -74,6 +69,20 @@ This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme att
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Community Wiki Pages<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Game Invitation Links<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Configure Scene<br/>
+
+---
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Generic Windows<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Inputs<br/>
+    <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Checkbox<br/>
+    <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Radio<br/>
+    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Select<br/>
+    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Text<br/>
+    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Textarea<br/>
+    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Number<br/>
+    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Range<br/>
+*This will apply a generic theme to all windows. Enabling individual theme options will have a more hand crafted experiance. Enable this option if you want the Fantasy RPG UI on more elements.*<br/>
+
+---
 
 If you find any other windows or elements unthemed please let me know.
 

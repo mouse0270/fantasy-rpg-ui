@@ -19,11 +19,11 @@
 .app.window-app {
 	.window-content {
 		@include windowContentBackground(--rpg-ui-generic-background);
+	
+		padding: 0.5rem;
 
 		> * {
 			@include windowContentParchment(--rpg-ui-generic-foreground);
-	
-			margin: 0.5rem;
 		}
 	}
 }
