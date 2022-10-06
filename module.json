@@ -1,7 +1,7 @@
 {
 	"id": "fantasy-rpg-ui",
 	"title": "Fantasy RPG UI",
-	"description": "MODULE DESCRIPTION",
+	"description": "This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme gives Foundry's UI a classic RPG interface you'd expect to find in an Role Playing Game.",
 	"version": "1.0.0",
 	"compatibility": {
 		"minimum": 10,

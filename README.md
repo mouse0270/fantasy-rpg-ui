@@ -35,7 +35,7 @@
 ## About The Module
 ![image](https://user-images.githubusercontent.com/564874/193952294-5032d9e6-9d5a-4174-a27e-984c4ae3b1e0.png)
 
-This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme attempts to give the UI a classic RPG interface you'd expect to find in an Role Playing Game.
+This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme gives Foundry's UI a classic RPG interface you'd expect to find in an Role Playing Game.
 
 
 ### Supported Features <img src="https://geps.dev/progress/34" height="16"/>
