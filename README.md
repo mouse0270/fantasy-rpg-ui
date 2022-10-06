@@ -24,8 +24,8 @@
 <details>
   <summary>Table of Contents</summary>
 	<ol>
-		<li><a href="#about-the-Module">About the Module</a></li>
-		<li><a href="#supported-Modules--Systems">Supported Modules / Systems</a></li>
+		<li><a href="#about-the-module">About the Module</a></li>
+		<li><a href="#supported-packages">Supported Packages</a></li>
 		<li><a href="#license">License</a></li>
 		<li><a href="#acknowledgments">Acknowledgments</a></li>
 	</ol>
