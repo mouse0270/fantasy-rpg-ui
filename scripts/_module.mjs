@@ -2,7 +2,7 @@ export class MODULE {
 	static ID = 'fantasy-rpg-ui';
 
 	static OPTIONS = {
-		background: '#7030A0',
+		background: '#6e5a44',
 		color: '#fff',
 		LOG_LEVEL: [
 			{ title: 'OFF', background: '#000', color: '#fff' },

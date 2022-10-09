@@ -3,6 +3,10 @@
 :root {
 	--rpg-ui-inputs-checkbox-color: var(--rpg-ui-inputs-checkbox-checked-green);
 	--rpg-ui-inputs-radio-color: var(--rpg-ui-inputs-checkbox-checked-green);
+
+    --rpg-ui-prosemirror-button-style: var(--rpg-ui-button-rounded);
+    --rpg-ui-prosemirror-button-style-pressed: var(--rpg-ui-button-rounded-pressed);
+    --rpg-ui-prosemirror-button-style-padding: 4px;
 }
 
 /*======================================================================*/
@@ -46,4 +50,57 @@ input[type="radio"]:checked:before {
     height: 100%;
     position: absolute;
     width: 100%;
+}
+
+/*======================================================================*/
+/* FORMAT INPUTS - SELECT
+/*======================================================================*/
+select {
+    appearance: none;
+    background-image: var(--rpg-ui-inputs-select-dark);
+    background-size: 100% 100%;
+    color: white;
+}
+select option {
+    background: rgb(89, 78, 66) var(--rpg-ui-inputs-select-dark-option);
+    background-size: 100% 100%;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+    background-color: rgb(58, 45, 31);
+    background: rgb(58, 45, 31) var(--rpg-ui-inputs-select-dark-selected);
+    box-shadow: 0 0 10px 100px rgb(58, 45, 31) inset;
+    background-size: 100% 100%;
+}
+
+/*======================================================================*/
+/* FORMAT INPUTS - RANGE
+/*======================================================================*/
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: transparent;
+	background: transparent;
+	border-image-source: var(--rpg-ui-inputs-range-track);
+	border-image-repeat: repeat;
+	border-image-slice: 10 fill;
+	border-image-width: 5px;
+    border-width: 0px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background-color: transparent;
+	background: transparent;
+	border-image-source: var(--rpg-ui-inputs-range-track);
+	border-image-repeat: repeat;
+	border-image-slice: 10 fill;
+	border-image-width: 5px;
+    border-width: 0px;
+}
+input[type=range]::-webkit-slider-thumb {
+    background-color: transparent;
+    background-image: var(--rpg-ui-inputs-range-thumb);
+    background-size: 100% 100%;
+    border-width: 0px;
+    box-shadow: none;
+    transform: translateY(1px);
 }

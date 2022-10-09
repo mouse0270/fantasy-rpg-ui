@@ -148,6 +148,26 @@ export default class CORE {
 					}
 				}
 			},
+			libraryFantasyRPGUIProseMirror: {
+				name: `${MODULE.ID}.theme.library.proseMirror.name`,
+				hint: `${MODULE.ID}.theme.library.proseMirror.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/prosemirror.css`,
+					type: 'text/css'
+				}],
+				settings: {
+					'--rpg-ui-prosemirror-button-style': {
+						name: `${MODULE.ID}.theme.library.proseMirror.buttonStyle.name`,
+						hint: `${MODULE.ID}.theme.library.proseMirror.buttonStyle.hint`,
+						type: 'choices',
+						default: '--rpg-ui-button-rounded',
+						format: 'var({value})',
+						choices: Object.fromEntries(Object.entries(CORE.#BUTTONSTYLES).filter(([key, value]) => !key.endsWith('border')))
+					}
+				}
+			},
 			libraryFantasyRPGUIDialogs: {
 				name: `${MODULE.ID}.theme.library.dialogs.name`,
 				hint: `${MODULE.ID}.theme.library.dialogs.hint`,
@@ -403,6 +423,45 @@ export default class CORE {
 							}
 						}
 					},
+					libraryFantasyRPGUISidebarCombat: {
+						name: `${MODULE.ID}.theme.library.sidebar.combat.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.combat.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-combat.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-combat-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							},
+							'--rpg-ui-sidebar-combat-button-style': {
+								name: `${MODULE.ID}.theme.library.sidebar.combat.buttonStyle.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.combat.buttonStyle.hint`,
+								type: 'choices',
+								default: '--rpg-ui-button-rounded',
+								format: 'var({value})',
+								choices: CORE.#BUTTONSTYLES
+							},
+							'--rpg-ui-sidebar-combat-combatant-inactive-opacity': {
+								name: `${MODULE.ID}.theme.library.sidebar.combat.combatant.inactiveOpacity.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.combat.combatant.inactiveOpacity.hint`,
+								type: 'number',
+								default: 0.7,
+								range: {
+									min: 0,
+									max: 1,
+									step: 0.05
+								}
+							}
+						}
+					},
 					libraryFantasyRPGUISidebarScenes: {
 						name: `${MODULE.ID}.theme.library.sidebar.scenes.name`,
 						hint: `${MODULE.ID}.theme.library.sidebar.scenes.hint`,
@@ -430,6 +489,154 @@ export default class CORE {
 									name: `./modules/${MODULE.ID}/styles/sidebar-scenes-compact.css`,
 									type: 'text/css'
 								}],
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarActors: {
+						name: `${MODULE.ID}.theme.library.sidebar.actors.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.actors.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-actors.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-actors-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarItems: {
+						name: `${MODULE.ID}.theme.library.sidebar.items.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.items.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-items.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-items-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarJournal: {
+						name: `${MODULE.ID}.theme.library.sidebar.journal.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.journal.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-journal.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-journal-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarTables: {
+						name: `${MODULE.ID}.theme.library.sidebar.tables.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.tables.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-tables.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-tables-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarCards: {
+						name: `${MODULE.ID}.theme.library.sidebar.cards.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.cards.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-cards.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-cards-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarPlaylists: {
+						name: `${MODULE.ID}.theme.library.sidebar.playlists.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.playlists.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-playlists.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-playlists-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							}
+						}
+					},
+					libraryFantasyRPGUISidebarCompendium: {
+						name: `${MODULE.ID}.theme.library.sidebar.compendium.name`,
+						hint: `${MODULE.ID}.theme.library.sidebar.compendium.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sidebar-compendium.css`,
+							type: 'text/css'
+						}],
+						settings: {
+							'--rpg-ui-sidebar-compendium-background': {
+								name: `${MODULE.ID}.theme.options.background.name`,
+								hint: `${MODULE.ID}.theme.options.background.hint`,
+								type: 'choices',
+								default: 'stone',
+								format: 'var(--rpg-ui-background-{value})',
+								choices: CORE.#BACKGROUNDCHOICES
+							},
+							'--rpg-ui-sidebar-compendium-ribbon': {
+								name: `${MODULE.ID}.theme.library.sidebar.compendium.ribbon.name`,
+								hint: `${MODULE.ID}.theme.library.sidebar.compendium.ribbon.hint`,
+								type: 'choices',
+								default: 'ribbon-purple',
+								format: 'var(--rpg-ui-title-{value})',
+								choices: Object.fromEntries(Object.entries(CORE.#TITLECHOICES).filter(([key, value]) => key.startsWith('ribbon')))
 							}
 						}
 					},
@@ -521,54 +728,6 @@ export default class CORE {
 
 				return wrapped(...args);
 			}, "WRAPPER");
-
-			// Check if Theme Exists
-			if (!game.settings.get('lib-themer', 'presets').hasOwnProperty('fantasy-rpg-ui')) {
-				let rpgUITheme = {
-					[`${MODULE.ID}`]: {
-						name: MODULE.TITLE,
-						theme: {
-							libraryFantasyRPGUIGenericWindow: {value: 'true'},
-							libraryFantasyRPGUIGenericWindowHideHeaderButtons: {value: 'true'},
-							libraryFantasyRPGUIGenericWindowInputs: {value: 'true'},
-							libraryFantasyRPGUIDialogs: {value: 'true'},
-							libraryFantasyRPGUIInterface: {value: 'true'},
-							libraryFantasyRPGUIInterfaceControls: {value: 'true'},
-							libraryFantasyRPGUIInterfaceHotbar: {value: 'true'},
-							libraryFantasyRPGUIInterfaceNavigation: {value: 'true'},
-							libraryFantasyRPGUIInterfacePHotbar: {value: 'true'},
-							libraryFantasyRPGUIInterfacePlayers: {value: 'true'},
-							libraryFantasyRPGUISidebar: {value: 'true'},
-							libraryFantasyRPGUISidebarChat: {value: 'true'},
-							libraryFantasyRPGUISidebarChatMessages: {value: 'true'},
-							libraryFantasyRPGUISidebarNav: {value: 'true'},
-							libraryFantasyRPGUISidebarScenes: {value: 'true'},
-							libraryFantasyRPGUISidebarScenesCompact: {value: 'true'},
-							libraryFantasyRPGUISidebarSettings: {value: 'true'},
-							libraryFantasyRPGUIJournals: {value: 'true'},
-							libraryFantasyRPGUIJournalsHideHeaderButtons: {value: 'true'},
-							libraryFantasyRPGUIModulesFoundryTaskbar: {value: 'true'}
-						}
-					}
-				}
-
-				Dialog.confirm({
-					id: `${MODULE.ID}-create-preset`,
-					title: MODULE.TITLE,
-					content: `<p style="margin-top: 0px;">${MODULE.localize('dialog.createPreset')}</p>`,
-					yes: (elemDialog) => {
-						game.settings.set('lib-themer', 'presets', foundry.utils.mergeObject(game.settings.get('lib-themer', 'presets'), rpgUITheme, { inplace: false })).then(response => {
-							game.settings.set('lib-themer', 'themeSettings', game.settings.get('lib-themer', 'presets')[MODULE.ID]).then(response => {
-								for (const [property, value] of Object.entries(game.settings.get('lib-themer','themeSettings').theme)) {
-									game.modules.get('lib-themer').API.setCSSVariable(property, value.value);
-								}
-							});
-						})
-					}, no: () => {
-						game.settings.set('lib-themer', 'presets', foundry.utils.mergeObject(game.settings.get('lib-themer', 'presets'), rpgUITheme, { inplace: false }))
-					}
-				})
-			}
 		});
 
 		Hooks.on('renderJournalSheet', async (app, elem, options) => {
@@ -579,7 +738,13 @@ export default class CORE {
 		});
 
 		Hooks.on('lib-themer.UpdateSetting', async (setting, key, value) => {
-			const checkFor = ['--rpg-ui-interface-controls-style-main', '--rpg-ui-interface-controls-style-sub', '--rpg-ui-interface-controls-style-toggle'];
+			const checkFor = [
+				'--rpg-ui-interface-controls-style-main', 
+				'--rpg-ui-interface-controls-style-sub', 
+				'--rpg-ui-interface-controls-style-toggle', 
+				'--rpg-ui-sidebar-combat-button-style',
+				'--rpg-ui-prosemirror-button-style'
+			];
 
 			if (checkFor.includes(key)) {
 				document.querySelector(":root").style.setProperty(`${key}-pressed`, `var(${value}-pressed)`);

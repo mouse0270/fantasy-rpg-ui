@@ -4,6 +4,9 @@ import { MODULE } from './_module.mjs';
 // GET CORE MODULE
 import { default as CORE } from './module.mjs';
 
+// GET MIGRATION
+import './_migration.mjs';
+
 /* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */
 // socketlib HOOKS -> socketlib.ready
 /* ─────────────── ⋆⋅☆⋅⋆ ─────────────── */

@@ -1,0 +1,87 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-sidebar-combat-background: var(--rpg-ui-background-stone);
+	--rpg-ui-sidebar-combat-button-style: var(--rpg-ui-button-rounded);
+	--rpg-ui-sidebar-combat-button-style-pressed: var(--rpg-ui-button-rounded-pressed);
+	--rpg-ui-sidebar-combat-combatant-inactive-opacity: 0.7;
+}
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - SCENES
+/*======================================================================*/
+#sidebar {
+	.tab[data-tab].combat-sidebar {
+		background-color: transparent;
+		background-image: none;
+		border-image-source: var(--rpg-ui-sidebar-combat-background);
+		border-image-repeat: repeat;
+		border-image-slice: 60 fill;
+		border-image-width: 20px;
+		border-width: 0px;
+		box-shadow: none;
+		
+    	box-shadow: none;
+		margin: 0px;
+		padding: 7px;
+
+		.combat-tracker-header,
+		#combat-controls {
+			border-image-source: var(--rpg-ui-content-board-1);
+			border-image-repeat: repeat;
+			border-image-slice: 50 fill;
+			border-image-width: 20px;
+			border-width: 0px;
+			margin: 0.1rem 0.25rem;
+			padding: 0.5rem 0.75rem;
+
+			a.combat-button,
+			a.combat-control {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+
+				&[disabled] {
+					display: none;
+				}
+			}
+			a.combat-button i,
+			a.combat-control i {
+				align-items: center;
+				background-image: var(--rpg-ui-sidebar-combat-button-style);
+				background-size: 100% 100%;
+				display: flex;
+				flex: 0 0 24px;
+				font-size: var(--font-size-11);
+				height: 24px;
+				justify-content: center;
+				padding-bottom: var(--rpg-ui-sidebar-combat-button-style-padding);
+				width: 24px;
+		
+				&:hover {
+					background: var(--rpg-ui-sidebar-combat-button-style-pressed);
+					background-size: 100% 100%;
+					padding-bottom: 0px;
+					padding-top: var(--rpg-ui-sidebar-combat-button-style-padding);
+					text-shadow: none;
+				}
+			}
+		}
+
+		.directory-list .directory-item {
+			border-image-source: var(--rpg-ui-content-board-1);
+			border-image-repeat: repeat;
+			border-image-slice: 50 fill;
+			border-image-width: 20px;
+			border-width: 0px;
+			margin: 0.1rem 0.25rem;
+			opacity: var(--rpg-ui-sidebar-combat-combatant-inactive-opacity);
+			padding: 0.5rem;
+			transition: all 0.1s ease-in-out;
+	
+			&.active, &:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

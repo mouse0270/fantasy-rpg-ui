@@ -200,3 +200,32 @@
   border-style: solid;
   padding: 0.5rem;
 }
+
+/*======================================================================*/
+/* FIX FOR SVELTE APPS ADDING OVERFLOW: INHERIT
+/*======================================================================*/
+html .window-app.svelte-are4no.svelte-are4no.svelte-are4no {
+  overflow: visible;
+}
+
+/*======================================================================*/
+/* FIX FOR Module Compatibility Checker
+/*======================================================================*/
+html #mcc .window-content {
+  background-image: none !important;
+  padding: 0.5rem !important;
+}
+
+html #mcc .window-content table thead {
+  top: -9px;
+}
+
+html #mcc footer {
+  background-color: transparent;
+  margin: 0px;
+  color: inherit;
+}
+
+html #mcc footer a {
+  color: var(--color-text-hyperlink);
+}

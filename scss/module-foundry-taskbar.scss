@@ -14,6 +14,41 @@
     box-shadow: none;
     margin-bottom: 2px;
     padding: 8px;
+
+	.start-menu {
+		background-color: transparent !important;
+		border-image-source: var(--rpg-ui-content-board-1) !important;
+		border-image-repeat: repeat !important;
+		border-image-slice: 60 fill !important;
+		border-image-width: 20px !important;
+		border-bottom: 0px !important;
+		box-shadow: none;
+
+		.start-menu-options {
+			background-color: transparent;
+			border-image-source: var(--rpg-ui-content-board-2);
+			border-image-repeat: repeat;
+			border-image-slice: 60 fill;
+			border-image-width: 20px;
+			border-bottom: 0px;
+			box-shadow: none;
+		}
+		.start-menu-items, .start-menu-apps {
+			padding-top: 30px;
+			&:before {
+				top: 10px;
+			}
+		}
+	}
+}
+.taskbar-workspaces {
+	background-color: transparent !important;
+	border-image-source: var(--rpg-ui-content-board-1) !important;
+	border-image-repeat: repeat !important;
+	border-image-slice: 60 fill !important;
+	border-image-width: 20px !important;
+	border-bottom: 0px !important;
+	box-shadow: none;
 }
 
 /*======================================================================*/

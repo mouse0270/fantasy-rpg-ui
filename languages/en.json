@@ -61,9 +61,9 @@
 				}
 			},
 			"options.toggle": {
-				"checkbox.name": "Checked Box State Color",
-				"checkbox.hint": "Select the color you would like the checkmark to be when checked.",
-				"radio.name": "Radio Button State Color",
+				"checkbox.name": "Checkbox Checked State Color",
+				"checkbox.hint": "Select the color you would like the checkbox to be when checked.",
+				"radio.name": "Radio Button Selected State Color",
 				"radio.hint": "Select the color you would like the radio button to be when selected."
 			},
 			"options.iconBorderStyles": {
@@ -104,6 +104,12 @@
 						"name": "Enable Theme for Toggle Inputs",
 						"hint": "When Enabled this will apply a the theme to all inputs with the type checkbox or radio."
 					}
+				},
+				"proseMirror": {
+					"name": "Enable Theme for Prose Mirror",
+					"hint": "When enabled this will apply Fantasy RPG UI Theme to ProseMirror Elements.",
+					"buttonStyle.name": "Choose a Button Style",
+					"buttonStyle.hint": "Changes the style of the controls used in Prose Mirror."
 				},
 				"dialogs": {
 					"name": "Enable Dialog Theme",
@@ -178,9 +184,49 @@
 						"messages.name": "Enable Chat Messages Theme",
 						"messages.hint": "When enabled it will style the chat messages in the Chat Tab used in Foundry's Sidebar."
 					},
+					"combat": {
+						"name": "Enable Sidebar Combat Theme",
+						"hint": "When enabled it will style the Combat Tab used in Foundry's Sidebar.",
+						"buttonStyle.name": "Choose a Button Style",
+						"buttonStyle.hint": "Changes the style of the controls used in Prose Mirror.",
+						"combatant": {
+							"inactiveOpacity.name": "Opacity for Inactive Combatants",
+							"inactiveOpacity.hint": "Changes the opacity level for inactive combatants."
+						}
+					},
 					"scenes": {
 						"name": "Enable Sidebar Scenes Theme",
 						"hint": "When enabled it will style the Scenes Tab used in Foundry's Sidebar."
+					},
+					"actors": {
+						"name": "Enable Sidebar Actors Theme",
+						"hint": "When enabled it will style the Actors Tab used in Foundry's Sidebar."
+					},
+					"items": {
+						"name": "Enable Sidebar Items Theme",
+						"hint": "When enabled it will style the Items Tab used in Foundry's Sidebar."
+					},
+					"journal": {
+						"name": "Enable Sidebar journal Theme",
+						"hint": "When enabled it will style the Journal Tab used in Foundry's Sidebar."
+					},
+					"tables": {
+						"name": "Enable Sidebar Tables Theme",
+						"hint": "When enabled it will style the Tables Tab used in Foundry's Sidebar."
+					},
+					"cards": {
+						"name": "Enable Sidebar Cards Theme",
+						"hint": "When enabled it will style the Cards Tab used in Foundry's Sidebar."
+					},
+					"playlists": {
+						"name": "Enable Sidebar Playlists Theme",
+						"hint": "When enabled it will style the Playlists Tab used in Foundry's Sidebar."
+					},
+					"compendium": {
+						"name": "Enable Sidebar Compendium Theme",
+						"hint": "When enabled it will style the Compendium Tab used in Foundry's Sidebar.",
+						"ribbon.name": "Ribbon Color",
+						"ribbon.hint": "Select the ribbon color you would like to use for the Compendium headings."
 					},
 					"settings": {
 						"name": "Enable Sidebar Settings Theme",
@@ -203,6 +249,11 @@
 						"hint": "When enabled it will style elements used in the Module Taskbar by theripper93."
 					}
 				}
+			}
+		},
+		"migration": {
+			"v033": {
+				"updatePreset": "Fantast RPG UI has been updated to version 0.3.3, would you like to enable the new theme options?"
 			}
 		}
 	}
