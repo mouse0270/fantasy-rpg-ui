@@ -1,0 +1,66 @@
+@import '_mixins';
+
+:root {
+
+}
+
+html #always-hp {
+	background: none;
+	box-shadow: none;
+
+	.window-header {
+		flex: 0;
+
+		.window-title {
+			align-items: center;
+			background-image: var(--rpg-ui-generic-title);
+			left: 50%;
+			min-width: 250px;
+			padding: 0.5rem 1.5rem;
+			position: absolute;
+			transform: translate(-50%, -15px);
+		}
+	}
+
+	.window-content {
+		border-image-source: var(--rpg-ui-generic-background);
+    	border-width: 5px;
+
+		> * {
+			border-image-source: var(--rpg-ui-generic-foreground);
+			border-width: 15px;
+			padding: 0.5rem;
+		}
+	}
+}
+
+html #always-hp {
+	height: 103px !important; 
+	.window-title {
+		height: auto;
+		min-height: 40px;
+	}
+	.window-content {
+		padding: 0.5rem;
+		.alwayshp-content {
+			padding-top: 18px;
+
+			.resource {
+				left: 50%;
+				top: 27px;
+				transform: translateX(-50%);
+				width: calc(100% + -50px);
+			}
+
+			.good-ones {
+				border: 1px solid rgb(0 144 163);
+				box-shadow: 0 0 10px rgb(0 144 163);
+				color: rgb(0 144 163);
+
+				i {
+					color: inherit;
+				}
+			}
+		}
+	}
+}

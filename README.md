@@ -38,7 +38,7 @@
 This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme gives Foundry's UI a classic RPG interface you'd expect to find in an Role Playing Game.
 
 
-### Supported Features <img src="https://geps.dev/progress/51" height="16"/>
+### Supported Features <img src="https://geps.dev/progress/52" height="16"/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Dialog Windows<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Journal Sheet<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
@@ -92,10 +92,16 @@ If you find any other windows or elements unthemed please let me know.
 <!-- SUPPORTED MODULES/SYSTEMS -->
 ## Supported Packages
 ### Full Support
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Always HP](https://foundryvtt.com/packages/always-hp)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Module Compatibility Checker](https://foundryvtt.com/packages/mcc)<br/>
-<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Taskbar](https://theripper93.com/#/module/foundry-taskbar)<br/>
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Taskbar](https://theripper93.com/#/module/foundry-taskbar)<br/>
 
 ### Partial Support
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [PopOut!](https://foundryvtt.com/packages/popout)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Header buttons are outside of the window. Clicking on the `couplings` will trigger the button, but you can't see what you are clicking on.<br/>
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [SmallTime](https://foundryvtt.com/packages/smalltime)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed<br/>
 ### Planned Support
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Token Action HUD]()<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>

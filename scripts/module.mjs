@@ -709,6 +709,19 @@ export default class CORE {
 			}
 		}
 
+		if (game.modules.get('always-hp')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesAlwaysHP'] = {
+				name: `${MODULE.ID}.theme.library.modules.always-hp.name`,
+				hint: `${MODULE.ID}.theme.library.modules.always-hp.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-always-hp.css`,
+					type: 'text/css'
+				}]
+			}
+		}
+
 		return fantasyRPGUITheme;
 	}
 

@@ -1,3 +1,9 @@
+# Version 0.3.5 - Compatibility
+- Removed Styling from About Time (Will try to theme it later)
+- Added Support for Always HP
+- Added Support for Pop Out
+  - Header Buttons will not be seen in the PopOut. Click on the couplings will trigger the button, but there is no way to see the text of the button at the moment.
+
 # Version 0.3.4 - Linux Nerds Exists
 - Changed LICENSED assets folder name from `.private` to `_private` for better support for linux systems blocking hidden folders
 

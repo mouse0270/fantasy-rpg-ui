@@ -4,7 +4,7 @@
 /* FORMAT HEADER BUTTONS - HIDDEN
 /*======================================================================*/
 .app.window-app {
-	.window-header a.header-button:not(.close) {
+	.window-header .window-title ~ a:not(.close) {
 		background-image: none;
 		font-size: 0rem;
 		max-width: 40px;

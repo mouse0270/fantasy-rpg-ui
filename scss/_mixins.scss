@@ -5,9 +5,9 @@
     display: flex;
 	left: calc(50%);
     justify-content: center;
-    min-width: 300px;
+    min-width: 250px;
 	overflow: visible;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1.5rem;
     position: absolute;
     transform: translate(-50%, -15px);
 	white-space: nowrap;
@@ -57,7 +57,7 @@
 			@include windowButton;
 		}
 
-		a.header-button:not(.close) {
+		.window-title ~ a:not(.close) {
 			align-items: center;
 			background-image: var(--rpg-ui-button-with-rings);
 			background-color: transparent;
@@ -73,22 +73,23 @@
 			transform: translate(-20px, 70px);
 			width: 150px;
 			z-index: 1;
-		}
-		a.header-button:not(.close):before {
-			background-image: var(--rpg-ui-button-rings);
-			background-color: transparent;
-			background-size: 100% 100%;
-			content: "";
-			display: flex;
-			height: 30px;
-			width: 37px;
-			position: absolute;
-			transform: translate(-35px, -1px);
-			z-index: 1;
+
+			&:before {
+				background-image: var(--rpg-ui-button-rings);
+				background-color: transparent;
+				background-size: 100% 100%;
+				content: "";
+				display: flex;
+				height: 30px;
+				width: 37px;
+				position: absolute;
+				transform: translate(-35px, -1px);
+				z-index: 1;
+			}
 		}
 
 		@for $iLoop from 2 through 18 { 
-			a.header-button:not(.close):nth-child(#{$iLoop}) {
+			a:not(.close):nth-child(#{$iLoop}) {
 				transform: translate(-20px, (15px + (35px * ($iLoop - 1)) + (10px * ($iLoop - 1))));
 			}
 		}

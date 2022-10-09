@@ -1,0 +1,61 @@
+html #always-hp {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html #always-hp .window-header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+html #always-hp .window-header .window-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-generic-title);
+  left: 50%;
+  min-width: 250px;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -15px);
+          transform: translate(-50%, -15px);
+}
+html #always-hp .window-content {
+  border-image-source: var(--rpg-ui-generic-background);
+  border-width: 5px;
+}
+html #always-hp .window-content > * {
+  border-image-source: var(--rpg-ui-generic-foreground);
+  border-width: 15px;
+  padding: 0.5rem;
+}
+
+html #always-hp {
+  height: 103px !important;
+}
+html #always-hp .window-title {
+  height: auto;
+  min-height: 40px;
+}
+html #always-hp .window-content {
+  padding: 0.5rem;
+}
+html #always-hp .window-content .alwayshp-content {
+  padding-top: 18px;
+}
+html #always-hp .window-content .alwayshp-content .resource {
+  left: 50%;
+  top: 27px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% - 50px);
+}
+html #always-hp .window-content .alwayshp-content .good-ones {
+  border: 1px solid rgb(0, 144, 163);
+  -webkit-box-shadow: 0 0 10px rgb(0, 144, 163);
+          box-shadow: 0 0 10px rgb(0, 144, 163);
+  color: rgb(0, 144, 163);
+}
+html #always-hp .window-content .alwayshp-content .good-ones i {
+  color: inherit;
+}

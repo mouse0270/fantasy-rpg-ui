@@ -247,6 +247,10 @@
 					"foundry-taskbar": {
 						"name": "Enable Theme for Taskbar",
 						"hint": "When enabled it will style elements used in the Module Taskbar by theripper93."
+					}, 
+					"always-hp": {
+						"name": "Enable Theme for Always HP",
+						"hint": "When enabled it will style elements used in the Module Always HP by IronMonk."
 					}
 				}
 			}

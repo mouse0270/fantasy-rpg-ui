@@ -31,9 +31,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 300px;
+  min-width: 250px;
   overflow: visible;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   position: absolute;
   -webkit-transform: translate(-50%, -15px);
           transform: translate(-50%, -15px);
@@ -71,7 +71,7 @@
 .app.window-app .window-header a.header-button.close:hover, .app.window-app .window-header a.header-button.close:active {
   background-image: var(--rpg-ui-button-border-pressed);
 }
-.app.window-app .window-header a.header-button:not(.close) {
+.app.window-app .window-header .window-title ~ a:not(.close) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,7 +93,7 @@
   width: 150px;
   z-index: 1;
 }
-.app.window-app .window-header a.header-button:not(.close):before {
+.app.window-app .window-header .window-title ~ a:not(.close):before {
   background-image: var(--rpg-ui-button-rings);
   background-color: transparent;
   background-size: 100% 100%;
@@ -108,71 +108,71 @@
           transform: translate(-35px, -1px);
   z-index: 1;
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(2) {
+.app.window-app .window-header a:not(.close):nth-child(2) {
   -webkit-transform: translate(-20px, 60px);
           transform: translate(-20px, 60px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(3) {
+.app.window-app .window-header a:not(.close):nth-child(3) {
   -webkit-transform: translate(-20px, 105px);
           transform: translate(-20px, 105px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(4) {
+.app.window-app .window-header a:not(.close):nth-child(4) {
   -webkit-transform: translate(-20px, 150px);
           transform: translate(-20px, 150px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(5) {
+.app.window-app .window-header a:not(.close):nth-child(5) {
   -webkit-transform: translate(-20px, 195px);
           transform: translate(-20px, 195px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(6) {
+.app.window-app .window-header a:not(.close):nth-child(6) {
   -webkit-transform: translate(-20px, 240px);
           transform: translate(-20px, 240px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(7) {
+.app.window-app .window-header a:not(.close):nth-child(7) {
   -webkit-transform: translate(-20px, 285px);
           transform: translate(-20px, 285px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(8) {
+.app.window-app .window-header a:not(.close):nth-child(8) {
   -webkit-transform: translate(-20px, 330px);
           transform: translate(-20px, 330px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(9) {
+.app.window-app .window-header a:not(.close):nth-child(9) {
   -webkit-transform: translate(-20px, 375px);
           transform: translate(-20px, 375px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(10) {
+.app.window-app .window-header a:not(.close):nth-child(10) {
   -webkit-transform: translate(-20px, 420px);
           transform: translate(-20px, 420px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(11) {
+.app.window-app .window-header a:not(.close):nth-child(11) {
   -webkit-transform: translate(-20px, 465px);
           transform: translate(-20px, 465px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(12) {
+.app.window-app .window-header a:not(.close):nth-child(12) {
   -webkit-transform: translate(-20px, 510px);
           transform: translate(-20px, 510px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(13) {
+.app.window-app .window-header a:not(.close):nth-child(13) {
   -webkit-transform: translate(-20px, 555px);
           transform: translate(-20px, 555px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(14) {
+.app.window-app .window-header a:not(.close):nth-child(14) {
   -webkit-transform: translate(-20px, 600px);
           transform: translate(-20px, 600px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(15) {
+.app.window-app .window-header a:not(.close):nth-child(15) {
   -webkit-transform: translate(-20px, 645px);
           transform: translate(-20px, 645px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(16) {
+.app.window-app .window-header a:not(.close):nth-child(16) {
   -webkit-transform: translate(-20px, 690px);
           transform: translate(-20px, 690px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(17) {
+.app.window-app .window-header a:not(.close):nth-child(17) {
   -webkit-transform: translate(-20px, 735px);
           transform: translate(-20px, 735px);
 }
-.app.window-app .window-header a.header-button:not(.close):nth-child(18) {
+.app.window-app .window-header a:not(.close):nth-child(18) {
   -webkit-transform: translate(-20px, 780px);
           transform: translate(-20px, 780px);
 }
@@ -228,4 +228,51 @@ html #mcc footer {
 
 html #mcc footer a {
   color: var(--color-text-hyperlink);
+}
+
+/*======================================================================*/
+/* FIX FOR MODULE - SMALLTIME
+/*======================================================================*/
+#smalltime-app .window-content > form {
+  border-width: 0px;
+}
+#smalltime-app .window-content > form input[type=range]::-webkit-slider-runnable-track,
+#smalltime-app .window-content > form input[type=range]:focus::-webkit-slider-runnable-track {
+  border-image-source: none;
+}
+
+/*======================================================================*/
+/* FIX FOR MODULE - ALWAYS HP
+/*======================================================================*/
+#always-hp {
+  background: url(/ui/denim075.png) repeat;
+  -webkit-box-shadow: 0 0 20px var(--color-shadow-dark);
+          box-shadow: 0 0 20px var(--color-shadow-dark);
+}
+#always-hp .window-header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+}
+#always-hp .window-header .window-title {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-image: none;
+  left: auto;
+  min-width: auto;
+  padding: 0rem;
+  position: relative;
+  -webkit-transform: none;
+          transform: none;
+}
+#always-hp .window-content {
+  border-image-source: none;
+  border-width: 0px;
+  border-top: 2px solid #782e22;
+}
+#always-hp .window-content > * {
+  border-image-source: none;
+  border-width: 0px;
+  padding: 0px;
 }

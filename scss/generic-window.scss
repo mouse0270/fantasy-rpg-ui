@@ -54,3 +54,51 @@ html #mcc footer {
 html #mcc footer a {
 	color: var(--color-text-hyperlink);
 }
+
+
+/*======================================================================*/
+/* FIX FOR MODULE - SMALLTIME
+/*======================================================================*/
+#smalltime-app .window-content > form {
+	border-width: 0px;
+
+	input[type=range]::-webkit-slider-runnable-track,
+	input[type=range]:focus::-webkit-slider-runnable-track {
+		border-image-source: none;;
+	}
+}
+
+
+/*======================================================================*/
+/* FIX FOR MODULE - ALWAYS HP
+/*======================================================================*/
+#always-hp {
+	background: url(/ui/denim075.png) repeat;
+	box-shadow: 0 0 20px var(--color-shadow-dark);
+
+	.window-header {
+		flex: 0 0 30px;
+
+		.window-title {
+			align-items: start;
+			background-image: none;
+			left: auto;
+			min-width: auto;
+			padding: 0rem;
+			position: relative;
+			transform: none;
+		}
+	}
+
+	.window-content {
+		border-image-source: none;
+    	border-width: 0px;
+		border-top: 2px solid #782e22;
+
+		> * {
+			border-image-source: none;
+			border-width: 0px;
+			padding: 0px;
+		}
+	}
+}

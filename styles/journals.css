@@ -34,9 +34,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 300px;
+  min-width: 250px;
   overflow: visible;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   position: absolute;
   -webkit-transform: translate(-50%, -15px);
           transform: translate(-50%, -15px);
@@ -74,7 +74,7 @@
 .window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close:hover, .window-app.sheet.journal-sheet.journal-entry .window-header a.header-button.close:active {
   background-image: var(--rpg-ui-button-border-pressed);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close) {
+.window-app.sheet.journal-sheet.journal-entry .window-header .window-title ~ a:not(.close) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -96,7 +96,7 @@
   width: 150px;
   z-index: 1;
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):before {
+.window-app.sheet.journal-sheet.journal-entry .window-header .window-title ~ a:not(.close):before {
   background-image: var(--rpg-ui-button-rings);
   background-color: transparent;
   background-size: 100% 100%;
@@ -111,71 +111,71 @@
           transform: translate(-35px, -1px);
   z-index: 1;
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(2) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(2) {
   -webkit-transform: translate(-20px, 60px);
           transform: translate(-20px, 60px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(3) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(3) {
   -webkit-transform: translate(-20px, 105px);
           transform: translate(-20px, 105px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(4) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(4) {
   -webkit-transform: translate(-20px, 150px);
           transform: translate(-20px, 150px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(5) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(5) {
   -webkit-transform: translate(-20px, 195px);
           transform: translate(-20px, 195px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(6) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(6) {
   -webkit-transform: translate(-20px, 240px);
           transform: translate(-20px, 240px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(7) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(7) {
   -webkit-transform: translate(-20px, 285px);
           transform: translate(-20px, 285px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(8) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(8) {
   -webkit-transform: translate(-20px, 330px);
           transform: translate(-20px, 330px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(9) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(9) {
   -webkit-transform: translate(-20px, 375px);
           transform: translate(-20px, 375px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(10) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(10) {
   -webkit-transform: translate(-20px, 420px);
           transform: translate(-20px, 420px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(11) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(11) {
   -webkit-transform: translate(-20px, 465px);
           transform: translate(-20px, 465px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(12) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(12) {
   -webkit-transform: translate(-20px, 510px);
           transform: translate(-20px, 510px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(13) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(13) {
   -webkit-transform: translate(-20px, 555px);
           transform: translate(-20px, 555px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(14) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(14) {
   -webkit-transform: translate(-20px, 600px);
           transform: translate(-20px, 600px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(15) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(15) {
   -webkit-transform: translate(-20px, 645px);
           transform: translate(-20px, 645px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(16) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(16) {
   -webkit-transform: translate(-20px, 690px);
           transform: translate(-20px, 690px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(17) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(17) {
   -webkit-transform: translate(-20px, 735px);
           transform: translate(-20px, 735px);
 }
-.window-app.sheet.journal-sheet.journal-entry .window-header a.header-button:not(.close):nth-child(18) {
+.window-app.sheet.journal-sheet.journal-entry .window-header a:not(.close):nth-child(18) {
   -webkit-transform: translate(-20px, 780px);
           transform: translate(-20px, 780px);
 }
