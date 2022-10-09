@@ -29,11 +29,14 @@ Hooks.once('ready', async () => {
 				libraryFantasyRPGUISidebarSettings: {value: 'true'},
 				libraryFantasyRPGUIModulesFoundryTaskbar: {value: 'true'},
 				// v0.3.3 Them Options
+				libraryFantasyRPGUISidebarCombat: {value: 'true'},
 				libraryFantasyRPGUISidebarActors: {value: 'true'},
 				libraryFantasyRPGUISidebarItems: {value: 'true'},
 				libraryFantasyRPGUISidebarJournal: {value: 'true'},
 				libraryFantasyRPGUISidebarTables: {value: 'true'},
 				libraryFantasyRPGUISidebarCards: {value: 'true'},
+				libraryFantasyRPGUISidebarPlaylists: {value: 'true'},
+				libraryFantasyRPGUISidebarCompendium: {value: 'true'},
 				libraryFantasyRPGUIProseMirror: {value: 'true'}
 			}
 		}

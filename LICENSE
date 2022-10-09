@@ -23,6 +23,6 @@ SOFTWARE.
 ==============================================
 Art Assets
 ==============================================
-The artwork included in the `./private` folder is licensed from GameDev Market (https://www.gamedevmarket.net/).
+The artwork included in the `_private` folder is licensed from GameDev Market (https://www.gamedevmarket.net/).
 
-These assets are packaged with and provided with Fantasy RPG UI and may **NOT** be redistributed or used outside of Foundry Virtual Tabletop except as permitted by a separate license agreement between the original copyright holder of these assets. These license terms apply to all images within `./private` folder and all subdirectories.
+These assets are packaged with and provided with Fantasy RPG UI and may **NOT** be redistributed or used outside of Foundry Virtual Tabletop except as permitted by a separate license agreement between the original copyright holder of these assets. These license terms apply to all images within `_private` folder and all subdirectories.

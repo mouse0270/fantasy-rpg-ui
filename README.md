@@ -114,7 +114,7 @@ Any package listed here is because I am either unable to support it or wont supp
 ## License
 Distributed under the MIT License. See [LICENSE](https://github.com/mouse0270/fantasy-rpg-ui/blob/master/LICENSE) for more information.
 
-The assets in `./private` folder are packaged within and provided with Fantasy RPG UI and may **NOT** be redistributed or used outside of Foundry Virtual Tabletop except as permitted by a separate license agreement between the original copyright holder of these assets. These license terms apply to all images within `./private` folder and all subdirectories.
+The assets in `_private` folder are packaged within and provided with Fantasy RPG UI and may **NOT** be redistributed or used outside of Foundry Virtual Tabletop except as permitted by a separate license agreement between the original copyright holder of these assets. These license terms apply to all images within `_private` folder and all subdirectories.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

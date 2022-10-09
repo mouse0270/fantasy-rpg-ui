@@ -1,3 +1,6 @@
+# Version 0.3.4 - Linux Nerds Exists
+- Changed LICENSED assets folder name from `.private` to `_private` for better support for linux systems blocking hidden folders
+
 # Version 0.3.3 - My Side Chick is Kitted Out
 - Added Theme Support for `select` elements
 - Added Theme Support for `range` elements
