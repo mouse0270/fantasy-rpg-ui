@@ -1,4 +1,4 @@
-# Version 0.3.5 - Compatibility
+# Version 0.3.5 - Compatibility Patches
 - Removed Styling from About Time (Will try to theme it later)
 - Removed Styling from Simple Calendar (Will try to theme it later)
 - Added Support for Always HP
