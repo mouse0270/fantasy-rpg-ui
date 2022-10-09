@@ -1,5 +1,6 @@
 # Version 0.3.5 - Compatibility
 - Removed Styling from About Time (Will try to theme it later)
+- Removed Styling from Simple Calendar (Will try to theme it later)
 - Added Support for Always HP
 - Added Support for Pop Out
   - Header Buttons will not be seen in the PopOut. Click on the couplings will trigger the button, but there is no way to see the text of the button at the moment.

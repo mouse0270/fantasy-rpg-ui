@@ -1,7 +1,7 @@
 /*======================================================================*/
 /* FORMAT HEADER BUTTONS - HIDDEN
 /*======================================================================*/
-.app.window-app .window-header .window-title ~ a:not(.close) {
+.app.window-app:not(.simple-calendar) .window-header .window-title ~ a:not(.close) {
   background-image: none;
   font-size: 0rem;
   max-width: 40px;
@@ -10,7 +10,7 @@
   -webkit-transform-origin: left;
           transform-origin: left;
 }
-.app.window-app .window-header .window-title ~ a:not(.close):hover {
+.app.window-app:not(.simple-calendar) .window-header .window-title ~ a:not(.close):hover {
   background-image: var(--rpg-ui-button-with-rings);
   font-size: var(--font-size-14);
   max-width: 150px;

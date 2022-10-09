@@ -9,14 +9,14 @@
 /*======================================================================*/
 /* FORMAT GENERIC TITLE
 /*======================================================================*/
-.app.window-app {
+.app.window-app:not(.simple-calendar) {
 	@include windowHeader(--rpg-ui-generic-title);
 }
 
 /*======================================================================*/
 /* FORMAT GENERIC CONTENT
 /*======================================================================*/
-.app.window-app {
+.app.window-app:not(.simple-calendar) {
 	.window-content {
 		@include windowContentBackground(--rpg-ui-generic-background);
 	

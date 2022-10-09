@@ -99,9 +99,13 @@ If you find any other windows or elements unthemed please let me know.
 ### Partial Support
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [PopOut!](https://foundryvtt.com/packages/popout)<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Header buttons are outside of the window. Clicking on the `couplings` will trigger the button, but you can't see what you are clicking on.<br/>
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [SmallTime](https://foundryvtt.com/packages/smalltime)<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed<br/>
+
 ### Planned Support
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Token Action HUD]()<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
