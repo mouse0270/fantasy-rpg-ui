@@ -37,8 +37,9 @@
 
 This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme gives Foundry's UI a classic RPG interface you'd expect to find in an Role Playing Game.
 
+> Game Masters who want to enable this theme for players. It is recommended for you to go to `Configure Settings` > `libThemer` and enable `GM Theme`. This will apply your theme options to all your players. However if you'd like to leave theming up to your players, they can always go to `Configure Theme` > `Manage Presets` and `Activate` the **Fantasy RPG UI** Theme.
 
-### Supported Features <img src="https://geps.dev/progress/57" height="16"/>
+### Supported Features <img src="https://geps.dev/progress/55" height="16"/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Dialog Windows<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Journal Sheet<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
