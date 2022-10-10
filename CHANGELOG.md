@@ -4,12 +4,12 @@
   - Heading for Settings Sidebar
 - Added Support for Window Controls
 - Fixed Compendium and Settings Sidebar Headings from staying fixed while scrolling through content
-- Removed Styling from Monster Blocks
+- Removed Theme Styling from Monster Blocks (Basically wont attempt to style these windows)
 - Changed Migration Logic to handle updating Preset only if GM
 
 # Version 0.3.5 - Compatibility Patches
-- Removed Styling from About Time
-- Removed Styling from Simple Calendar
+- Removed Theme Styling from About Time (Basically wont attempt to style these windows)
+- Removed Theme Styling from Simple Calendar (Basically wont attempt to style these windows)
 - Added Support for Always HP
 - Added Support for Pop Out
   - Header Buttons will not be seen in the PopOut. Click on the couplings will trigger the button, but there is no way to see the text of the button at the moment.
