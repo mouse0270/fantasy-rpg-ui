@@ -39,14 +39,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 50%;
-  margin: 0rem;
+  margin: 0px auto;
   padding: 0px 36px;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   white-space: nowrap;
   width: 80%;
+}
+#sidebar .tab[data-tab].settings-sidebar h2:nth-of-type(1) {
+  -webkit-transform: translate(0, 0px);
+          transform: translate(0, 0px);
 }
 #sidebar .tab[data-tab].settings-sidebar h2:nth-of-type(2) {
   background-image: var(--rpg-ui-sidebar-settings-ribbon-general-info);
@@ -60,10 +60,6 @@
 #sidebar .tab[data-tab].settings-sidebar h2:nth-of-type(4) {
   background-image: var(--rpg-ui-sidebar-settings-ribbon-game-access);
 }
-#sidebar .tab[data-tab].settings-sidebar h2 + * {
-  padding-top: 30px;
-  margin-top: 10px;
-}
 #sidebar .tab[data-tab].settings-sidebar ul#game-details {
   background-color: transparent;
   background-image: none;
@@ -76,9 +72,9 @@
   border-width: 5px;
   color: var(--color-text-dark-primary);
   margin: 0.25rem 0.5rem;
-  margin-top: 10px;
+  margin-top: -30px;
   padding: 0.5rem 1rem;
-  padding-top: 30px;
+  padding-top: 2rem;
 }
 #sidebar .tab[data-tab].settings-sidebar h2 + div {
   -webkit-box-align: center;
@@ -91,8 +87,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
 }
 #sidebar .tab[data-tab].settings-sidebar h2 + div > button {
   -webkit-box-align: center;

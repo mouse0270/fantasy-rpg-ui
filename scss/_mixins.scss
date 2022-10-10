@@ -97,7 +97,7 @@
 }
 
 @mixin windowContentBackground($background) {
-	background: transparent;
+	background: none;
 	border-image-source: var($background);
 	border-image-repeat: repeat;
 	border-image-slice: 60 fill;

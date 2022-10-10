@@ -243,11 +243,31 @@
 						}
 					}
 				},
+				"system": {
+					"pf2e": {
+						"name": "Enable Theme for Pathfinder 2e",
+						"hint": "When enabled it will style elements used in the Pathfinder 2e System.",
+						"sidebar": {
+							"settings": {
+								"ribbon.pf2e.name": "Pathfinder 2e Ribbon Color",
+								"ribbon.pf2e.hint": "Select the ribbon color you would like to use for the Pathfinder 2e heading."
+							}
+						},
+						"actor.nav": {
+							"buttonStyle.name": "Actors Navigation Button Style",
+							"buttonStyle.hint": "Changes the Style of the Navigation Buttons on Pathfinder 2e Actor Sheets."
+						}
+					}
+				},
 				"modules": {
 					"foundry-taskbar": {
 						"name": "Enable Theme for Taskbar",
 						"hint": "When enabled it will style elements used in the Module Taskbar by theripper93."
 					}, 
+					"window-controls": {
+						"name": "Enable Theme for Window Controls",
+						"hint": "When enabled it will style elements used in the Module Window Controls by JeansenVaars."
+					},
 					"always-hp": {
 						"name": "Enable Theme for Always HP",
 						"hint": "When enabled it will style elements used in the Module Always HP by IronMonk."
@@ -256,9 +276,7 @@
 			}
 		},
 		"migration": {
-			"v033": {
-				"updatePreset": "Fantast RPG UI has been updated to version 0.3.3, would you like to enable the new theme options?"
-			}
+			"updatePreset": "Your Fantasy RPG UI theme appears out of date, would you like to apply the new features?"
 		}
 	}
 }

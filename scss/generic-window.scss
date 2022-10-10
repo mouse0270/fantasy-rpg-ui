@@ -6,28 +6,31 @@
 	--rpg-ui-generic-foreground: var(--rpg-ui-background-parchment);
 }
 	
+$exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet';
+
 /*======================================================================*/
 /* FORMAT GENERIC TITLE
 /*======================================================================*/
-.app.window-app:not(.simple-calendar) {
+.app.window-app:not(#{$exclude}) {
 	@include windowHeader(--rpg-ui-generic-title);
 }
 
 /*======================================================================*/
 /* FORMAT GENERIC CONTENT
 /*======================================================================*/
-.app.window-app:not(.simple-calendar) {
+.app.window-app:not(#{$exclude}) {
+	@include windowHeader(--rpg-ui-generic-title);
+	
 	.window-content {
 		@include windowContentBackground(--rpg-ui-generic-background);
-	
+		
 		padding: 0.5rem;
-
+	
 		> * {
 			@include windowContentParchment(--rpg-ui-generic-foreground);
 		}
 	}
 }
-
 	
 /*======================================================================*/
 /* FIX FOR SVELTE APPS ADDING OVERFLOW: INHERIT
@@ -102,3 +105,4 @@ html #mcc footer a {
 		}
 	}
 }
+

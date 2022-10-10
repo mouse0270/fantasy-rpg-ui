@@ -36,12 +36,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 50%;
-  margin: 0rem;
+  margin: 0rem auto;
   padding: 0px 36px;
-  position: absolute;
-  -webkit-transform: translate(-50%, -10px);
-          transform: translate(-50%, -10px);
+  -webkit-transform: translate(0, 0px);
+          transform: translate(0, 0px);
   white-space: nowrap;
   width: 80%;
 }
@@ -57,7 +55,7 @@
   border-width: 5px;
   color: var(--color-text-dark-primary);
   margin: 0.25rem 0.5rem;
-  margin-top: 10px;
+  margin-top: -30px;
   padding: 0.5rem 1rem;
   padding-top: 30px;
 }

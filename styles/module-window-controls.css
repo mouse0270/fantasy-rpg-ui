@@ -1,0 +1,129 @@
+/*======================================================================*/
+/* FORMAT MINIMIZE BUTTON
+/*======================================================================*/
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) {
+  /* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+  /* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.minimize {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+  background-image: var(--rpg-ui-button-border) !important;
+  color: white;
+  height: 35px !important;
+  max-width: 35px !important;
+  padding: 0px !important;
+  right: -46px !important;
+  -webkit-transform: translate(-20px, 15px) !important;
+          transform: translate(-20px, 15px) !important;
+  z-index: -1 !important;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.minimize i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.minimize:hover, html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.minimize:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.pin {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+  background-image: var(--rpg-ui-button-border) !important;
+  color: white;
+  height: 35px !important;
+  max-width: 35px !important;
+  padding: 0px !important;
+  right: -46px !important;
+  -webkit-transform: translate(5px, 15px) !important;
+          transform: translate(5px, 15px) !important;
+  z-index: -2 !important;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.pin i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.pin:hover, html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.pin:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) .window-header a.header-button.pin ~ a.header-button.close {
+  -webkit-transform: translate(-73px, 15px) !important;
+          transform: translate(-73px, 15px) !important;
+  z-index: -3 !important;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar).minimized .window-header {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar).minimized .window-header .window-title {
+  background-image: none;
+  left: auto;
+  min-width: auto;
+  padding: 0;
+  padding-right: 2rem;
+  position: relative;
+  -webkit-transform: none;
+          transform: none;
+  white-space: normal;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar).minimized .window-header .window-title ~ a {
+  display: none !important;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar).minimized .window-header .window-title ~ a.minimize {
+  background-image: none !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: auto !important;
+  min-height: auto;
+  position: absolute;
+  right: 10px !important;
+  top: 50%;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  z-index: 1 !important;
+  width: auto;
+}
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar).minimized .window-header .window-title ~ a.minimize:before {
+  content: none;
+}

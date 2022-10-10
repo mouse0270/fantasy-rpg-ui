@@ -189,7 +189,7 @@
 /* FORMAT DIALOG CONTENT
 /*======================================================================*/
 .window-app.dialog .window-content {
-  background: transparent;
+  background: none;
   border-image-source: var(--rpg-ui-dialog-background);
   border-image-repeat: repeat;
   border-image-slice: 60 fill;
@@ -212,7 +212,7 @@
 
 .window-app.sheet-config .window-content,
 .window-app.folder-edit .window-content {
-  background: transparent;
+  background: none;
   border-image-source: var(--rpg-ui-dialog-background);
   border-image-repeat: repeat;
   border-image-slice: 60 fill;

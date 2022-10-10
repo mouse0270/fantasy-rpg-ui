@@ -38,7 +38,7 @@
 This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme gives Foundry's UI a classic RPG interface you'd expect to find in an Role Playing Game.
 
 
-### Supported Features <img src="https://geps.dev/progress/52" height="16"/>
+### Supported Features <img src="https://geps.dev/progress/57" height="16"/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Dialog Windows<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Journal Sheet<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
@@ -50,7 +50,7 @@ This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme giv
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Sidebar<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Navigation<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Chat<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Tab - Combat<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Combat<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Scenes<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Actors<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Journal<br/>
@@ -92,16 +92,24 @@ If you find any other windows or elements unthemed please let me know.
 <!-- SUPPORTED MODULES/SYSTEMS -->
 ## Supported Packages
 ### Full Support
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [D&D 5e System](https://foundryvtt.com/packages/dnd5e)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Always HP](https://foundryvtt.com/packages/always-hp)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Module Compatibility Checker](https://foundryvtt.com/packages/mcc)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Taskbar](https://theripper93.com/#/module/foundry-taskbar)<br/>
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Window Controls](https://foundryvtt.com/packages/window-controls)<br/>
 
 ### Partial Support
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Monster Blocks](https://foundryvtt.com/packages/monsterblock)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed - *Does some math when opening the window, which causes issues theming it*<br/>
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Pathfinder 2nd Edition](https://foundryvtt.com/packages/pf2e)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Character Sheets<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> I don't play Pathfinder 2e, so some elements may not be styled correctly, if you com across any, please let me know.<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [PopOut!](https://foundryvtt.com/packages/popout)<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Header buttons are outside of the window. Clicking on the `couplings` will trigger the button, but you can't see what you are clicking on.<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar)<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed - *Uses a lot of custom CSS, will need a lot of custom support.*<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [SmallTime](https://foundryvtt.com/packages/smalltime)<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed<br/>
@@ -109,12 +117,12 @@ If you find any other windows or elements unthemed please let me know.
 ### Planned Support
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Token Action HUD]()<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
-<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [D&D 5e System]()<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
-<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Pathfinder 2nd Edition]()<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Tidy5e Sheet]()<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Planned Support<br/>
+
+## Unknown Support
+<img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Monks Enhanced Journal](https://foundryvtt.com/packages/monks-enhanced-journal)<br/>
+Technically this module works with Fantasy RPG UI, however it greatly strays away from the default journal layout. After a quick look through the module, it would require a lot of redesigning of both custom CSS and JavaScript for me to get it to a point that I would like. At this time I am not sure If I will be adding support or listing this module as unsupported.
 ## Unsupported
 Any package listed here is because I am either unable to support it or wont support it, please don't ask
 

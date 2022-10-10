@@ -1,0 +1,140 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-system-pf2e-actor-character-background: var(--rpg-ui-generic-background);
+	--rpg-ui-system-pf2e-actor-character-foreground: var(--rpg-ui-generic-foreground);
+	--rpg-ui-system-pf2e-actor-character-nav-button-style: var(--rpg-ui-button-circle);
+	--rpg-ui-system-pf2e-actor-character-nav-button-style-pressed: var(--rpg-ui-button-circle-pressed);
+	--rpg-ui-system-pf2e-actor-character-nav-button-style-padding: 4px;
+	--rpg-ui-sidebar-settings-ribbon-pf2e: var(--rpg-ui-title-ribbon-green);
+}
+
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - SETTINGS
+/*======================================================================*/
+html #sidebar {
+	.tab[data-tab].settings-sidebar {
+		#pf2e-license {
+			padding-bottom: 0px;
+		}
+		#pf2e-troubleshooting {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+    		padding-bottom: 10px;
+
+			> button {
+				@include button;
+
+				margin-top: 0px;
+			}
+		}
+
+		h2 {	
+			&:nth-of-type(4) {
+				background-image: var(--rpg-ui-sidebar-settings-ribbon-pf2e);
+			}	
+			&:nth-of-type(5) {
+				background-image: var(--rpg-ui-sidebar-settings-ribbon-game-access);
+			}
+		}
+	}
+}
+
+
+
+/*======================================================================*/
+/* FORMAT ACTOR SHEET - CHARACTER
+/*======================================================================*/
+.app.window-app.sheet.actor.character, .app.window-app.sheet.actor.vehicle {
+	.window-header .window-title {
+
+	}
+
+	.window-content {
+		border-image-source: var(--rpg-ui-system-pf2e-actor-character-background);
+		border-width: 0px;
+
+		> form {
+			background-image: none;
+			border-image-source: none;
+			border-width: 0px;
+			grid: "sidebar header" 100px
+				"sidebar nav" minmax(min-content,max-content)
+				"sidebar content" 1fr/230px 1fr;
+			padding: 0px;
+
+			header.char-header {
+				align-items: end;
+				border-image-source: var(--rpg-ui-content-board-1);
+				border-image-repeat: repeat;
+				border-image-slice: 50 fill;
+				border-image-width: 20px;
+				border-width: 0px;
+				margin: 0.5rem;
+				padding: 0.5rem 0.75rem;
+
+				.char-details {
+					margin: 0px;
+				}
+				.char-level {
+					padding: 0px;
+				}
+			}
+
+			nav.sheet-navigation {
+				border-image-source: var(--rpg-ui-background-button);
+				border-image-repeat: repeat;
+				border-image-slice: 60 fill;
+				border-image-width: 20px;
+				border-bottom: 0px;
+				box-shadow: none;
+				height: auto;
+				padding: 0.75rem 0.5rem;
+				position: absolute;
+				right: calc(1rem + 4px);
+				top: 100px;
+				z-index: 1;
+
+				.item {
+					background-image: var(--rpg-ui-system-pf2e-actor-character-nav-button-style);
+					background-size: 100% 100%;
+					border-radius: 0px;
+					box-shadow: none;
+					height: 30px;
+					margin: 0px 2px;
+					padding-bottom: var(--rpg-ui-system-pf2e-actor-character-nav-button-style-padding);
+					width: 30px;
+
+					&.active, &:hover {
+						background: var(--rpg-ui-system-pf2e-actor-character-nav-button-style-pressed);
+						background-size: 100% 100%;
+						padding-bottom: 0px;
+						padding-top: var(--rpg-ui-system-pf2e-actor-character-nav-button-style-padding);
+						transform: none;
+					}
+				}
+			}
+
+			.sheet-body {
+				border-image-source: var(--rpg-ui-system-pf2e-actor-character-foreground);
+				border-image-repeat: repeat;
+				border-image-slice: 85 fill;
+				border-image-width: 20px;
+				border-width: 15px;
+				border-style: solid;
+				margin: 0.5rem;
+				padding: 0.5rem;
+
+				.sheet-content {
+					padding-top: 2rem;
+
+					.inventory {
+						padding-top: 2rem;
+					}
+				}
+			}
+		}
+	}
+}

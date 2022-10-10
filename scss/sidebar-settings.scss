@@ -11,7 +11,6 @@
 /*======================================================================*/
 /* FORMAT SIDEBAR - CHAT
 /*======================================================================*/
-
 #sidebar {
 	.tab[data-tab].settings-sidebar {
 		background-color: transparent;
@@ -37,14 +36,14 @@
 			display: flex;   
 			height: 40px;
 			justify-content: center;
-			left: 50%;
-			margin: 0rem;
+			margin: 0px auto;
 			padding: 0px 36px;
-			position: absolute;
-    		transform: translateX(-50%);
 			white-space: nowrap;
 			width: 80%;
-
+			
+			&:nth-of-type(1) {
+				transform: translate(0, 0px);
+			}
 			&:nth-of-type(2) {
 				background-image: var(--rpg-ui-sidebar-settings-ribbon-general-info);
 			}	
@@ -59,11 +58,6 @@
 			}
 		}
 
-		h2 + * {
-			padding-top: 30px;
-    		margin-top: 10px
-		}
-
 		ul#game-details {
 			background-color: transparent;
 			background-image: none;
@@ -76,17 +70,17 @@
 			border-width: 5px;
 			color: var(--color-text-dark-primary);
 			margin: 0.25rem 0.5rem;
-    		margin-top: 10px;
+			margin-top: -30px;
 			padding: 0.5rem 1rem;
-			padding-top: 30px;
+			padding-top: 2rem;
 		}
 
 		h2 + div {
 			align-items: center;
 			display: flex;
 			flex-direction: column;
-			margin-top: 30px;
-    		padding-bottom: 10px;
+			margin-top: 10px;
+    		padding-bottom: 20px;
 
 			> button {
 				@include button;

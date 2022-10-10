@@ -696,6 +696,67 @@ export default class CORE {
 			}
 		}
 
+		if ((game.system.id ?? '') == 'pf2e') {
+			fantasyRPGUITheme['libraryFantasyRPGUISidebar']['settings']['libraryFantasyRPGUISidebarSettings']['settings']['--rpg-ui-sidebar-settings-ribbon-pf2e'] = {
+				name: `${MODULE.ID}.theme.library.system.pf2e.sidebar.settings.ribbon.pf2e.name`,
+				hint: `${MODULE.ID}.theme.library.system.pf2e.sidebar.settings.ribbon.pf2e.hint`,
+				type: 'choices',
+				default: 'ribbon-purple',
+				format: 'var(--rpg-ui-title-{value})',
+				choices: Object.fromEntries(Object.entries(CORE.#TITLECHOICES).filter(([key, value]) => key.startsWith('ribbon')))
+			};
+
+			fantasyRPGUITheme['libraryFantasyRPGUISystemPF2e'] = {
+				name: `${MODULE.ID}.theme.library.system.pf2e.name`,
+				hint: `${MODULE.ID}.theme.library.system.pf2e.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/system-pf2e.css`,
+					type: 'text/css'
+				}],
+				settings: {
+					'--rpg-ui-system-pf2e-actor-character-background': {
+						name: `${MODULE.ID}.theme.options.background.name`,
+						hint: `${MODULE.ID}.theme.options.background.hint`,
+						type: 'choices',
+						default: 'stone',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					},
+					'--rpg-ui-system-pf2e-actor-character-foreground': {
+						name: `${MODULE.ID}.theme.options.foreground.name`,
+						hint: `${MODULE.ID}.theme.options.foreground.hint`,
+						type: 'choices',
+						default: 'parchment',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					},
+					'--rpg-ui-system-pf2e-actor-character-nav-button-style': {
+						name: `${MODULE.ID}.theme.library.system.pf2e.actor.nav.buttonStyle.name`,
+						hint: `${MODULE.ID}.theme.library.system.pf2e.actor.nav.buttonStyle.hint`,
+						type: 'choices',
+						default: '--rpg-ui-button-circle',
+						format: 'var({value})',
+						choices: Object.fromEntries(Object.entries(CORE.#BUTTONSTYLES).filter(([key, value]) => !key.endsWith('border')))
+					}					
+				}
+			}
+		}
+
+		if (game.modules.get('window-controls')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesWindowControls'] = {
+				name: `${MODULE.ID}.theme.library.modules.window-controls.name`,
+				hint: `${MODULE.ID}.theme.library.modules.window-controls.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-window-controls.css`,
+					type: 'text/css'
+				}]
+			}
+		}
+
 		if (game.modules.get('foundry-taskbar')?.active ?? false) {
 			fantasyRPGUITheme['libraryFantasyRPGUIModulesFoundryTaskbar'] = {
 				name: `${MODULE.ID}.theme.library.modules.foundry-taskbar.name`,
@@ -756,7 +817,10 @@ export default class CORE {
 				'--rpg-ui-interface-controls-style-sub', 
 				'--rpg-ui-interface-controls-style-toggle', 
 				'--rpg-ui-sidebar-combat-button-style',
-				'--rpg-ui-prosemirror-button-style'
+				'--rpg-ui-prosemirror-button-style',
+
+				// SYSTEM SUPPORT - PF2E
+				'--rpg-ui-system-pf2e-actor-character-nav-button-style'
 			];
 
 			if (checkFor.includes(key)) {

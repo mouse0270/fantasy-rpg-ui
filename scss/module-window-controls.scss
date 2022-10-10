@@ -1,0 +1,83 @@
+@import '_mixins';
+
+:root {
+
+}
+
+/*======================================================================*/
+/* FORMAT MINIMIZE BUTTON
+/*======================================================================*/
+html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit):not(.simple-calendar) {
+	/* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+	.window-header a.header-button.minimize {
+		@include windowButton;
+
+		background-image: var(--rpg-ui-button-border) !important;
+		color: white;
+		height: 35px !important;
+		max-width: 35px !important;
+		padding: 0px !important;
+		right: -46px !important;
+		transform: translate(-20px, 15px) !important;
+		z-index: -1 !important;
+	}	
+	
+	/* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
+	.window-header a.header-button.pin {
+		@include windowButton;
+
+		background-image: var(--rpg-ui-button-border) !important;
+		color: white;
+		height: 35px !important;
+		max-width: 35px !important;
+		padding: 0px !important;
+		right: -46px !important;
+		transform: translate(5px, 15px) !important;
+		z-index: -2 !important;
+
+		~ a.header-button.close {
+			transform: translate(-73px, 15px) !important;
+			z-index: -3 !important;
+		}
+	}
+
+	&.minimized {
+		.window-header {
+			flex: auto;
+
+			.window-title {
+				background-image: none;
+				left: auto;
+				min-width: auto;
+				padding: 0;
+				padding-right: 2rem;
+				position: relative;
+				transform: none;
+				white-space: normal;
+
+				&~ a {
+					display: none !important;
+				}
+				
+
+				&~ a.minimize {
+					background-image: none !important;
+					display: flex !important;
+					height: auto !important;
+					min-height: auto;
+					position: absolute;
+					right: 10px !important;
+					top: 50%;
+					transform: translateY(-50%)!important;
+					z-index: 1 !important;
+					width: auto;
+					
+
+					&:before {
+						content: none;
+					}
+				}
+			}
+		}
+	}
+}

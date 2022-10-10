@@ -194,7 +194,7 @@
 /* FORMAT JOURNAL SIDEBAR
 /*======================================================================*/
 .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar {
-  background: transparent;
+  background: none;
   border-image-source: var(--rpg-ui-journal-background-left);
   border-image-repeat: repeat;
   border-image-slice: 60 fill;
@@ -346,7 +346,7 @@
   padding: 0px 55px;
 }
 .window-app.sheet.journal-sheet.journal-entry .window-content .journal-entry-content {
-  background: transparent;
+  background: none;
   border-image-source: var(--rpg-ui-journal-background-right);
   border-image-repeat: repeat;
   border-image-slice: 60 fill;
