@@ -5,7 +5,7 @@
 /*======================================================================*/
 /* FORMAT SIDEBAR - CHAT - BETTER ROLLS
 /*======================================================================*/
-#sidebar .tab[data-tab].chat-sidebar #chat-log + .brsw-chat-form {
+#sidebar .tab[data-tab].chat-sidebar .brsw-chat-form {
   background-color: transparent;
   background-image: none;
   border-image-source: var(--rpg-ui-module-sidebar-betterrolls-swade2-background);
@@ -18,9 +18,9 @@
   margin: 0.25rem 0.5rem;
   padding: 0.5rem 1rem;
 }
-#sidebar .tab[data-tab].chat-sidebar #chat-log + .brsw-chat-form .brsw-tab-content {
+#sidebar .tab[data-tab].chat-sidebar .brsw-chat-form .brsw-tab-content {
   height: auto;
 }
-#sidebar .tab[data-tab].chat-sidebar #chat-log + .brsw-chat-form .brsw-tab-content > div > span:first-of-type {
+#sidebar .tab[data-tab].chat-sidebar .brsw-chat-form .brsw-tab-content > div > span:first-of-type {
   display: block;
 }

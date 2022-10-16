@@ -279,6 +279,10 @@
 					"forien-quest-log": {
 						"name": "Enable Theme for Forien Quest Log",
 						"hint": "When enabled it will style elements used in the Module Forien Quest Log by Forien & TyphonJS."
+					},
+					"betterrolls-swade2": {
+						"name": "Enable Theme for Better Rolls 2 for Savage Worlds",
+						"hint": "When enabled it will style elements used in the Module Better Rolls 2 for Savage Worlds by Javier Rivera."
 					}
 				}
 			}

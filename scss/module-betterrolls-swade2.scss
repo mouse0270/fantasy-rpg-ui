@@ -9,7 +9,7 @@
 /*======================================================================*/
 #sidebar {
 	.tab[data-tab].chat-sidebar {
-		#chat-log + .brsw-chat-form {
+		.brsw-chat-form {
 			background-color: transparent;
 			background-image: none;
 			border-image-source: var(--rpg-ui-module-sidebar-betterrolls-swade2-background);
