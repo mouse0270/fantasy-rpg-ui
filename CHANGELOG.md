@@ -3,6 +3,8 @@
 - Removed `.sheet.actor` from General Window Theming. This will allow systems and modules to theme the actor sheet instead.
   - Added Option to theme `.sheet.actor`
 - Added Support for **Better Rolls 2 for Savage Worlds**
+  - Fixed Selector for **Better Rolls 2 for Savage Worlds**
+  - Fixed Missing Localization for **Better Rolls 2 for Savage Worlds**
 - Hide images in Dialog buttons
   - Temporary Fix for MIDI - QOL Reaction Dialog
 
