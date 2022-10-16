@@ -1,4 +1,4 @@
-# Version 0.3.7 - Compatibility Patches
+# Version 0.3.7.1 - Compatibility Patches
 - Fixed issue with Small Time Settings Widget.
 - Removed `.sheet.actor` from General Window Theming. This will allow systems and modules to theme the actor sheet instead.
   - Added Option to theme `.sheet.actor`
