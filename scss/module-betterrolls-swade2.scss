@@ -1,0 +1,34 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-module-sidebar-betterrolls-swade2-background: var(--rpg-ui-background-wood);
+}
+
+/*======================================================================*/
+/* FORMAT SIDEBAR - CHAT - BETTER ROLLS
+/*======================================================================*/
+#sidebar {
+	.tab[data-tab].chat-sidebar {
+		#chat-log + .brsw-chat-form {
+			background-color: transparent;
+			background-image: none;
+			border-image-source: var(--rpg-ui-module-sidebar-betterrolls-swade2-background);
+			border-image-repeat: repeat;
+			border-image-slice: 60 fill;
+			border-image-width: 20px;
+			border-color: transparent !important;
+			border-style: solid;
+			border-width: 5px;
+			margin: 0.25rem 0.5rem;
+			padding: 0.5rem 1rem;
+			
+			.brsw-tab-content {
+				height: auto;
+
+				&> div > span:first-of-type {
+					display: block;
+				} 
+			}
+		}
+	}
+}

@@ -1,3 +1,11 @@
+# Version 0.3.7 - Compatibility Patches
+- Fixed issue with Small Time Settings Widget.
+- Removed `.sheet.actor` from General Window Theming. This will allow systems and modules to theme the actor sheet instead.
+  - Added Option to theme `.sheet.actor`
+- Added Support for **Better Rolls 2 for Savage Worlds**
+- Hide images in Dialog buttons
+  - Temporary Fix for MIDI - QOL Reaction Dialog
+
 # Version 0.3.6 - Compatibility Patches
 - Added Basic Support to Pathfinder 2e System
   - Character Sheets

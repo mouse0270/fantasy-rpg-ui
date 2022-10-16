@@ -1,11 +1,9 @@
 @import '_mixins'; 
 
-$exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log';
-
 /*======================================================================*/
 /* FORMAT HEADER BUTTONS - HIDDEN
 /*======================================================================*/
-.app.window-app:not(#{$exclude}) {
+#forien-quest-log.app.window-app.forien-quest-log {
 	.window-header .window-title ~ a:not(.close) {
 		background-image: none;
 		font-size: 0rem;

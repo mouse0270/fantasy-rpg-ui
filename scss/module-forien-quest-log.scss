@@ -1,0 +1,52 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-module-forien-quest-log-title: var(--rpg-ui-title-iron);
+	--rpg-ui-module-forien-quest-log-background: var(--rpg-ui-background-stone);
+	--rpg-ui-module-forien-quest-log-foreground: var(--rpg-ui-background-parchment);
+}
+
+/*======================================================================*/
+/* FORMAT FORIEN QUEST LOG
+/*======================================================================*/
+#forien-quest-log.app.window-app.forien-quest-log {
+	@include windowHeader(--rpg-ui-module-forien-quest-log-title);
+	
+	.window-content {
+		@include windowContentBackground(--rpg-ui-module-forien-quest-log-background);
+		
+		padding: 0.5rem;
+	
+		> * {
+			@include windowContentParchment(--rpg-ui-module-forien-quest-log-foreground);
+		}
+		.quest-log.bookmarks nav.log-tabs .item {
+			align-items: center;
+			color: var(--color-text-light-highlight);
+			display: flex;
+			font-size: var(--font-size-14);
+			height: 40px;
+			justify-content: right;
+			margin-bottom: 10px;
+    		max-width: 140px;
+			padding-left: 1rem;
+			width: 140px;
+		}
+		.quest-log.bookmarks nav.log-tabs .item:before {
+			align-items: center;
+			background-image: var(--rpg-ui-button-with-rings) !important;
+			background-color: transparent;
+			background-size: 100% 100%;
+			content: "";
+			display: flex;
+			height: 40px;
+			left: 7px;
+    		max-width: 115px;
+			padding-left: 35px;
+			position: absolute;
+			transform: scaleX(-1);
+			width: 115px;
+			z-index: -1;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@import '_mixins';
+
+:root {
+	--rpg-ui-sheet-actor-title: var(--rpg-ui-title-iron);
+	--rpg-ui-sheet-actor-background: var(--rpg-ui-background-stone);
+	--rpg-ui-sheet-actor-foreground: var(--rpg-ui-background-parchment);
+}
+/*======================================================================*/
+/* FORMAT SHEET - ACTOR
+/*======================================================================*/
+.app.window-app.sheet.actor:not(.monsterblock) {
+	@include windowHeader(--rpg-ui-sheet-actor-title);
+	
+	.window-content {
+		@include windowContentBackground(--rpg-ui-sheet-actor-background);
+		
+		padding: 0.5rem;
+	
+		> * {
+			@include windowContentParchment(--rpg-ui-sheet-actor-foreground);
+		}
+	}
+}

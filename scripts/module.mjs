@@ -148,6 +148,52 @@ export default class CORE {
 					}
 				}
 			},
+			libraryFantasyRPGUISheetActor: {
+				name: `${MODULE.ID}.theme.library.sheetActor.name`,
+				hint: `${MODULE.ID}.theme.library.sheetActor.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/sheet-actor.css`,
+					type: 'text/css'
+				}],
+				settings: {
+					'--rpg-ui-sheet-actor-title': {
+						name: `${MODULE.ID}.theme.options.title.name`,
+						hint: `${MODULE.ID}.theme.options.title.hint`,
+						type: 'choices',
+						default: 'iron',
+						format: 'var(--rpg-ui-title-{value})',
+						choices: CORE.#TITLECHOICES
+					},
+					'libraryFantasyRPGUISheetActorHideHeaderButtons': {
+						name: `${MODULE.ID}.theme.options.hideHeaderButtons.name`,
+						hint: `${MODULE.ID}.theme.options.hideHeaderButtons.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/sheet-actor-hide-header-buttons.css`,
+							type: 'text/css'
+						}]
+					},
+					'--rpg-ui-sheet-actor-background': {
+						name: `${MODULE.ID}.theme.options.background.name`,
+						hint: `${MODULE.ID}.theme.options.background.hint`,
+						type: 'choices',
+						default: 'stone',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					},
+					'--rpg-ui-sheet-actor-foreground': {
+						name: `${MODULE.ID}.theme.options.foreground.name`,
+						hint: `${MODULE.ID}.theme.options.foreground.hint`,
+						type: 'choices',
+						default: 'parchment',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					}
+				}
+			},
 			libraryFantasyRPGUIProseMirror: {
 				name: `${MODULE.ID}.theme.library.proseMirror.name`,
 				hint: `${MODULE.ID}.theme.library.proseMirror.hint`,
@@ -744,14 +790,78 @@ export default class CORE {
 			}
 		}
 
-		if (game.modules.get('window-controls')?.active ?? false) {
-			fantasyRPGUITheme['libraryFantasyRPGUIModulesWindowControls'] = {
-				name: `${MODULE.ID}.theme.library.modules.window-controls.name`,
-				hint: `${MODULE.ID}.theme.library.modules.window-controls.hint`,
+		if (game.modules.get('betterrolls-swade2')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesBetterrollsSWADE2'] = {
+				name: `${MODULE.ID}.theme.library.modules.betterrolls-swade2.name`,
+				hint: `${MODULE.ID}.theme.library.modules.betterrolls-swade2.hint`,
 				type: 'library',
 				default: false,
 				files: [{
-					name: `./modules/${MODULE.ID}/styles/module-window-controls.css`,
+					name: `./modules/${MODULE.ID}/styles/module-betterrolls-swade2.css`,
+					type: 'text/css'
+				}],
+				settings: {
+					'--rpg-ui-module-sidebar-betterrolls-swade2-background': {
+						name: `${MODULE.ID}.theme.options.background.name`,
+						hint: `${MODULE.ID}.theme.options.background.hint`,
+						type: 'choices',
+						default: 'wood',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					}
+				}
+			}
+		}
+
+		if (game.modules.get('forien-quest-log')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesForienQuestLog'] = {
+				name: `${MODULE.ID}.theme.library.modules.forien-quest-log.name`,
+				hint: `${MODULE.ID}.theme.library.modules.forien-quest-log.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-forien-quest-log.css`,
+					type: 'text/css'
+				}],
+				settings: {
+					'--rpg-ui-module-forien-quest-log-background': {
+						name: `${MODULE.ID}.theme.options.background.name`,
+						hint: `${MODULE.ID}.theme.options.background.hint`,
+						type: 'choices',
+						default: 'stone',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					},
+					'--rpg-ui-module-forien-quest-log-foreground': {
+						name: `${MODULE.ID}.theme.options.foreground.name`,
+						hint: `${MODULE.ID}.theme.options.foreground.hint`,
+						type: 'choices',
+						default: 'parchment',
+						format: 'var(--rpg-ui-background-{value})',
+						choices: CORE.#BACKGROUNDCHOICES
+					},
+					'libraryFantasyRPGUIModulesForienQuestLogHideHeaderButtons': {
+						name: `${MODULE.ID}.theme.options.hideHeaderButtons.name`,
+						hint: `${MODULE.ID}.theme.options.hideHeaderButtons.hint`,
+						type: 'library',
+						default: false,
+						files: [{
+							name: `./modules/${MODULE.ID}/styles/module-forien-quest-log-hide-header-buttons.css`,
+							type: 'text/css'
+						}]
+					}
+				}
+			}
+		}
+
+		if (game.modules.get('always-hp')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesAlwaysHP'] = {
+				name: `${MODULE.ID}.theme.library.modules.always-hp.name`,
+				hint: `${MODULE.ID}.theme.library.modules.always-hp.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-always-hp.css`,
 					type: 'text/css'
 				}]
 			}
@@ -770,14 +880,14 @@ export default class CORE {
 			}
 		}
 
-		if (game.modules.get('always-hp')?.active ?? false) {
-			fantasyRPGUITheme['libraryFantasyRPGUIModulesAlwaysHP'] = {
-				name: `${MODULE.ID}.theme.library.modules.always-hp.name`,
-				hint: `${MODULE.ID}.theme.library.modules.always-hp.hint`,
+		if (game.modules.get('window-controls')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesWindowControls'] = {
+				name: `${MODULE.ID}.theme.library.modules.window-controls.name`,
+				hint: `${MODULE.ID}.theme.library.modules.window-controls.hint`,
 				type: 'library',
 				default: false,
 				files: [{
-					name: `./modules/${MODULE.ID}/styles/module-always-hp.css`,
+					name: `./modules/${MODULE.ID}/styles/module-window-controls.css`,
 					type: 'text/css'
 				}]
 			}

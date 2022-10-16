@@ -5,16 +5,8 @@
 	--rpg-ui-generic-background: var(--rpg-ui-background-stone);
 	--rpg-ui-generic-foreground: var(--rpg-ui-background-parchment);
 }
-	
-$exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet';
 
-/*======================================================================*/
-/* FORMAT GENERIC TITLE
-/*======================================================================*/
-.app.window-app:not(#{$exclude}) {
-	@include windowHeader(--rpg-ui-generic-title);
-}
-
+$exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log';
 /*======================================================================*/
 /* FORMAT GENERIC CONTENT
 /*======================================================================*/
@@ -71,6 +63,40 @@ html #mcc footer a {
 	}
 }
 
+html #smalltime-darkness-config {
+	position: relative;
+
+	.handles {
+		--SMLTME-darkness-container-width: 440px; // 72px
+
+		.sunset-start, .sunset-end {
+			margin-left: -72px;
+		}
+	}
+	.sunrise-start-bounds, .sunrise-end-bounds, .sunset-start-bounds, .sunset-end-bounds {
+		bottom: 2px;
+		margin-bottom: 0px;
+		position: absolute;
+		top: auto;
+	}
+	.sunset-start-bounds, .sunset-end-bounds {
+		left: auto;
+	}
+	.sunrise-start-bounds {
+		width: calc(248px - 72px);
+	}
+	.sunrise-end-bounds {
+		width: calc(240px - 72px);
+	}
+	.sunset-start-bounds {
+		right: -6px;
+		width: calc(250px - 72px);
+	}
+	.sunset-end-bounds {
+		right: -24px;
+		width: calc(240px - 72px);
+	}
+}
 
 /*======================================================================*/
 /* FIX FOR MODULE - ALWAYS HP

@@ -176,7 +176,7 @@
   -webkit-transform: translate(-20px, 780px);
           transform: translate(-20px, 780px);
 }
-.window-app.dialog .window-header a.header-button:not(.close), .window-app.sheet-config .window-header a.header-button:not(.close), .window-app.folder-edit .window-header a.header-button:not(.close) {
+.window-app.dialog .window-header a:not(.close), .window-app.sheet-config .window-header a:not(.close), .window-app.folder-edit .window-header a:not(.close) {
   display: none !important;
 }
 .window-app.dialog .window-header a.header-button.close, .window-app.sheet-config .window-header a.header-button.close, .window-app.folder-edit .window-header a.header-button.close {
@@ -280,6 +280,10 @@
           box-shadow: none;
   padding-bottom: 0px;
   padding-top: 10px;
+}
+.window-app.sheet-config .window-content > form button img,
+.window-app.folder-edit .window-content > form button img {
+  display: none !important;
 }
 
 /*======================================================================*/

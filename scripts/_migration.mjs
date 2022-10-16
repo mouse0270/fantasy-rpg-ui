@@ -39,10 +39,13 @@ Hooks.once('ready', async () => {
 				libraryFantasyRPGUIJournals: {value: 'true'},
 				libraryFantasyRPGUIJournalsHideHeaderButtons: {value: 'true'},
 				libraryFantasyRPGUIProseMirror: {value: 'true'},
+				libraryFantasyRPGUISheetActor: {value: 'true'},
+				libraryFantasyRPGUISheetActorHideHeaderButtons: {value: 'true'},
 				// Systems
 				libraryFantasyRPGUISystemPF2e: {value: 'true'},
 				// Modules
 				libraryFantasyRPGUIModulesAlwaysHP: {value: 'true'},
+				libraryFantasyRPGUIModulesBetterrollsSWADE2: {value: 'true'},
 				libraryFantasyRPGUIModulesFoundryTaskbar: {value: 'true'},
 				libraryFantasyRPGUIModulesWindowControls: {value: 'true'}
 			}

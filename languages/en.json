@@ -105,6 +105,10 @@
 						"hint": "When Enabled this will apply a the theme to all inputs with the type checkbox or radio."
 					}
 				},
+				"sheetActor": {
+					"name": "Enable Theme for Actor Windows.",
+					"hint": "When enabled this will apply the theme to Actor Windows. WARNING: These are not handcrafted and may have issues."
+				},
 				"proseMirror": {
 					"name": "Enable Theme for Prose Mirror",
 					"hint": "When enabled this will apply Fantasy RPG UI Theme to ProseMirror Elements.",
@@ -271,6 +275,10 @@
 					"always-hp": {
 						"name": "Enable Theme for Always HP",
 						"hint": "When enabled it will style elements used in the Module Always HP by IronMonk."
+					},
+					"forien-quest-log": {
+						"name": "Enable Theme for Forien Quest Log",
+						"hint": "When enabled it will style elements used in the Module Forien Quest Log by Forien & TyphonJS."
 					}
 				}
 			}

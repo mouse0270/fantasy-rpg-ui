@@ -42,24 +42,24 @@ This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme giv
 ### Supported Features <img src="https://geps.dev/progress/55" height="16"/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Dialog Windows<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Journal Sheet<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Edit Journal Content<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Interface<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Left UI - Controls<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Top UI - Scene Navigation<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Bottom UI - Hotbar<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Players Widget<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Left UI - Controls<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Top UI - Scene Navigation<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Bottom UI - Hotbar<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Players Widget<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Sidebar<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Navigation<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Chat<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Combat<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Scenes<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Actors<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Journal<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Tables<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Cards<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Playlist<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Compendium<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Settings<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Navigation<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Chat<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Combat<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Scenes<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Actors<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Journal<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Tables<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Cards<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Playlist<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Compendium<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Tab - Settings<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Configure Game Settings<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Module Management<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Configure Controls<br/>
@@ -73,14 +73,15 @@ This is a UI Overhaul for Foundry Virtual Tabletop's UI elements. This theme giv
 
 ---
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Generic Windows<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Inputs<br/>
-    <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Checkbox<br/>
-    <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Radio<br/>
-    <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Select<br/>
-    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Text<br/>
-    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Textarea<br/>
-    <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Number<br/>
-    <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Range<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Configure Game Settings<br/>
+ <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Inputs<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Checkbox<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Radio<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Select<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Text<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Textarea<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Number<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Range<br/>
 *This will apply a generic theme to all windows. Enabling individual theme options will have a more hand crafted experiance. Enable this option if you want the Fantasy RPG UI on more elements.*<br/>
 
 ---
@@ -95,13 +96,19 @@ If you find any other windows or elements unthemed please let me know.
 ### Full Support
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [D&D 5e System](https://foundryvtt.com/packages/dnd5e)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Always HP](https://foundryvtt.com/packages/always-hp)<br/>
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Forien's Quest Log](https://foundryvtt.com/packages/forien-quest-log)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Module Compatibility Checker](https://foundryvtt.com/packages/mcc)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Taskbar](https://theripper93.com/#/module/foundry-taskbar)<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Window Controls](https://foundryvtt.com/packages/window-controls)<br/>
 
 ### Partial Support
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Better Rolls 2 for Savage Worlds](https://foundryvtt.com/packages/betterrolls-swade2)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> I do not use this system or module so am unable to verify its completely working<br/>
+<img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Midi Quality of Life Improvements](https://foundryvtt.com/packages/midi-qol)<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fixed issue with dialog button containing images.<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Monster Blocks](https://foundryvtt.com/packages/monsterblock)<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionality<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed - *Does some math when opening the window, which causes issues theming it*<br/>
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [Pathfinder 2nd Edition](https://foundryvtt.com/packages/pf2e)<br/>
   <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Character Sheets<br/>
@@ -109,10 +116,10 @@ If you find any other windows or elements unthemed please let me know.
 <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> [PopOut!](https://foundryvtt.com/packages/popout)<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Header buttons are outside of the window. Clicking on the `couplings` will trigger the button, but you can't see what you are clicking on.<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar)<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionality<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed - *Uses a lot of custom CSS, will need a lot of custom support.*<br/>
 <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> [SmallTime](https://foundryvtt.com/packages/smalltime)<br/>
-  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionaliy<br/>
+  <img src="https://user-images.githubusercontent.com/564874/194057078-2370ef89-4efc-47f6-a7a6-8e801a9ffdc5.png" height="12"/> Fantasy RPG UI does not break its functionality<br/>
   <img src="https://user-images.githubusercontent.com/564874/194056707-6c5aa550-75c4-422d-b4cb-3c655ab96835.png" height="12"/> Themed<br/>
 
 ### Planned Support

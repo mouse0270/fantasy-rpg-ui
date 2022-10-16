@@ -12,7 +12,7 @@
 .window-app.dialog, .window-app.sheet-config, .window-app.folder-edit {
 	@include windowHeader(--rpg-ui-dialog-title);
 	
-	.window-header a.header-button:not(.close) {
+	.window-header a:not(.close) {
 		display: none !important;
 	}
 	.window-header a.header-button.close {
@@ -53,6 +53,10 @@
 		left: 50%;
 		position: absolute;
 		transform: translate(-50%, -3px);
+
+		img {
+			display: none !important;
+		}
 	}
 }
 
