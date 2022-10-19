@@ -53,10 +53,6 @@
 		left: 50%;
 		position: absolute;
 		transform: translate(-50%, -3px);
-
-		img {
-			display: none !important;
-		}
 	}
 }
 
@@ -72,11 +68,16 @@
     margin: 0px;
 	padding: 0px 1rem;
 	position: absolute;
-	transform: translateY(15px);
+	top: 100%;
+	transform: translateY(-25px);
 	width: 100%;
 
 	button {
 		@include button;
+
+		img {
+			display: none !important;
+		}
 	}
 }
 

@@ -7,18 +7,18 @@
 /*======================================================================*/
 /* FORMAT GENERIC CONTENT
 /*======================================================================*/
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header {
   border-width: 0px;
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header .window-title {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header .window-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -40,7 +40,7 @@
   white-space: nowrap;
   z-index: 1;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a.header-button.close {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a.header-button.close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -64,14 +64,14 @@
   width: 35px;
   z-index: -1;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a.header-button.close i {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a.header-button.close i {
   font-size: var(--font-size-18);
   margin-right: 0px;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a.header-button.close:hover, .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a.header-button.close:active {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a.header-button.close:hover, .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a.header-button.close:active {
   background-image: var(--rpg-ui-button-border-pressed);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header .window-title ~ a:not(.close) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header .window-title ~ a:not(.close) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,7 +93,7 @@
   width: 150px;
   z-index: 1;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header .window-title ~ a:not(.close):before {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header .window-title ~ a:not(.close):before {
   background-image: var(--rpg-ui-button-rings);
   background-color: transparent;
   background-size: 100% 100%;
@@ -108,75 +108,75 @@
           transform: translate(-35px, -1px);
   z-index: 1;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(2) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(2) {
   -webkit-transform: translate(-20px, 60px);
           transform: translate(-20px, 60px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(3) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(3) {
   -webkit-transform: translate(-20px, 105px);
           transform: translate(-20px, 105px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(4) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(4) {
   -webkit-transform: translate(-20px, 150px);
           transform: translate(-20px, 150px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(5) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(5) {
   -webkit-transform: translate(-20px, 195px);
           transform: translate(-20px, 195px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(6) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(6) {
   -webkit-transform: translate(-20px, 240px);
           transform: translate(-20px, 240px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(7) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(7) {
   -webkit-transform: translate(-20px, 285px);
           transform: translate(-20px, 285px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(8) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(8) {
   -webkit-transform: translate(-20px, 330px);
           transform: translate(-20px, 330px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(9) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(9) {
   -webkit-transform: translate(-20px, 375px);
           transform: translate(-20px, 375px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(10) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(10) {
   -webkit-transform: translate(-20px, 420px);
           transform: translate(-20px, 420px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(11) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(11) {
   -webkit-transform: translate(-20px, 465px);
           transform: translate(-20px, 465px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(12) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(12) {
   -webkit-transform: translate(-20px, 510px);
           transform: translate(-20px, 510px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(13) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(13) {
   -webkit-transform: translate(-20px, 555px);
           transform: translate(-20px, 555px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(14) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(14) {
   -webkit-transform: translate(-20px, 600px);
           transform: translate(-20px, 600px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(15) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(15) {
   -webkit-transform: translate(-20px, 645px);
           transform: translate(-20px, 645px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(16) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(16) {
   -webkit-transform: translate(-20px, 690px);
           transform: translate(-20px, 690px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(17) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(17) {
   -webkit-transform: translate(-20px, 735px);
           transform: translate(-20px, 735px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-header a:not(.close):nth-child(18) {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-header a:not(.close):nth-child(18) {
   -webkit-transform: translate(-20px, 780px);
           transform: translate(-20px, 780px);
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-content {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-content {
   background: none;
   border-image-source: var(--rpg-ui-generic-background);
   border-image-repeat: repeat;
@@ -187,7 +187,7 @@
   padding: 0px;
   padding: 0.5rem;
 }
-.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log) .window-content > * {
+.app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout) .window-content > * {
   border-image-source: var(--rpg-ui-generic-foreground);
   border-image-repeat: repeat;
   border-image-slice: 85 fill;
@@ -195,6 +195,18 @@
   border-width: 15px;
   border-style: solid;
   padding: 0.5rem;
+}
+
+/*======================================================================*/
+/* FIX FOR FILE PICKER
+/*======================================================================*/
+.filepicker .tiles-list {
+  grid-template-columns: 90px 90px 90px 90px 90px;
+  width: 451px;
+}
+.filepicker .tiles-list li {
+  height: 90px;
+  width: 90px;
 }
 
 /*======================================================================*/

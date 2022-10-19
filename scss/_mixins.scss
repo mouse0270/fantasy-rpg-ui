@@ -1,3 +1,5 @@
+$exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout';
+
 @mixin windowTitle($title) {
 	align-items: center;
     background-image: var($title);

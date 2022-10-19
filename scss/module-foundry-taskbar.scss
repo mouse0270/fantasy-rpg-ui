@@ -54,7 +54,7 @@
 /*======================================================================*/
 /* FORMAT MINIMIZE BUTTON
 /*======================================================================*/
-html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) {
+html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) {
 	/* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
 	.window-header a.header-button.send-to-taskbar {
 		@include windowButton;

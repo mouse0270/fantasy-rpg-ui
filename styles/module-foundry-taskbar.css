@@ -51,10 +51,10 @@
 /*======================================================================*/
 /* FORMAT MINIMIZE BUTTON
 /*======================================================================*/
-html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) {
+html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) {
   /* ADD SUPPORT FOR TASKBAR MINIMIZE FEATURE */
 }
-html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar {
+html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) .window-header a.header-button.send-to-taskbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -87,17 +87,17 @@ html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-h
           transform: translate(-20px, 15px) !important;
   z-index: -1 !important;
 }
-html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar i {
+html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) .window-header a.header-button.send-to-taskbar i {
   font-size: var(--font-size-18);
   margin-right: 0px;
 }
-html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar:hover, html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar:active {
+html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) .window-header a.header-button.send-to-taskbar:hover, html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) .window-header a.header-button.send-to-taskbar:active {
   background-image: var(--rpg-ui-button-border-pressed);
 }
-html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar:before {
+html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) .window-header a.header-button.send-to-taskbar:before {
   content: none !important;
 }
-html .app.window-app:not(.dialog):not(.sheet-config):not(.folder-edit) .window-header a.header-button.send-to-taskbar ~ a.header-button.close {
+html .app.window-app:not(.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock) .window-header a.header-button.send-to-taskbar ~ a.header-button.close {
   -webkit-transform: translate(-99px, 15px) !important;
           transform: translate(-99px, 15px) !important;
   z-index: -2 !important;

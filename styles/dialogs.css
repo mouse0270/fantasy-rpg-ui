@@ -281,10 +281,6 @@
   padding-bottom: 0px;
   padding-top: 10px;
 }
-.window-app.sheet-config .window-content > form button img,
-.window-app.folder-edit .window-content > form button img {
-  display: none !important;
-}
 
 /*======================================================================*/
 /* FORMAT DIALOG BUTTONS
@@ -297,8 +293,9 @@
   margin: 0px;
   padding: 0px 1rem;
   position: absolute;
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  top: 100%;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
   width: 100%;
 }
 .window-app.dialog .window-content .dialog-buttons button {
@@ -336,6 +333,9 @@
           box-shadow: none;
   padding-bottom: 0px;
   padding-top: 10px;
+}
+.window-app.dialog .window-content .dialog-buttons button img {
+  display: none !important;
 }
 
 .window-app.folder-edit .window-content > form button[type=submit] {

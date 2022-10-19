@@ -6,7 +6,6 @@
 	--rpg-ui-generic-foreground: var(--rpg-ui-background-parchment);
 }
 
-$exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log';
 /*======================================================================*/
 /* FORMAT GENERIC CONTENT
 /*======================================================================*/
@@ -21,6 +20,19 @@ $exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock
 		> * {
 			@include windowContentParchment(--rpg-ui-generic-foreground);
 		}
+	}
+}
+	
+/*======================================================================*/
+/* FIX FOR FILE PICKER
+/*======================================================================*/
+.filepicker .tiles-list {
+	grid-template-columns: 90px 90px 90px 90px 90px;
+    width: 451px;
+
+	li {
+		height: 90px;
+		width: 90px;
 	}
 }
 	
