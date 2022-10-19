@@ -2,6 +2,7 @@
 - Removed Theme Styling from Card Hand Mini Toolbar (Basically wont attempt to style these windows)
 - An actual sorta fix for MIDI Reaction Dialog
   - Hide all images in `.dialog .dialog-buttons button` *Buttons will cascade downwards, not a perfect solution*
+- Fixed Tile View in File Picker so images don't scale off of page.
 
 # Version 0.3.7.1 - Compatibility Patches
 - Fixed Selector for **Better Rolls 2 for Savage Worlds**
