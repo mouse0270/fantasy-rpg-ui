@@ -237,8 +237,8 @@
   /* FORMAT DIALOG BUTTONS
   /*======================================================================*/
 }
-.window-app.sheet-config .window-content > form button,
-.window-app.folder-edit .window-content > form button {
+.window-app.sheet-config .window-content > form button[type=submit],
+.window-app.folder-edit .window-content > form button[type=submit] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -263,17 +263,18 @@
   white-space: nowrap;
   left: 50%;
   position: absolute;
-  -webkit-transform: translate(-50%, -3px);
-          transform: translate(-50%, -3px);
+  top: 100%;
+  -webkit-transform: translate(-50%, -25px);
+          transform: translate(-50%, -25px);
 }
-.window-app.sheet-config .window-content > form button:focus,
-.window-app.folder-edit .window-content > form button:focus {
+.window-app.sheet-config .window-content > form button[type=submit]:focus,
+.window-app.folder-edit .window-content > form button[type=submit]:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.window-app.sheet-config .window-content > form button:hover, .window-app.sheet-config .window-content > form button:active,
-.window-app.folder-edit .window-content > form button:hover,
-.window-app.folder-edit .window-content > form button:active {
+.window-app.sheet-config .window-content > form button[type=submit]:hover, .window-app.sheet-config .window-content > form button[type=submit]:active,
+.window-app.folder-edit .window-content > form button[type=submit]:hover,
+.window-app.folder-edit .window-content > form button[type=submit]:active {
   background: var(--rpg-ui-button-big-pressed);
   background-size: 100% 100%;
   -webkit-box-shadow: none;
@@ -336,9 +337,4 @@
 }
 .window-app.dialog .window-content .dialog-buttons button img {
   display: none !important;
-}
-
-.window-app.folder-edit .window-content > form button[type=submit] {
-  -webkit-transform: translate(-50%, 22px);
-          transform: translate(-50%, 22px);
 }

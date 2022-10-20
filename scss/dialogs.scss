@@ -47,12 +47,13 @@
 	/*======================================================================*/
 	/* FORMAT DIALOG BUTTONS
 	/*======================================================================*/
-	button {
+	button[type="submit"] {
 		@include button;
 
 		left: 50%;
 		position: absolute;
-		transform: translate(-50%, -3px);
+		top: 100%;
+		transform: translate(-50%, -25px);
 	}
 }
 
@@ -79,8 +80,4 @@
 			display: none !important;
 		}
 	}
-}
-
-.window-app.folder-edit .window-content > form button[type="submit"] {
-	transform: translate(-50%, 22px);
 }

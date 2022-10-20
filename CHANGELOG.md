@@ -1,3 +1,7 @@
+# Version 0.3.9 - Patches
+- Fixed Dialog buttons being styled. Should now only style `button[type="submit"]` and `.dialog-buttons button`
+- Fixed `.window-resizable-handle` handle being under `.header-button`
+
 # Version 0.3.8 - Compatibility Patches
 - Removed Theme Styling from Card Hand Mini Toolbar (Basically wont attempt to style these windows)
 - An actual sorta fix for MIDI Reaction Dialog
