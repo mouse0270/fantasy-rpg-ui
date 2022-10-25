@@ -1,3 +1,9 @@
+# Version 0.3.10 - Patches
+- Fixed DND5e Advancement Dialog for Classes
+- Improved Style Registration to use libThemer so that custom css variables are in private stylesheet instead of global html element
+- Added option to set icon used on canvas.
+- Added option to customize the Game Paused image
+
 # Version 0.3.9 - Patches
 - Fixed Dialog buttons being styled. Should now only style `button[type="submit"]` and `.dialog-buttons button`
 - Fixed `.window-resizable-handle` handle being under `.header-button`

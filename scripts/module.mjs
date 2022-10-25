@@ -333,6 +333,64 @@ export default class CORE {
 					type: 'text/css'
 				}],
 				settings: {
+					'--rpg-ui-interface-logo': {
+						name: `${MODULE.ID}.theme.library.interface.logo.name`,
+						hint: `${MODULE.ID}.theme.library.interface.logo.hint`,
+						type: 'background',
+						default: {
+							url: 'var(--rpg-ui-logo)'
+						}
+					},
+					'--rpg-ui-interface-logo-margin': {
+						name: `${MODULE.ID}.theme.library.interface.logo.margin.name`,
+						hint: `${MODULE.ID}.theme.library.interface.logo.margin.hint`,
+						type: 'number',
+						default: '35px',
+						"range": {
+							"min": 0,
+							"max": 100
+						}
+					},
+					'--rpg-ui-interface-logo-width': {
+						name: `${MODULE.ID}.theme.library.interface.logo.width.name`,
+						hint: `${MODULE.ID}.theme.library.interface.logo.width.hint`,
+						type: 'number',
+						default: '50px',
+						"range": {
+							"min": 25,
+							"max": 150
+						}
+					},
+					'--rpg-ui-interface-logo-rotation': {
+						name: `${MODULE.ID}.theme.library.interface.logo.rotation.name`,
+						hint: `${MODULE.ID}.theme.library.interface.logo.rotation.hint`,
+						type: 'number',
+						default: '90deg',
+						format: 'rotate({value})',
+						"range": {
+							"min": 0,
+							"max": 360
+						}
+					},
+					'--rpg-ui-interface-pause-img': {
+						name: `${MODULE.ID}.theme.library.interface.pause.logo.name`,
+						hint: `${MODULE.ID}.theme.library.interface.pause.logo.hint`,
+						type: 'background',
+						default: {
+							url: 'var(--rpg-ui-logo)'
+						}
+					},
+					'--rpg-ui-interface-pause-img-opacity': {
+						name: `${MODULE.ID}.theme.library.interface.pause.opacity.name`,
+						hint: `${MODULE.ID}.theme.library.interface.pause.opacity.hint`,
+						type: 'number',
+						default: '0.5',
+						"range": {
+							"min": 0,
+							"max": 1,
+							"step": 0.01
+						}
+					},
 					libraryFantasyRPGUIInterfaceControls: {
 						name: `${MODULE.ID}.theme.library.interface.controls.name`,
 						hint: `${MODULE.ID}.theme.library.interface.controls.hint`,
@@ -934,12 +992,12 @@ export default class CORE {
 			];
 
 			if (checkFor.includes(key)) {
-				document.querySelector(":root").style.setProperty(`${key}-pressed`, `var(${value}-pressed)`);
+				game.modules.get('lib-themer').API.setCSSVariable(`${key}-pressed`, `var(${value}-pressed)`);
 
 				if (value == '--rpg-ui-button-border') {
-					document.querySelector(":root").style.setProperty(`${key}-padding`, `0px`);
+					game.modules.get('lib-themer').API.setCSSVariable(`${key}-padding`, `0px`);
 				}else{
-					document.querySelector(":root").style.setProperty(`${key}-padding`, `4px`);
+					game.modules.get('lib-themer').API.setCSSVariable(`${key}-padding`, `4px`);
 				}
 			}
 		})

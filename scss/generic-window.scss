@@ -37,10 +37,16 @@
 }
 	
 /*======================================================================*/
-/* FIX FOR SVELTE APPS ADDING OVERFLOW: INHERIT
+/* FIX FOR SVELTE APPS 
 /*======================================================================*/
 html .window-app.svelte-are4no.svelte-are4no.svelte-are4no {
 	overflow: visible;
+}
+html .window-content.svelte-are4no {
+	border-radius: 0px 0px 5px 5px;
+}
+html .window-content.svelte-are4no ~ .window-resizable-handle {
+	border-bottom-right-radius: 5px;
 }
 	
 /*======================================================================*/

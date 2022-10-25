@@ -10,6 +10,7 @@
 /*======================================================================*/
 #ui-bottom {
 	#hotbar {
+		--hotbar-width: 670px;
 		.bar-controls {
 			background-color: transparent;
 			border-image-source: var(--rpg-ui-background-button);

@@ -223,7 +223,8 @@
 }
 
 .window-app.sheet-config .window-content > form,
-.window-app.folder-edit .window-content > form {
+.window-app.folder-edit .window-content > form,
+.window-app.dialog.dnd5e.advancement .window-content > form {
   border-image-source: var(--rpg-ui-dialog-foreground);
   border-image-repeat: repeat;
   border-image-slice: 85 fill;
@@ -238,7 +239,8 @@
   /*======================================================================*/
 }
 .window-app.sheet-config .window-content > form button[type=submit],
-.window-app.folder-edit .window-content > form button[type=submit] {
+.window-app.folder-edit .window-content > form button[type=submit],
+.window-app.dialog.dnd5e.advancement .window-content > form button[type=submit] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -268,13 +270,16 @@
           transform: translate(-50%, -25px);
 }
 .window-app.sheet-config .window-content > form button[type=submit]:focus,
-.window-app.folder-edit .window-content > form button[type=submit]:focus {
+.window-app.folder-edit .window-content > form button[type=submit]:focus,
+.window-app.dialog.dnd5e.advancement .window-content > form button[type=submit]:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .window-app.sheet-config .window-content > form button[type=submit]:hover, .window-app.sheet-config .window-content > form button[type=submit]:active,
 .window-app.folder-edit .window-content > form button[type=submit]:hover,
-.window-app.folder-edit .window-content > form button[type=submit]:active {
+.window-app.folder-edit .window-content > form button[type=submit]:active,
+.window-app.dialog.dnd5e.advancement .window-content > form button[type=submit]:hover,
+.window-app.dialog.dnd5e.advancement .window-content > form button[type=submit]:active {
   background: var(--rpg-ui-button-big-pressed);
   background-size: 100% 100%;
   -webkit-box-shadow: none;

@@ -37,7 +37,9 @@
 	@include windowContentBackground(--rpg-ui-dialog-background);
 }
 .window-app.sheet-config .window-content > form, 
-.window-app.folder-edit .window-content > form {
+.window-app.folder-edit .window-content > form,
+/* FIX FOR DND5e Class Advancement Dialog */
+.window-app.dialog.dnd5e.advancement .window-content > form {
 	@include windowContentParchment(--rpg-ui-dialog-foreground);
 
 	margin: 0.5rem;

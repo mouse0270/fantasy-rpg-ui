@@ -1,10 +1,26 @@
+:root {
+  --rpg-ui-interface-logo-blend: "normal";
+  --rpg-ui-interface-logo-url: var(--rpg-ui-logo);
+  --rpg-ui-interface-logo-margin: 35px;
+  --rpg-ui-interface-logo-width: 50px;
+  --rpg-ui-interface-logo-rotation: rotate(90deg);
+  --rpg-ui-interface-pause-img-blend: "normal";
+  --rpg-ui-interface-pause-img-url: var(--rpg-ui-logo);
+  --rpg-ui-interface-pause-img-opacity: 0.5;
+}
+
 /*======================================================================*/
 /* FORMAT UI LEFT
 /*======================================================================*/
 #ui-left #logo {
-  content: var(--rpg-ui-logo);
-  margin-left: 35px;
-  width: 50px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  content: var(--rpg-ui-interface-logo-url);
+  margin-left: var(--rpg-ui-interface-logo-margin);
+  width: var(--rpg-ui-interface-logo-width);
+  -webkit-transform: var(--rpg-ui-interface-logo-rotation);
+          transform: var(--rpg-ui-interface-logo-rotation);
+}
+
+#pause img {
+  content: var(--rpg-ui-interface-pause-img-url);
+  opacity: var(--rpg-ui-interface-pause-img-opacity);
 }
