@@ -1,4 +1,4 @@
-# Version 0.3.10 - Patches
+# Version 0.3.10 - Custom Logos
 - Fixed DND5e Advancement Dialog for Classes
 - Improved Style Registration to use libThemer so that custom css variables are in private stylesheet instead of global html element
 - Added option to set icon used on canvas.
