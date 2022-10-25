@@ -1,3 +1,6 @@
+# Version 0.3.10.1 - Whoops forgot about localization
+- Fixes localization strings for features added in v0.3.10
+
 # Version 0.3.10 - Custom Logos
 - Fixed DND5e Advancement Dialog for Classes
 - Improved Style Registration to use libThemer so that custom css variables are in private stylesheet instead of global html element

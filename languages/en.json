@@ -144,6 +144,22 @@
 				"interface": {
 					"name": "Enable Interface Theme",
 					"hint": "When enabled you will be able to select and style individual parts of the user interface.",
+					"logo": {
+						"name": "Image Logo",
+						"hint": "This will allow you to change the image used above the controls on the UI.",
+						"margin.name": "Logo Left Margin",
+						"margin.hint": "This will adjust the margin to the left of the logo to allow you to better position images.",
+						"width.name": "Logo Width",
+						"width.hint": "This will adjust the width of the logo to allow you to use different sized logos.",	
+						"rotation.name": "Logo Rotation",
+						"rotation.hint": "This will adjust the rotation of the logo."	
+					},
+					"pause": {
+						"logo.name": "Game Pause Logo",
+						"logo.hint": "This will allow you to adjust to image used in the Game Pause Element.",
+						"opacity.name": "Game Pause logo Opacity",
+						"opacity.hint": "This will allow you to adjust the opacity of the image used in the Game Pause Element."
+					},
 					"controls": {
 						"name": "Enable Controls Theme",
 						"hint": "When enabled you will be able to control the style of UI Controls of Foundry",
