@@ -214,8 +214,18 @@
 					"chat": {
 						"name": "Enable Sidebar Chat Theme",
 						"hint": "When enabled it will style the Chat Tab used in Foundry's Sidebar.",
-						"messages.name": "Enable Chat Messages Theme",
-						"messages.hint": "When enabled it will style the chat messages in the Chat Tab used in Foundry's Sidebar."
+						"messages": {
+							"name": "Enable Chat Messages Theme",
+							"hint": "When enabled it will style the chat messages in the Chat Tab used in Foundry's Sidebar.",
+							"background": {
+								"name": "Default Chat Message Background",
+								"hint": "Select the background image you would like to use for the default background of chat messages",
+								"whisper.name": "Whisper Chat Message Background",
+								"whisper.hint": "Select the background image you would like to use for the whisper background of chat messages",
+								"blind.name": "Blind Chat Message Background",
+								"blind.hint": "Select the background image you would like to use for the blind background of chat messages"
+							}
+						}						
 					},
 					"combat": {
 						"name": "Enable Sidebar Combat Theme",

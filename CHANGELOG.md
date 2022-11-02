@@ -1,4 +1,5 @@
-# Version 0.4.0 - Monks Enhanced Journal.
+# Version 0.4.0 - IronMonk88 has to Many Modules Update
+- Setting CSS Variables is done via libThemer API so they should no longer be viewable via the HTML DOM element in the developer console
 - Fixed module.json version number so foundry doesn't think its constantly out of date.
 - Added New Parchment Colors: Black, Blue, Dark Green, Green, Navy, Navy Purple, Orange, Pink, Purple, Red, Sky Blue, Yellow and Yellow Green
 - Added Options to set Chat Messages Background. Currently supports the Default Chat Message class along with `.whisper` and `.blind`
