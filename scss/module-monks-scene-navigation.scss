@@ -1,0 +1,75 @@
+@import '_mixins';
+
+:root {
+
+}
+
+#navigation {
+	&.background .monks-scene-navigation .scene-list {
+		background-color: transparent;
+		border-width: 0px;
+		padding: 0px;
+
+		.scene, .folder {
+			@include button;
+
+			flex: 0;
+			margin: 0 0.5rem 0.5rem 0;
+			max-width: none;
+			min-width: auto;
+
+			&:hover {
+				flex: 0;
+				margin: 0 0.5rem 0.5rem 0;
+				max-width: none;
+			}
+
+			a {
+				background: transparent none;
+				border-width: 0px;
+				box-shadow: none;
+				height: auto;
+				left: auto;
+				position: relative;
+				padding: 0px;
+				top: auto;
+				width: auto;
+			}
+
+			ul.scene-players {
+				top: 36px;
+				width: calc(100% - 1rem);
+			}
+		}
+
+		.folder  {
+			&.expanded {
+				background: var(--rpg-ui-button-big-pressed);
+				background-size: 100% 100%;
+				box-shadow: none;
+				padding-bottom: 0px;
+				padding-top: 10px;
+
+				a {
+					background-color: transparent;
+					height: auto;
+					margin: 0px;
+				}
+			}
+		}
+	}
+}
+
+.tab.sidebar-tab.scenes-sidebar {
+	.directory-item.scene h3 {
+		> a {
+			background-color: rgba(0 0 0 / 5%);
+			border-radius: 0px;
+			border-width: 0px;
+			display: block;
+			height: 100%;
+			padding: 0px;
+			width: 100%;
+		}
+	}
+}

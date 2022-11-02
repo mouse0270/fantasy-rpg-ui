@@ -40,7 +40,20 @@
 				"choices": {
 					"parchment": "Parchment",
 					"parchment-with-nails": "Parchment with Nails",
-					"oldFabric": "Old Fabric"
+					"oldFabric": "Old Fabric",
+					"parchmentBlack": "Parchment - Black",
+					"parchmentBlue": "Parchment - Blue",
+					"parchmentDarkGreen": "Parchment - Dark Green",
+					"parchmentGreen": "Parchment - Green",
+					"parchmentNavy": "Parchment - Navy",
+					"parchmentNavyPurple": "Parchment - Navy Purple",
+					"parchmentOrange": "Parchment - Orange",
+					"parchmentPink": "Parchment - Pink",
+					"parchmentPurple": "Parchment - Purple",
+					"parchmentSkyBlue": "Parchment - Sky Blue",
+					"parchmentRed": "Parchment - Red",
+					"parchmentYellow": "Parchment - Yellow",
+					"parchmentYellowGreen": "Parchment - Yellow Green"
 				}
 			},
 			"options.hideHeaderButtons": {
@@ -299,6 +312,18 @@
 					"betterrolls-swade2": {
 						"name": "Enable Theme for Better Rolls 2 for Savage Worlds",
 						"hint": "When enabled it will style elements used in the Module Better Rolls 2 for Savage Worlds by Javier Rivera."
+					},
+					"monks-enhanced-journal": {
+						"name": "Enable Theme for Monks Enhanced Journal",
+						"hint": "When enabled it will style elements used in the Module Monks Enhanced Journal by IronMonk88."
+					},
+					"monks-scene-navigation": {
+						"name": "Enable Theme for Monks Scene Navigation",
+						"hint": "When enabled it will style elements used in the Module Monks Scene Navigation by IronMonk88."
+					},
+					"monks-hotbar-expansion": {
+						"name": "Enable Theme for Monks Hotbar Expansion",
+						"hint": "When enabled it will style elements used in the Module Monks Hotbar Expansion by IronMonk88."
 					}
 				}
 			}

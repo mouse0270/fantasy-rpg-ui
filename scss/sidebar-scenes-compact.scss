@@ -6,10 +6,6 @@
 /*======================================================================*/
 /* FORMAT SIDEBAR - SCENES
 /*======================================================================*/
-html #sidebar {
-	.tab[data-tab].scenes-sidebar {
-		.scene {
-			--sidebar-scene-height: 50px;
-		}
-	}
+html .tab.sidebar-tab.scenes-sidebar .scene {
+	--sidebar-scene-height: 50px;
 }

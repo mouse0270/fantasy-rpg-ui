@@ -55,7 +55,7 @@ html #sidebar .tab[data-tab].settings-sidebar #pf2e-troubleshooting > button:foc
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-html #sidebar .tab[data-tab].settings-sidebar #pf2e-troubleshooting > button:hover, html #sidebar .tab[data-tab].settings-sidebar #pf2e-troubleshooting > button:active {
+html #sidebar .tab[data-tab].settings-sidebar #pf2e-troubleshooting > button:hover, html #sidebar .tab[data-tab].settings-sidebar #pf2e-troubleshooting > button:active, html #sidebar .tab[data-tab].settings-sidebar #pf2e-troubleshooting > button.active {
   background: var(--rpg-ui-button-big-pressed);
   background-size: 100% 100%;
   -webkit-box-shadow: none;

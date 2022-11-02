@@ -1,3 +1,21 @@
+# Version 0.4.0 - Monks Enhanced Journal.
+- Fixed module.json version number so foundry doesn't think its constantly out of date.
+- Added New Parchment Colors: Black, Blue, Dark Green, Green, Navy, Navy Purple, Orange, Pink, Purple, Red, Sky Blue, Yellow and Yellow Green
+- Added Options to set Chat Messages Background. Currently supports the Default Chat Message class along with `.whisper` and `.blind`
+  - If you need additional options, please let me know
+- Fixed Sidebar Popout Windows not using Sidebar Themes
+- Fixed some issues with Generic Controls Checkboxes and Radio buttons disappearing.
+  - Still not perfect I will keep working on them
+- Added Partial Support for Monks Enhanced Journal *Please note, I don't use this module so some things may be broken, please report them to me not ironmonk*
+  - Fixed issue with my theme libWrapping the Journal collapse function when this module is enabled
+    - Known Issue, Title for journal will not move based on if sidebar is collapsed
+  - Moved Monks Sidebar to the left of the Journal and Styled it similar to how foundry v10 Journals are styled.
+    - When collapsed the couplings get cut off.
+- Added Support for Monks Scene Navigation
+- Added Support for Monks Hotbar Expansion
+
+> Will probably come back and keep working on Monks Enhanced Journal, but don't expect anything quickly. This module has a very complicated and confusing layout and takes very specific CSS selectors to properly target its individual sections.
+
 # Version 0.3.10.1 - Whoops forgot about localization
 - Fixes localization strings for features added in v0.3.10
 

@@ -7,30 +7,47 @@
 /*======================================================================*/
 /* FORMAT SIDEBAR - SCENES
 /*======================================================================*/
-#sidebar {
-	.tab[data-tab].journal-sidebar {
-		background-color: transparent;
-		background-image: none;
-		border-image-source: var(--rpg-ui-sidebar-journal-background);
-		border-image-repeat: repeat;
-		border-image-slice: 60 fill;
-		border-image-width: 20px;
+#sidebar .tab.sidebar-tab.journal-sidebar {
+	background-color: transparent;
+	background-image: none;
+	border-image-source: var(--rpg-ui-sidebar-journal-background);
+	border-image-repeat: repeat;
+	border-image-slice: 60 fill;
+	border-image-width: 20px;
+	border-width: 0px;
+	box-shadow: none;
+	padding: 7px;
+}
+.tab.sidebar-tab.journal-sidebar {
+	&.sidebar-popout {
+		@include windowHeader(--rpg-ui-generic-title);
 		border-width: 0px;
-		box-shadow: none;
-		
-    	box-shadow: none;
-		margin: 0px;
-		padding: 7px;
 
-
-		.directory-list .directory-item.document {
-			border-image-source: var(--rpg-ui-content-board-1);
+		> .window-content {
+			background-color: transparent;
+			background-image: none;
+			border-image-source: var(--rpg-ui-sidebar-journal-background);
 			border-image-repeat: repeat;
-			border-image-slice: 50 fill;
+			border-image-slice: 60 fill;
 			border-image-width: 20px;
 			border-width: 0px;
-			margin: 0.1rem 0.25rem;
-			padding: 0.5rem;
+			box-shadow: none;
+			margin: 0px;
+			padding: 1.5rem 0rem 0rem;
+
+			.sidebar-tab {
+				padding: 7px;
+			}
 		}
+	}
+
+	.directory-list .directory-item.document {
+		border-image-source: var(--rpg-ui-content-board-1);
+		border-image-repeat: repeat;
+		border-image-slice: 50 fill;
+		border-image-width: 20px;
+		border-width: 0px;
+		margin: 0.1rem 0.25rem;
+		padding: 0.5rem;
 	}
 }

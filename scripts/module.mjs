@@ -3,9 +3,6 @@
 // GET MODULE CORE
 import { MODULE } from './_module.mjs';
 
-// IMPORT SETTINGS -> Settings Register on Hooks.Setup
-import './_settings.mjs';
-
 // DEFINE MODULE CLASS
 export default class CORE {
 	static #TITLECHOICES = {
@@ -32,7 +29,20 @@ export default class CORE {
 		'wood-alt': `${MODULE.ID}.theme.options.background.choices.woodAlt`,
 		'parchment': `${MODULE.ID}.theme.options.foreground.choices.parchment`,
 		'parchment-with-nails': `${MODULE.ID}.theme.options.foreground.choices.parchment-with-nails`,
-		'old-fabric': `${MODULE.ID}.theme.options.foreground.choices.oldFabric`
+		'old-fabric': `${MODULE.ID}.theme.options.foreground.choices.oldFabric`,
+		'parchment-black': `${MODULE.ID}.theme.options.foreground.choices.parchmentBlack`,
+		'parchment-blue': `${MODULE.ID}.theme.options.foreground.choices.parchmentBlue`,
+		'parchment-dark-green': `${MODULE.ID}.theme.options.foreground.choices.parchmentDarkGreen`,
+		'parchment-green': `${MODULE.ID}.theme.options.foreground.choices.parchmentGreen`,
+		'parchment-navy': `${MODULE.ID}.theme.options.foreground.choices.parchmentNavy`,
+		'parchment-navy-purple': `${MODULE.ID}.theme.options.foreground.choices.parchmentNavyPurple`,
+		'parchment-orange': `${MODULE.ID}.theme.options.foreground.choices.parchmentOrange`,
+		'parchment-pink': `${MODULE.ID}.theme.options.foreground.choices.parchmentPink`,
+		'parchment-purple': `${MODULE.ID}.theme.options.foreground.choices.parchmentPurple`,
+		'parchment-red': `${MODULE.ID}.theme.options.foreground.choices.parchmentRed`,
+		'parchment-sky-blue': `${MODULE.ID}.theme.options.foreground.choices.parchmentSkyBlue`,
+		'parchment-yellow': `${MODULE.ID}.theme.options.foreground.choices.parchmentYellow`,
+		'parchment-yellow-green': `${MODULE.ID}.theme.options.foreground.choices.parchmentYellowGreen`
 	};
 	static #BUTTONSTYLES = {
 		'--rpg-ui-button-rounded': `${MODULE.ID}.theme.options.buttonStyle.choices.rounded`,
@@ -523,7 +533,33 @@ export default class CORE {
 								files: [{
 									name: `./modules/${MODULE.ID}/styles/sidebar-chat-messages.css`,
 									type: 'text/css'
-								}]
+								}],
+								settings: {
+									'--rpg-ui-sidebar-chat-messages-background': {
+										name: `${MODULE.ID}.theme.library.sidebar.chat.messages.background.name`,
+										hint: `${MODULE.ID}.theme.library.sidebar.chat.messages.background.hint`,
+										type: 'choices',
+										default: 'parchment',
+										format: 'var(--rpg-ui-background-{value})',
+										choices: CORE.#BACKGROUNDCHOICES
+									},
+									'--rpg-ui-sidebar-chat-messages-background-whisper': {
+										name: `${MODULE.ID}.theme.library.sidebar.chat.messages.background.whisper.name`,
+										hint: `${MODULE.ID}.theme.library.sidebar.chat.messages.background.whisper.hint`,
+										type: 'choices',
+										default: 'parchment-purple',
+										format: 'var(--rpg-ui-background-{value})',
+										choices: CORE.#BACKGROUNDCHOICES
+									},
+									'--rpg-ui-sidebar-chat-messages-background-blind': {
+										name: `${MODULE.ID}.theme.library.sidebar.chat.messages.background.blind.name`,
+										hint: `${MODULE.ID}.theme.library.sidebar.chat.messages.background.blind.hint`,
+										type: 'choices',
+										default: 'parchment-black',
+										format: 'var(--rpg-ui-background-{value})',
+										choices: CORE.#BACKGROUNDCHOICES
+									}
+								}
 							}
 						}
 					},
@@ -938,6 +974,45 @@ export default class CORE {
 			}
 		}
 
+		if (game.modules.get('monks-enhanced-journal')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesMonksEnhancedJournal'] = {
+				name: `${MODULE.ID}.theme.library.modules.monks-enhanced-journal.name`,
+				hint: `${MODULE.ID}.theme.library.modules.monks-enhanced-journal.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-monks-enhanced-journal.css`,
+					type: 'text/css'
+				}]
+			}
+		}
+
+		if (game.modules.get('monks-scene-navigation')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesMonksSceneNavigation'] = {
+				name: `${MODULE.ID}.theme.library.modules.monks-scene-navigation.name`,
+				hint: `${MODULE.ID}.theme.library.modules.monks-scene-navigation.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-monks-scene-navigation.css`,
+					type: 'text/css'
+				}]
+			}
+		}
+
+		if (game.modules.get('monks-hotbar-expansion')?.active ?? false) {
+			fantasyRPGUITheme['libraryFantasyRPGUIModulesMonksHotbarExpansion'] = {
+				name: `${MODULE.ID}.theme.library.modules.monks-hotbar-expansion.name`,
+				hint: `${MODULE.ID}.theme.library.modules.monks-hotbar-expansion.hint`,
+				type: 'library',
+				default: false,
+				files: [{
+					name: `./modules/${MODULE.ID}/styles/module-monks-hotbar-expansion.css`,
+					type: 'text/css'
+				}]
+			}
+		}
+
 		if (game.modules.get('window-controls')?.active ?? false) {
 			fantasyRPGUITheme['libraryFantasyRPGUIModulesWindowControls'] = {
 				name: `${MODULE.ID}.theme.library.modules.window-controls.name`,
@@ -962,6 +1037,8 @@ export default class CORE {
 		this.installAPI();
 
 		Hooks.once('ready', async () => {
+			// Kick out if Monks Enhanced Journal
+			if (game.modules.get('monks-enhanced-journal')?.active ?? false) return;
 			libWrapper.register(MODULE.ID, "JournalSheet.prototype.toggleSidebar", (wrapped, ...args) => {
 				const target = args[0].target;
 				const isCollapsed = !target.closest('.sidebar').classList.contains('collapsed');
@@ -973,6 +1050,8 @@ export default class CORE {
 		});
 
 		Hooks.on('renderJournalSheet', async (app, elem, options) => {
+			// Kick out if Monks Enhanced Journal
+			if (game.modules.get('monks-enhanced-journal')?.active ?? false) return;
 			const target = elem[0].classList.contains('.app') ? elem[0] : elem[0].closest('.app');
 			const isCollapsed = target.querySelector('.sidebar').classList.contains('collapsed');
 

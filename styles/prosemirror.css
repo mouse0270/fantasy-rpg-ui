@@ -118,7 +118,7 @@ dialog.menu-dialog.prosemirror > form > button[name=save]:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-dialog.menu-dialog.prosemirror > form > button[name=save]:hover, dialog.menu-dialog.prosemirror > form > button[name=save]:active {
+dialog.menu-dialog.prosemirror > form > button[name=save]:hover, dialog.menu-dialog.prosemirror > form > button[name=save]:active, dialog.menu-dialog.prosemirror > form > button[name=save].active {
   background: var(--rpg-ui-button-big-pressed);
   background-size: 100% 100%;
   -webkit-box-shadow: none;

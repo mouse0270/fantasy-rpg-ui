@@ -275,11 +275,13 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.window-app.sheet-config .window-content > form button[type=submit]:hover, .window-app.sheet-config .window-content > form button[type=submit]:active,
+.window-app.sheet-config .window-content > form button[type=submit]:hover, .window-app.sheet-config .window-content > form button[type=submit]:active, .window-app.sheet-config .window-content > form button[type=submit].active,
 .window-app.folder-edit .window-content > form button[type=submit]:hover,
 .window-app.folder-edit .window-content > form button[type=submit]:active,
+.window-app.folder-edit .window-content > form button[type=submit].active,
 .window-app.dialog.dnd5e.advancement .window-content > form button[type=submit]:hover,
-.window-app.dialog.dnd5e.advancement .window-content > form button[type=submit]:active {
+.window-app.dialog.dnd5e.advancement .window-content > form button[type=submit]:active,
+.window-app.dialog.dnd5e.advancement .window-content > form button[type=submit].active {
   background: var(--rpg-ui-button-big-pressed);
   background-size: 100% 100%;
   -webkit-box-shadow: none;
@@ -332,7 +334,7 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.window-app.dialog .window-content .dialog-buttons button:hover, .window-app.dialog .window-content .dialog-buttons button:active {
+.window-app.dialog .window-content .dialog-buttons button:hover, .window-app.dialog .window-content .dialog-buttons button:active, .window-app.dialog .window-content .dialog-buttons button.active {
   background: var(--rpg-ui-button-big-pressed);
   background-size: 100% 100%;
   -webkit-box-shadow: none;

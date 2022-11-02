@@ -1,0 +1,82 @@
+@import '_mixins';
+
+:root {
+
+}
+
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal {
+	@include windowHeader(--rpg-ui-journal-title);
+	
+	.window-content {
+		background-color: transparent;
+		background-image: none;
+		padding: 0px;
+
+		.monks-enhanced-journal.flexrow {
+			flex-direction: row-reverse;
+		}
+
+		.body {
+			@include windowContentBackground(--rpg-ui-journal-background-right);
+			padding-top: 1.5rem;
+
+			.tab-bar  {
+				padding-left: 30px;
+				.tab-button.sidebar-toggle {
+					left: 0px;
+					right: auto;
+				}
+			}
+
+			.journal-entry-content, > .content > .journal-entry-page {
+				@include windowContentParchment(--rpg-ui-journal-foreground);
+
+				background: transparent none;
+				border-width: 0px;
+    			margin: 0 0.5rem;
+			}
+
+			> .content > .journal-entry-page {
+				margin: 0 0.75rem;
+    			width: calc(100% - 1.5rem);
+			}
+		}
+		.directory-sidebar {
+			@include windowContentBackground(--rpg-ui-journal-background-left);
+			position: relative;
+
+			&:after {
+				background-image: var(--rpg-ui-window-coupling);
+				background-position-x: center;
+				background-repeat: space;
+				background-size: 50px 150px;
+				content: "";
+				height: calc(100% - 80px);
+				pointer-events: none;
+				position: absolute;
+				right: -28px;
+				top: 40px;
+				width: 45px;
+				z-index: 1;
+			}
+
+			.action-buttons	{
+				padding-left: 0px;
+			}
+
+			#journal-directory {
+				color: var(--color-text-light-0);
+
+				button {
+					background: rgba(255, 255, 240, 0.8);
+				}
+
+				li.folder.collapsed > .folder-header:not(.customcolor), 
+				li.folder.collapsed > .folder-header .create-folder, 
+				li.folder.collapsed > .folder-header .create-document {
+					color: var(--color-text-light-0);
+				}
+			}
+		}
+	}
+}

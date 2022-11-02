@@ -1,0 +1,253 @@
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header {
+  border-width: 0px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header .window-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-journal-title);
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 250px;
+  overflow: visible;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -15px);
+          transform: translate(-50%, -15px);
+  white-space: nowrap;
+  z-index: 1;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a.header-button.close {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-border);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--palette-danger-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 35px;
+  position: absolute;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(-124px, 15px);
+          transform: translate(-124px, 15px);
+  right: -150px;
+  width: 35px;
+  z-index: -1;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a.header-button.close i {
+  font-size: var(--font-size-18);
+  margin-right: 0px;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a.header-button.close:hover, #MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a.header-button.close:active {
+  background-image: var(--rpg-ui-button-border-pressed);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header .window-title ~ a:not(.close) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: var(--rpg-ui-button-with-rings);
+  background-color: transparent;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  display: flex;
+  font-size: var(--font-size-14);
+  max-width: 150px;
+  padding-left: 35px;
+  position: absolute;
+  right: -150px;
+  -webkit-transform: translate(-20px, 70px);
+          transform: translate(-20px, 70px);
+  width: 150px;
+  z-index: 1;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header .window-title ~ a:not(.close):before {
+  background-image: var(--rpg-ui-button-rings);
+  background-color: transparent;
+  background-size: 100% 100%;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  width: 37px;
+  position: absolute;
+  -webkit-transform: translate(-35px, -1px);
+          transform: translate(-35px, -1px);
+  z-index: 1;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(2) {
+  -webkit-transform: translate(-20px, 60px);
+          transform: translate(-20px, 60px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(3) {
+  -webkit-transform: translate(-20px, 105px);
+          transform: translate(-20px, 105px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(4) {
+  -webkit-transform: translate(-20px, 150px);
+          transform: translate(-20px, 150px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(5) {
+  -webkit-transform: translate(-20px, 195px);
+          transform: translate(-20px, 195px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(6) {
+  -webkit-transform: translate(-20px, 240px);
+          transform: translate(-20px, 240px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(7) {
+  -webkit-transform: translate(-20px, 285px);
+          transform: translate(-20px, 285px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(8) {
+  -webkit-transform: translate(-20px, 330px);
+          transform: translate(-20px, 330px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(9) {
+  -webkit-transform: translate(-20px, 375px);
+          transform: translate(-20px, 375px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(10) {
+  -webkit-transform: translate(-20px, 420px);
+          transform: translate(-20px, 420px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(11) {
+  -webkit-transform: translate(-20px, 465px);
+          transform: translate(-20px, 465px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(12) {
+  -webkit-transform: translate(-20px, 510px);
+          transform: translate(-20px, 510px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(13) {
+  -webkit-transform: translate(-20px, 555px);
+          transform: translate(-20px, 555px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(14) {
+  -webkit-transform: translate(-20px, 600px);
+          transform: translate(-20px, 600px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(15) {
+  -webkit-transform: translate(-20px, 645px);
+          transform: translate(-20px, 645px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(16) {
+  -webkit-transform: translate(-20px, 690px);
+          transform: translate(-20px, 690px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(17) {
+  -webkit-transform: translate(-20px, 735px);
+          transform: translate(-20px, 735px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-header a:not(.close):nth-child(18) {
+  -webkit-transform: translate(-20px, 780px);
+          transform: translate(-20px, 780px);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content {
+  background-color: transparent;
+  background-image: none;
+  padding: 0px;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .monks-enhanced-journal.flexrow {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .body {
+  background: none;
+  border-image-source: var(--rpg-ui-journal-background-right);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-width: 5px;
+  border-style: solid;
+  padding: 0px;
+  padding-top: 1.5rem;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .body .tab-bar {
+  padding-left: 30px;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .body .tab-bar .tab-button.sidebar-toggle {
+  left: 0px;
+  right: auto;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .body .journal-entry-content, #MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .body > .content > .journal-entry-page {
+  border-image-source: var(--rpg-ui-journal-foreground);
+  border-image-repeat: repeat;
+  border-image-slice: 85 fill;
+  border-image-width: 20px;
+  border-width: 15px;
+  border-style: solid;
+  padding: 0.5rem;
+  background: transparent none;
+  border-width: 0px;
+  margin: 0 0.5rem;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .body > .content > .journal-entry-page {
+  margin: 0 0.75rem;
+  width: calc(100% - 1.5rem);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar {
+  background: none;
+  border-image-source: var(--rpg-ui-journal-background-left);
+  border-image-repeat: repeat;
+  border-image-slice: 60 fill;
+  border-image-width: 20px;
+  border-width: 5px;
+  border-style: solid;
+  padding: 0px;
+  position: relative;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar:after {
+  background-image: var(--rpg-ui-window-coupling);
+  background-position-x: center;
+  background-repeat: space;
+  background-size: 50px 150px;
+  content: "";
+  height: calc(100% - 80px);
+  pointer-events: none;
+  position: absolute;
+  right: -28px;
+  top: 40px;
+  width: 45px;
+  z-index: 1;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar .action-buttons {
+  padding-left: 0px;
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar #journal-directory {
+  color: var(--color-text-light-0);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar #journal-directory button {
+  background: rgba(255, 255, 240, 0.8);
+}
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar #journal-directory li.folder.collapsed > .folder-header:not(.customcolor),
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar #journal-directory li.folder.collapsed > .folder-header .create-folder,
+#MonksEnhancedJournal.app.window-app.monks-enhanced-journal .window-content .directory-sidebar #journal-directory li.folder.collapsed > .folder-header .create-document {
+  color: var(--color-text-light-0);
+}

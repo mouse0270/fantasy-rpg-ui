@@ -272,7 +272,7 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button:hover, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button:active {
+.window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button:hover, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button:active, .window-app.sheet.journal-sheet.journal-entry .window-content .journal-sidebar .action-buttons button.active {
   background: var(--rpg-ui-button-big-pressed);
   background-size: 100% 100%;
   -webkit-box-shadow: none;

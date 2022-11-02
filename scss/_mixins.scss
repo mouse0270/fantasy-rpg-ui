@@ -1,4 +1,4 @@
-$exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout';
+$exclude: '.sidebar-tab, .dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock, .journal-sheet, .sheet.actor, .forien-quest-log, .hand-mini-bar-hand-popout, .monks-enhanced-journal';
 
 @mixin windowTitle($title) {
 	align-items: center;
@@ -141,7 +141,7 @@ $exclude: '.dialog, .sheet-config, .folder-edit, .simple-calendar, .monsterblock
 		box-shadow: none;
 	}
 
-	&:hover, &:active {
+	&:hover, &:active, &.active {
 		background: var(--rpg-ui-button-big-pressed);
 		background-size: 100% 100%;
 		box-shadow: none;
