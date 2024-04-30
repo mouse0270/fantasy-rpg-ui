@@ -1,3 +1,6 @@
+# Version 0.4.1 - Remove Compatibility Maximum for v11+ Support
+- Removed `compatibility.maximum` from module.json to allow for Foundry v11+ Support
+
 # Version 0.4.0 - IronMonk88 has to Many Modules Update
 - Setting CSS Variables is done via libThemer API so they should no longer be viewable via the HTML DOM element in the developer console
 - Fixed module.json version number so foundry doesn't think its constantly out of date.
